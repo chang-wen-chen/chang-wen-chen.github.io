@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Chang-Wen Blog</title>
+    <link>https://chang-wen-chen.github.io/categories/</link>
+    <description>Recent content in Categories on Chang-Wen Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hardware</title>
+      <link>https://chang-wen-chen.github.io/categories/hardware/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/categories/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>https://chang-wen-chen.github.io/categories/tech/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://chang-wen-chen.github.io/categories/tips/</link>
+      <pubDate>Thu, 24 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/categories/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>https://chang-wen-chen.github.io/categories/life/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/categories/life/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

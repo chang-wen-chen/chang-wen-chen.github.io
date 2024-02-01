@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardware on Chang-Wen Blog</title>
+    <link>https://chang-wen-chen.github.io/categories/hardware/</link>
+    <description>Recent content in hardware on Chang-Wen Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Chang-Wen&#39;s Blog</title>
+      <link>https://chang-wen-chen.github.io/2024/02/01/hello-world/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/01/hello-world/</guid>
+      <description>Learning 加入Code pwd 加入段落程式 print(&amp;#34;Hello&amp;#34;) echo Y puts &amp;#34;Y&amp;#34; Hugo shortcodes Youtube https://www.youtube.com/watch?v=VUskYJ0L-jY Twitter LeBron in October vs Now This is what four months of Darvin Ham and Taurean Prince does to a man😭 pic.twitter.com/aS5rEkfd9t &amp;mdash; jack (@TheCavsJack) February 1, 2024</description>
+    </item>
+  </channel>
+</rss>
