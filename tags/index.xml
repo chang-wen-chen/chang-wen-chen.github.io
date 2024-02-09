@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Chang-Wen Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVCS</title>
+      <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/dvcs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://chang-wen-chen.github.io/tags/git/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mercurial</title>
+      <link>https://chang-wen-chen.github.io/tags/mercurial/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/mercurial/</guid>
+      <description></description>
+    </item>
     <item>
       <title>english</title>
       <link>https://chang-wen-chen.github.io/tags/english/</link>

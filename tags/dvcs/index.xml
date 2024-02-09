@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DVCS on Chang-Wen Blog</title>
+    <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
+    <description>Recent content in DVCS on Chang-Wen Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/dvcs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mercurial and Git</title>
+      <link>https://chang-wen-chen.github.io/2024/02/02/sw-scm-mercurial-git/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/02/sw-scm-mercurial-git/</guid>
+      <description>Mercurial and Git are both used for version control.&#xA;Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach:&#xA;Branching Model:&#xA;Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows. Git: Uses a decentralized branching model, where all branches exist within the same repository.</description>
+    </item>
+  </channel>
+</rss>
