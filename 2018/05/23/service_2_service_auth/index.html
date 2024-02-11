@@ -276,6 +276,14 @@
 <p>解决方案是将用户信息从用户直接访问的第一个微服务向后传递到调用链上的每一个微服务，调用链上的每一个微服务都使用该用户信息对用户能访问的资源进行判断。在一个大型的微服务系统中，一个调用链可能会非常长，导致该方案的实现比较复杂。</p>
 <p>我们需要根据应用的使用场景，每个微服务中数据的敏感程度来决定选择哪一种服务间安全的实施方式。</p>
 
+                <script src="https://utteranc.es/client.js"
+                    repo="chang-wen-chen / chang-wen-chen.github.io"
+                    issue-term="url"
+                    theme="github-light"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+                
                 
                 
 <div class="entry-shang text-center">
@@ -337,29 +345,6 @@
                 
 
                 
-
-
-<div id="disqus-comment"></div>
-<div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "chang.wen.chen" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 
