@@ -237,6 +237,29 @@
                 post-container">
 
                 
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#pod和service">Pod和Service</a></li>
+        <li><a href="#service的类型">Service的类型</a></li>
+        <li><a href="#通过nodeport提供外部访问入口">通过NodePort提供外部访问入口</a></li>
+        <li><a href="#通过load-balancer提供外部访问入口">通过Load Balancer提供外部访问入口</a></li>
+        <li><a href="#采用ingress作为七层load-balancer">采用Ingress作为七层load balancer</a></li>
+        <li><a href="#结论">结论</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                
+
                 <h2 id="前言">前言</h2>
 <p>我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。</p>
 <blockquote>
@@ -463,6 +486,7 @@ spec:
 </li>
 </ul>
 
+
                 <script src="https://utteranc.es/client.js"
                     repo = "chang-wen-chen/chang-wen-chen.github.io"    # The repo to store comments
                     issueTerm = "pathname"
@@ -470,46 +494,6 @@ spec:
                     crossorigin="anonymous"
                     async>
                 </script>
-
-                
-                
-<div class="entry-shang text-center">
-    
-	    <p>Donate Eirik</p>
-	
-	<button class="zs show-zs btn btn-bred">Donate</button>
-</div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
-	<div class="zs-modal-head">
-		<button type="button" class="close">×</button>
-		<span class="author"><a href="https://chang-wen-chen.github.io"><img src="/img/favicon.png" />Chang-Wen Blog</a></span>
-        
-	        <p class="tip"><i></i><span>Donate information</span></p>
-		
- 
-	</div>
-	<div class="zs-modal-body">
-		<div class="zs-modal-btns">
-			<button class="btn btn-blink" data-num="2">2元</button>
-			<button class="btn btn-blink" data-num="5">5元</button>
-			<button class="btn btn-blink" data-num="10">10元</button>
-			<button class="btn btn-blink" data-num="50">50元</button>
-			<button class="btn btn-blink" data-num="100">100元</button>
-			<button class="btn btn-blink" data-num="1">任意金额</button>
-		</div>
-		<div class="zs-modal-pay">
-			<button class="btn btn-bred" id="pay-text">2元</button>
-			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
-		</div>
-	</div>
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
-	</div>
-</div>
-<script type="text/javascript" src="/js/reward.js"></script>
 
                 
 

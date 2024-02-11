@@ -241,6 +241,24 @@
                 post-container">
 
                 
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#目录">目录</a></li>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#用户认证和鉴权">用户认证和鉴权</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                
+
                 <blockquote>
 <p>这段时间对之前微服务安全相关的一些想法进行了进一步总结和归纳，理清了在之前文章里面没有想得太清楚的地方，例如服务间的认证与鉴权以及用户身份在服务调用链中的传递。</p>
 <p>在这一系列文章里，我将尝试分为三个部分对微服务安全进行系统阐述：用户访问认证与鉴权，服务间认证与鉴权，外部系统访问控制。</p>
@@ -385,6 +403,7 @@ Token颁发方的签名，用于客户端验证Token颁发方的身份，也用�
 <p>由于微服务进行权限判断时需要用户身份信息，该方案需要处理的另一个问题是如何把登录用户的信息从API Gateway传递到微服务中。如果是基于Http，可以采用Http header实现，如果是其他协议，则需要在消息体中增加用户身份相关的字段。</p>
 
 
+
                 <script src="https://utteranc.es/client.js"
                     repo = "chang-wen-chen/chang-wen-chen.github.io"    # The repo to store comments
                     issueTerm = "pathname"
@@ -392,46 +411,6 @@ Token颁发方的签名，用于客户端验证Token颁发方的身份，也用�
                     crossorigin="anonymous"
                     async>
                 </script>
-
-                
-                
-<div class="entry-shang text-center">
-    
-	    <p>Donate Eirik</p>
-	
-	<button class="zs show-zs btn btn-bred">Donate</button>
-</div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
-	<div class="zs-modal-head">
-		<button type="button" class="close">×</button>
-		<span class="author"><a href="https://chang-wen-chen.github.io"><img src="/img/favicon.png" />Chang-Wen Blog</a></span>
-        
-	        <p class="tip"><i></i><span>Donate information</span></p>
-		
- 
-	</div>
-	<div class="zs-modal-body">
-		<div class="zs-modal-btns">
-			<button class="btn btn-blink" data-num="2">2元</button>
-			<button class="btn btn-blink" data-num="5">5元</button>
-			<button class="btn btn-blink" data-num="10">10元</button>
-			<button class="btn btn-blink" data-num="50">50元</button>
-			<button class="btn btn-blink" data-num="100">100元</button>
-			<button class="btn btn-blink" data-num="1">任意金额</button>
-		</div>
-		<div class="zs-modal-pay">
-			<button class="btn btn-bred" id="pay-text">2元</button>
-			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
-		</div>
-	</div>
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
-	</div>
-</div>
-<script type="text/javascript" src="/js/reward.js"></script>
 
                 
 

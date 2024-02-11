@@ -245,6 +245,25 @@
                 post-container">
 
                 
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#微服务架构的演进">微服务架构的演进</a></li>
+        <li><a href="#istio服务网格">Istio服务网格</a></li>
+        <li><a href="#总结">总结</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                
+
                 <h2 id="微服务架构的演进">微服务架构的演进</h2>
 <p>作为一种架构模式，微服务将复杂系统切分为数十乃至上百个小服务，每个服务负责实现一个独立的业务逻辑。这些小服务易于被小型的软件工程师团队所理解和修改，并带来了语言和框架选择灵活性，缩短应用开发上线时间，可根据不同的工作负载和资源要求对服务进行独立缩扩容等优势。</p>
 <p>另一方面，当应用被拆分为多个微服务进程后，进程内的方法调用变成了了进程间的远程调用。引入了对大量服务的连接、管理和监控的复杂性。</p>
@@ -515,6 +534,7 @@ Envoy收集一个端到端调用中的各个分段的数据，并将这些调用
 <li><a href="https://istio.io/blog/2017/mixer-spof-myth.html">Mixer and the SPOF Myth</a></li>
 </ul>
 
+
                 <script src="https://utteranc.es/client.js"
                     repo = "chang-wen-chen/chang-wen-chen.github.io"    # The repo to store comments
                     issueTerm = "pathname"
@@ -522,46 +542,6 @@ Envoy收集一个端到端调用中的各个分段的数据，并将这些调用
                     crossorigin="anonymous"
                     async>
                 </script>
-
-                
-                
-<div class="entry-shang text-center">
-    
-	    <p>Donate Eirik</p>
-	
-	<button class="zs show-zs btn btn-bred">Donate</button>
-</div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
-	<div class="zs-modal-head">
-		<button type="button" class="close">×</button>
-		<span class="author"><a href="https://chang-wen-chen.github.io"><img src="/img/favicon.png" />Chang-Wen Blog</a></span>
-        
-	        <p class="tip"><i></i><span>Donate information</span></p>
-		
- 
-	</div>
-	<div class="zs-modal-body">
-		<div class="zs-modal-btns">
-			<button class="btn btn-blink" data-num="2">2元</button>
-			<button class="btn btn-blink" data-num="5">5元</button>
-			<button class="btn btn-blink" data-num="10">10元</button>
-			<button class="btn btn-blink" data-num="50">50元</button>
-			<button class="btn btn-blink" data-num="100">100元</button>
-			<button class="btn btn-blink" data-num="1">任意金额</button>
-		</div>
-		<div class="zs-modal-pay">
-			<button class="btn btn-bred" id="pay-text">2元</button>
-			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
-		</div>
-	</div>
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
-	</div>
-</div>
-<script type="text/javascript" src="/js/reward.js"></script>
 
                 
 

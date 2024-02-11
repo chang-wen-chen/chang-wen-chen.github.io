@@ -237,6 +237,22 @@
                 post-container">
 
                 
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#开始之前">开始之前</a></li>
+    <li><a href="#基于权重的版本路由">基于权重的版本路由</a></li>
+    <li><a href="#理解原理">理解原理</a></li>
+    <li><a href="#清理">清理</a></li>
+    <li><a href="#进阶阅读">进阶阅读</a></li>
+  </ul>
+</nav>
+                
+                
+
                 <p>关于Istio的更多内容请参考<a href="http://istio.doczh.cn/">istio中文文档</a>。</p>
 <p>原文参见<a href="https://istio.io/docs/tasks/traffic-management/traffic-shifting.html">Traffic Shifting</a>。</p>
 <p>本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。</p>
@@ -304,6 +320,7 @@
 <li>更多的内容请参见<a href="http://istio.doczh.cn/docs/concepts/traffic-management/rules-configuration.html">请求路由</a>。</li>
 </ul>
 
+
                 <script src="https://utteranc.es/client.js"
                     repo = "chang-wen-chen/chang-wen-chen.github.io"    # The repo to store comments
                     issueTerm = "pathname"
@@ -311,46 +328,6 @@
                     crossorigin="anonymous"
                     async>
                 </script>
-
-                
-                
-<div class="entry-shang text-center">
-    
-	    <p>Donate Eirik</p>
-	
-	<button class="zs show-zs btn btn-bred">Donate</button>
-</div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
-	<div class="zs-modal-head">
-		<button type="button" class="close">×</button>
-		<span class="author"><a href="https://chang-wen-chen.github.io"><img src="/img/favicon.png" />Chang-Wen Blog</a></span>
-        
-	        <p class="tip"><i></i><span>Donate information</span></p>
-		
- 
-	</div>
-	<div class="zs-modal-body">
-		<div class="zs-modal-btns">
-			<button class="btn btn-blink" data-num="2">2元</button>
-			<button class="btn btn-blink" data-num="5">5元</button>
-			<button class="btn btn-blink" data-num="10">10元</button>
-			<button class="btn btn-blink" data-num="50">50元</button>
-			<button class="btn btn-blink" data-num="100">100元</button>
-			<button class="btn btn-blink" data-num="1">任意金额</button>
-		</div>
-		<div class="zs-modal-pay">
-			<button class="btn btn-bred" id="pay-text">2元</button>
-			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
-		</div>
-	</div>
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
-	</div>
-</div>
-<script type="text/javascript" src="/js/reward.js"></script>
 
                 
 

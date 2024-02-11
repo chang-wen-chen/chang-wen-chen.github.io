@@ -241,6 +241,33 @@
                 post-container">
 
                 
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#kubernetes应用部署的挑战">Kubernetes应用部署的挑战</a></li>
+        <li><a href="#helm是什么">Helm是什么？</a></li>
+        <li><a href="#helm组件及相关术语">Helm组件及相关术语</a></li>
+        <li><a href="#安装helm">安装Helm</a></li>
+        <li><a href="#构建一个helm-chart">构建一个Helm chart</a></li>
+        <li><a href="#helm-repository">Helm Repository</a></li>
+        <li><a href="#在kubernetes中部署chart">在kubernetes中部署Chart</a></li>
+        <li><a href="#升级和回退">升级和回退</a></li>
+        <li><a href="#总结">总结</a></li>
+        <li><a href="#qa">Q&amp;A</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                
+
                 <h2 id="前言">前言</h2>
 <hr>
 <p>Helm是Kubernetes生态系统中的一个软件包管理工具。本文将介绍为何要使用Helm进行Kubernetes软件包管理，澄清Helm中使用到的相关概念，并通过一个具体的示例学习如何使用Helm打包，分发，安装，升级及回退Kubernetes应用。</p>
@@ -496,6 +523,7 @@ testapi 1               Mon Apr 16 10:21:44 2018        DEPLOYED        testapi-
 </ul>
 
 
+
                 <script src="https://utteranc.es/client.js"
                     repo = "chang-wen-chen/chang-wen-chen.github.io"    # The repo to store comments
                     issueTerm = "pathname"
@@ -503,46 +531,6 @@ testapi 1               Mon Apr 16 10:21:44 2018        DEPLOYED        testapi-
                     crossorigin="anonymous"
                     async>
                 </script>
-
-                
-                
-<div class="entry-shang text-center">
-    
-	    <p>Donate Eirik</p>
-	
-	<button class="zs show-zs btn btn-bred">Donate</button>
-</div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
-	<div class="zs-modal-head">
-		<button type="button" class="close">×</button>
-		<span class="author"><a href="https://chang-wen-chen.github.io"><img src="/img/favicon.png" />Chang-Wen Blog</a></span>
-        
-	        <p class="tip"><i></i><span>Donate information</span></p>
-		
- 
-	</div>
-	<div class="zs-modal-body">
-		<div class="zs-modal-btns">
-			<button class="btn btn-blink" data-num="2">2元</button>
-			<button class="btn btn-blink" data-num="5">5元</button>
-			<button class="btn btn-blink" data-num="10">10元</button>
-			<button class="btn btn-blink" data-num="50">50元</button>
-			<button class="btn btn-blink" data-num="100">100元</button>
-			<button class="btn btn-blink" data-num="1">任意金额</button>
-		</div>
-		<div class="zs-modal-pay">
-			<button class="btn btn-bred" id="pay-text">2元</button>
-			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
-		</div>
-	</div>
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
-	</div>
-</div>
-<script type="text/javascript" src="/js/reward.js"></script>
 
                 
 
