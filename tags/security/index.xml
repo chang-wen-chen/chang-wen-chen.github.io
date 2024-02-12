@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Security on Chang-Wen Blog</title>
+    <title>Security on CozyDev</title>
     <link>https://chang-wen-chen.github.io/tags/security/</link>
-    <description>Recent content in Security on Chang-Wen Blog</description>
+    <description>Recent content in Security on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Wed, 23 May 2018 18:00:00 +0000</lastBuildDate>
