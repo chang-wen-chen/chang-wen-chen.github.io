@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photography on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/photography/</link>
+    <description>Recent content in Photography on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobile photography</title>
+      <link>https://chang-wen-chen.github.io/2024/03/life_mobile_photography/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/life_mobile_photography/</guid>
+      <description>手機攝影 三分線構圖法 黃金比例：看了很舒服的構圖 把物體放在左右下角的點上 或是這四個點上/附近 三角構圖 (人像) 勾勒出三角形，很適合女生 男生三角構</description>
+    </item>
+  </channel>
+</rss>

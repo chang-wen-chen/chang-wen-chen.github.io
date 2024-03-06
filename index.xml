@@ -6,8 +6,15 @@
     <description>Recent content on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobile photography</title>
+      <link>https://chang-wen-chen.github.io/2024/03/life_mobile_photography/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/life_mobile_photography/</guid>
+      <description>手機攝影 三分線構圖法 黃金比例：看了很舒服的構圖 把物體放在左右下角的點上 或是這四個點上/附近 三角構圖 (人像) 勾勒出三角形，很適合女生 男生三角構</description>
+    </item>
     <item>
       <title>Clock Tree Synthesis</title>
       <link>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</link>
@@ -167,7 +174,7 @@
       <link>https://chang-wen-chen.github.io/2024/02/life_classic_cocktail/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/02/life_classic_cocktail/</guid>
-      <description></description>
+      <description>調酒的基礎是基酒，基酒是指調酒的基底，通常占最大的比例，酒精濃度高，約在40~45%之間，且多為蒸餾酒。 常見的基酒種類如下： 琴酒（Gin）：</description>
     </item>
     <item>
       <title>commitment | promise</title>
@@ -175,6 +182,13 @@
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/02/diff_commitment_promise/</guid>
       <description>TLDR A commitment holds more weight than a simple promise They do differ in how they frame the distinction: Emphasis on intent: Commitment signifies a genuine desire to fulfill the promise, suggesting sincerity and motivation. Focus on strength: Commitment implies a stronger promise than one can readily deliver, highlighting its ambitious nature. Contrast with indulgence: Commitment stands against indulgence, emphasizing dedication and perseverance as key differentiators. In essence, commitments go</description>
+    </item>
+    <item>
+      <title>Tequila and Mezcal</title>
+      <link>https://chang-wen-chen.github.io/2024/02/life_tequila_mezcal/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/life_tequila_mezcal/</guid>
+      <description>Tequila and Mezcal: What&amp;rsquo;s the Difference?&#xA;Tequila and mezcal are both Mexican spirits distilled from the agave plant. However, there are some key differences between them.&#xA;Tequila&#xA;Must be made from 100% blue agave plant. Can only be produced in five Mexican states: Jalisco, Nayarit, Guanajuato, Tamaulipas, and Michoacán. Typically distilled in stainless steel tanks. Usually unaged, but can also be aged in wooden barrels. Mezcal&#xA;Can be made from any type of agave plant, but most commonly espadín agave.</description>
     </item>
     <item>
       <title></title>

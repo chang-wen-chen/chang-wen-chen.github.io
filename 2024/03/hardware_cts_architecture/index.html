@@ -193,8 +193,8 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/cts" title="CTS">
-                            CTS
+                        <a class="tag" href="/tags/xpu" title="xPU">
+                            xPU
                         </a>
                         
                     </div>
@@ -234,64 +234,8 @@
 
                 
 
-                <p>CTS（Clock Tree Synthesis）、Multisource CTS 和時鐘網格（Clock Mesh）是在Digital IC design中用於時鐘分配和時鐘網絡布局的不同技術。以下是它們的差異以及各自的優缺點：</p>
-<ol>
-<li>
-<p><strong>CTS</strong>：</p>
-<ul>
-<li>CTS 是一種常見的時鐘分配技術，通過建立一個<code>樹狀結構</code>將時鐘信號從時鐘源傳輸到整個芯片的各個時鐘接收器。</li>
-<li>優點：
-<ul>
-<li>相對<code>簡單</code>，易於實現。</li>
-<li>適用於較小規模的芯片設計。</li>
-</ul>
-</li>
-<li>缺點：
-<ul>
-<li>對於大型芯片設計，時鐘樹的<code>延遲</code>和<code>功耗</code>可能會增加，並可能導致時鐘<code>偏移</code>和<code>時序</code>問題。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Multisource CTS(MCTS)</strong>：</p>
-<ul>
-<li>多源 CTS 是對傳統 CTS 的改進，它使用多個時鐘源來減少時鐘樹的延遲和功耗，從而提高整個芯片的時鐘分配性能。</li>
-<li>優點：
-<ul>
-<li>可以減少時鐘樹的延遲和功耗，提高時鐘網絡的性能。</li>
-<li>更適用於大型和高性能的芯片設計。</li>
-</ul>
-</li>
-<li>缺點：
-<ul>
-<li>實現覆雜度較高，需要更多的設計和優化工作。</li>
-<li>可能會增加設計的覆雜性和成本。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>時鐘網格（Clock Mesh）</strong>：</p>
-<ul>
-<li>時鐘網格是一種與時鐘樹相對的時鐘分配結構，它使用網格狀的拓撲結構來傳輸時鐘信號。</li>
-<li>優點：
-<ul>
-<li>可以提供更<code>均勻</code>的時鐘分配，減少時鐘<code>偏移</code>和<code>時序</code>問題。</li>
-<li>對於大型芯片設計和高性能應用更具優勢。</li>
-</ul>
-</li>
-<li>缺點：
-<ul>
-<li>實現和布局的覆雜度較高。</li>
-<li>需要更多的設計資源和面積。</li>
-<li>在某些情況下，時鐘網格可能會引入更多的功耗。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<p>綜上所述，選擇適當的時鐘分配技術取決於芯片的規模、性能要求以及設計資源的可用性。對於小型芯片設計，傳統的CTS可能是更簡單和有效的選擇，而對於大型和高性能芯片設計，則可能更傾向於多源CTS或時鐘網格技術。</p>
+                <p>TDP - Thermal design power</p>
+<p>3D V cache</p>
 
 
                 
@@ -301,10 +245,15 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2024/03/hardware_cts_architecture/" data-toggle="tooltip" data-placement="top" title="Clock Tree Synthesis">&larr;
+                        <a href="/2024/03/life_housing_contract/" data-toggle="tooltip" data-placement="top" title="Note: Housing contract">&larr;
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/2024/03/hardware_cts_architecture/" data-toggle="tooltip" data-placement="top" title="Clock Tree Synthesis">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
                 
@@ -348,8 +297,6 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                        
                         
                         
                         
@@ -411,9 +358,15 @@
                         
                         
                         
+                        
+                        
+                        
+                        
                         <a href="/tags/synonyms" title="synonyms">
                             synonyms
                         </a>
+                        
+                        
                         
                         
                         
@@ -544,6 +497,121 @@
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
                 </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
+/p>
             </div>
         </div>
     </div>

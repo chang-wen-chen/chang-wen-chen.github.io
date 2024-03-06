@@ -6,8 +6,15 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Photography</title>
+      <link>https://chang-wen-chen.github.io/tags/photography/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/photography/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CTS</title>
       <link>https://chang-wen-chen.github.io/tags/cts/</link>
@@ -163,10 +170,17 @@
       <description></description>
     </item>
     <item>
-      <title>Cosmopolitan</title>
-      <link>https://chang-wen-chen.github.io/tags/cosmopolitan/</link>
+      <title>Mezcal</title>
+      <link>https://chang-wen-chen.github.io/tags/mezcal/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/cosmopolitan/</guid>
+      <guid>https://chang-wen-chen.github.io/tags/mezcal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tequila</title>
+      <link>https://chang-wen-chen.github.io/tags/tequila/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/tequila/</guid>
       <description></description>
     </item>
   </channel>
