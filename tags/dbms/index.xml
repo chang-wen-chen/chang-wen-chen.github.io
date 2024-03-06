@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DBMS on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/dbms/</link>
+    <description>Recent content in DBMS on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/dbms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DBMS Data Types</title>
+      <link>https://chang-wen-chen.github.io/2024/03/sw_dbms_data_types/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/sw_dbms_data_types/</guid>
+      <description>結構化數據 (Structured Data): 結構化數據是以固定格式和結構存儲的數據。通常，結構化數據可以使用表格或者數據庫中的行和列來表示。 例子：關係型數據庫中的表格、E</description>
+    </item>
+    <item>
+      <title>Various dbms</title>
+      <link>https://chang-wen-chen.github.io/2024/02/sw_dbms/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/sw_dbms/</guid>
+      <description>Relational Databases: Structured Data: Data is organized in tables with predefined structures, each table consisting of fixed columns and column types. SQL Query Language: Relational databases typically use SQL (Structured Query Language) for executing queries and managing data. Strong Consistency: They usually provide ACID (Atomicity, Consistency, Isolation, Durability) properties, ensuring data consistency and reliability. Vertical Scaling: They often employ vertical scaling, meaning adding more hardware resources to improve performance. Example</description>
+    </item>
+  </channel>
+</rss>

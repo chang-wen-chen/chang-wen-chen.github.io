@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/shell/</link>
+    <description>Recent content in Shell on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell commands</title>
+      <link>https://chang-wen-chen.github.io/2024/02/infra_shell/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/infra_shell/</guid>
+      <description>set -euo pipefail 在Shell script中，set -euo pipefail 是設置script的選項，它們影響script的行為。逐個解釋這些選項： -e 這個選項使得scrip</description>
+    </item>
+  </channel>
+</rss>

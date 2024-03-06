@@ -6,20 +6,146 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTS</title>
+      <link>https://chang-wen-chen.github.io/tags/cts/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/cts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Housing</title>
+      <link>https://chang-wen-chen.github.io/tags/housing/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/housing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://chang-wen-chen.github.io/tags/python/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>xPU</title>
+      <link>https://chang-wen-chen.github.io/tags/xpu/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/xpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://chang-wen-chen.github.io/tags/cloud/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DBMS</title>
+      <link>https://chang-wen-chen.github.io/tags/dbms/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/dbms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Cloud</title>
+      <link>https://chang-wen-chen.github.io/tags/google-cloud/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/google-cloud/</guid>
+      <description></description>
+    </item>
     <item>
       <title>DVCS</title>
       <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
-      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/dvcs/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
       <link>https://chang-wen-chen.github.io/tags/git/</link>
-      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language</title>
+      <link>https://chang-wen-chen.github.io/tags/language/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/language/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://chang-wen-chen.github.io/tags/linux/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shell</title>
+      <link>https://chang-wen-chen.github.io/tags/shell/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>English</title>
+      <link>https://chang-wen-chen.github.io/tags/english/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synonyms</title>
+      <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OS</title>
+      <link>https://chang-wen-chen.github.io/tags/os/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/os/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTPS</title>
+      <link>https://chang-wen-chen.github.io/tags/https/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/https/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSL</title>
+      <link>https://chang-wen-chen.github.io/tags/ssl/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/ssl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TLS</title>
+      <link>https://chang-wen-chen.github.io/tags/tls/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/tls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Communication</title>
+      <link>https://chang-wen-chen.github.io/tags/network-communication/</link>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/network-communication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTML</title>
+      <link>https://chang-wen-chen.github.io/tags/html/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/html/</guid>
       <description></description>
     </item>
     <item>
@@ -30,24 +156,17 @@
       <description></description>
     </item>
     <item>
-      <title>English</title>
-      <link>https://chang-wen-chen.github.io/tags/english/</link>
+      <title>Bartending</title>
+      <link>https://chang-wen-chen.github.io/tags/bartending/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/english/</guid>
+      <guid>https://chang-wen-chen.github.io/tags/bartending/</guid>
       <description></description>
     </item>
     <item>
-      <title>Life</title>
-      <link>https://chang-wen-chen.github.io/tags/life/</link>
+      <title>Cosmopolitan</title>
+      <link>https://chang-wen-chen.github.io/tags/cosmopolitan/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/life/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Synonyms</title>
-      <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
+      <guid>https://chang-wen-chen.github.io/tags/cosmopolitan/</guid>
       <description></description>
     </item>
   </channel>

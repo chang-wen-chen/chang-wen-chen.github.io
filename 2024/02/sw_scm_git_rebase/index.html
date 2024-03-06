@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="CozyDev">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="/img/post-bg-unix-linux.jpg">
+    <meta property="twitter:image" content="/img/post-bg-unix-linux.jpg" />
+    
+
+    
+    <meta name="title" content="Git rebase" />
+    <meta property="og:title" content="Git rebase" />
+    <meta property="twitter:title" content="Git rebase" />
+    
+
+    
+    <meta name="description" content="陳昶聞">
+    <meta property="og:description" content="陳昶聞" />
+    <meta property="twitter:description" content="陳昶聞" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Git rebase | CozyDev</title>
+
+    <link rel="canonical" href="/2024/02/sw_scm_git_rebase/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLP6SS762D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DLP6SS762D');
+    </script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">CozyDev</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/hardware/">hardware</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/infra/">infra</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/life/">life</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/network/">network</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/software/">software</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/thesaurus/">thesaurus</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/post-bg-unix-linux.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dvcs" title="DVCS">
+                            DVCS
+                        </a>
+                        
+                        <a class="tag" href="/tags/git" title="Git">
+                            Git
+                        </a>
+                        
+                    </div>
+                    <h1>Git rebase</h1>
+                    <h2 class="subheading">Rebase branch and repositories</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Chang-Wen
+                             
+                            on 
+                            Saturday, March 2, 2024
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+
+                <h3 id="in-your-local-clone-of-your-forked-repository-you-can-add-the-original-github-repository-as-a-remote-remotes-are-like-nicknames-for-the-urls-of-repositories---origin-is-one-for-example-then-you-can-fetch-all-the-branches-from-that-upstream-repository-and-rebase-your-work-to-continue-working-on-the-upstream-version">In your local clone of your forked repository, you can add the original GitHub repository as a &ldquo;remote&rdquo;. (&ldquo;Remotes&rdquo; are like nicknames for the URLs of repositories - origin is one, for example.) Then you can fetch all the branches from that upstream repository, and rebase your work to continue working on the upstream version.</h3>
+<h3 id="到你-fork-repository-的-local-cloned-area-中你可以將原始-github-存儲庫添加為remote就像是-repository-url-的別名---origin-就是其一然後你可以從上游-repository-中取回所有分支並重新定位你的工作以繼續在上游版本上進行工作">到你 fork repository 的 local cloned area 中，你可以將原始 GitHub 存儲庫添加為<code>remote</code>（就像是 repository URL 的別名 - origin 就是其一）然後，你可以從上游 repository 中取回所有分支，並重新定位你的工作以繼續在上游版本上進行工作。</h3>
+<h4 id="add-the-remote-call-it-upstream-in-terms-of-commands-that-might-look-like">Add the remote, call it &ldquo;upstream&rdquo;: In terms of commands that might look like:</h4>
+<h4 id="命令可能如以下操作添加remote將其命名為-upstream">命令可能如以下操作：添加remote，將其命名為 <code>upstream</code>：</h4>
+<pre tabindex="0"><code>git remote add upstream &lt;remote git URL&gt;
+</code></pre><h4 id="fetch-all-the-branches-of-that-remote-into-remote-tracking-branches-such-as-upstreammaster">Fetch all the branches of that remote into remote-tracking branches, such as upstream/master:</h4>
+<h4 id="將該遠端的所有分支提取到遠端跟踪分支中例如-upstreammaster">將該遠端的所有分支提取到遠端跟踪分支中，例如 upstream/master：</h4>
+<pre tabindex="0"><code>git fetch upstream
+</code></pre><h4 id="make-sure-that-youre-on-your-master-branch">Make sure that you&rsquo;re on your master branch:</h4>
+<h4 id="確保你在你的-master-分支上">確保你在你的 master 分支上：</h4>
+<pre tabindex="0"><code>git checkout master
+</code></pre><h4 id="rewrite-your-master-branch-so-that-any-commits-of-yours-that-arent-already-in-upstreammaster-are-replayed-on-top-of-that-other-branch">Rewrite your master branch so that any commits of yours that aren&rsquo;t already in upstream/master are replayed on top of that other branch:</h4>
+<h4 id="重寫你的-master-分支使你的任何commit如果尚未存在於-upstreammaster都在該分支的頂部重放">重寫你的 master 分支，使你的任何commit（如果尚未存在於 upstream/master）都在該分支的頂部重放：</h4>
+<pre tabindex="0"><code>git rebase upstream/master
+</code></pre><h4 id="if-you-dont-want-to-rewrite-the-history-of-your-master-branch-for-example-because-other-people-may-have-cloned-it-then-you-should-replace-the-last-command-with-git-merge-upstreammaster-however-for-making-further-pull-requests-that-are-as-clean-as-possible-its-probably-better-to-rebase">If you don&rsquo;t want to rewrite the history of your master branch, (for example because other people may have cloned it) then you should replace the last command with git merge upstream/master. However, for making further pull requests that are as clean as possible, it&rsquo;s probably better to rebase.</h4>
+<h4 id="如果你不想重寫你的-master-分支的歷史例如因為其他人可能已-clone了它那麼你應該用-git-merge-upstreammaster-來替換最後一個命令但是為了製作盡可能乾淨的進一步fetch請求最好還是使用-rebase">如果你不想重寫你的 master 分支的歷史（例如因為其他人可能已 clone了它），那麼你應該用 git merge upstream/master 來替換最後一個命令。但是，為了製作盡可能乾淨的進一步fetch請求，最好還是使用 rebase。</h4>
+<h4 id="if-youve-rebased-your-branch-onto-upstreammaster-you-may-need-to-force-the-push-in-order-to-push-it-to-your-own-forked-repository-on-github-youd-do-that-with">If you&rsquo;ve rebased your branch onto upstream/master you may need to force the push in order to push it to your own forked repository on GitHub. You&rsquo;d do that with:</h4>
+<h4 id="如果你已經將你的分支重寫到-upstreammaster-上你可能需要強制-push-以將其-push-到-github-上的你自己的-forked-repository-中你可以使用以下命令來實現">如果你已經將你的分支重寫到 upstream/master 上，你可能需要強制 push 以將其 push 到 GitHub 上的你自己的 forked repository 中。你可以使用以下命令來實現：</h4>
+<pre tabindex="0"><code>git push -f origin master
+</code></pre><h4 id="you-only-need-to-use-the--f-the-first-time-after-youve-rebased">You only need to use the -f the first time after you&rsquo;ve rebased.</h4>
+<p>在重寫後的第一次推送時才需要使用 -f。</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2024/03/jplt_prepare/" data-toggle="tooltip" data-placement="top" title="JPLT skill">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2024/03/sw_gcloud_storage/" data-toggle="tooltip" data-placement="top" title="Google cloud storage options">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                <script src="https://utteranc.es/client.js"
+        repo="chang-wen-chen/chang-wen-chen.github.io"
+        issue-term="pathname"
+        label="Blog"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dbms" title="dbms">
+                            dbms
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/dvcs" title="dvcs">
+                            dvcs
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/english" title="english">
+                            english
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/git" title="git">
+                            git
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/linux" title="linux">
+                            linux
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/synonyms" title="synonyms">
+                            synonyms
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:eric81510@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/100000177908248">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/chang-wen-chen">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/eirik-chen-499454147">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    <li>
+                        <a target="_blank" href="https://medium.com/@eric81510">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/23330273">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            <li>
+                <a target="_blank" href="https://www.instagram.com/chang.wen.chen">
+                    <span class="fa-stack fa-lg">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="CozyDev" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; CozyDev 2024
+                    <br>
+                    <a href="https://github.com/chang-wen-chen">White Theme</a> by <a href="https://github.com/chang-wen-chen">Eirik</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

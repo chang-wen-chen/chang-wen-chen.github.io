@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/html/</link>
+    <description>Recent content in HTML on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML Basics</title>
+      <link>https://chang-wen-chen.github.io/2024/02/html_basics/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/html_basics/</guid>
+      <description> All HTML elements can have attributes The href attribute of &amp;lt;a&amp;gt; specifies the URL of the page the link goes to The src attribute of &amp;lt;img&amp;gt; specifies the path to the image to be displayed The width and height attributes of &amp;lt;img&amp;gt; provide size information for images The alt attribute of &amp;lt;img&amp;gt; provides an alternate text for an image The style attribute is used to add styles to an element, such as color, font, size, and more The lang attribute of the &amp;lt;html&amp;gt; tag declares the language of the Web page The title attribute defines some extra information about an element </description>
+    </item>
+  </channel>
+</rss>

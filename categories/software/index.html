@@ -34,7 +34,7 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Software | Eirik | Blog | CozyDev</title>
+    <title>Software | CozyDev</title>
 
     <link rel="canonical" href="/categories/software/">
 
@@ -109,7 +109,19 @@
                     
                         
                         <li>
+                            <a href="/categories/hardware/">hardware</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/infra/">infra</a>
+                        </li>
+                        
+                        <li>
                             <a href="/categories/life/">life</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/network/">network</a>
                         </li>
                         
                         <li>
@@ -198,9 +210,168 @@
 <div data-pagefind-ignore="all">
 
 <div class="post-preview">
-    <a href="https://chang-wen-chen.github.io/2024/02/02/sw-scm-mercurial-git/">
+    <a href="https://chang-wen-chen.github.io/2024/03/sw_python_venv/">
         <h2 class="post-title">
-            Mercurial and Git
+            Python virtual environment management
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            pip show pip list
+Create venv command python -m venv venv_name
+Activate venv cd venv/scripts ./activate
+pip list
+pip install flask
+pip show flask
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Tuesday, March 5, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/03/sw_dbms_data_types/">
+        <h2 class="post-title">
+            DBMS Data Types
+        </h2>
+	
+        <h3 class="post-subtitle">
+            What&#39;s the differences between: structured, unstrcutured, transactional and relational data
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            結構化數據 (Structured Data): 結構化數據是以固定格式和結構存儲的數據。通常，結構化數據可以使用表格或者數據庫中的行和列來表示。 例子：關係型數據庫中的表格、E
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Monday, March 4, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/03/sw_gcloud_storage/">
+        <h2 class="post-title">
+            Google cloud storage options
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            Google cloud provides 5 storage products: Cloud Storage Cloud SQL Cloud Spanner Firestore Cloud Bigtable 1. Cloud storage Google&rsquo;s object storage product. It allows user to store any amount of data and retrieve it as often as needed. Fully managed scalable service that has wide variety of uses. Example: web archival and disaster recovery, website content, direct download. Primary use: Binary large-object storage (BLOB) Online contents: videos and photos Backup and archiving Storage of intermediate results object storage: store data as object but not as file and folder hierarchy(file storage), or as chunks of a disk(block storage)
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Monday, March 4, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/02/sw_scm_git_rebase/">
+        <h2 class="post-title">
+            Git rebase
+        </h2>
+	
+        <h3 class="post-subtitle">
+            Rebase branch and repositories
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            In your local clone of your forked repository, you can add the original GitHub repository as a &ldquo;remote&rdquo;. (&ldquo;Remotes&rdquo; are like nicknames for the URLs of repositories - origin is one, for example.) Then you can fetch all the branches from that upstream repository, and rebase your work to continue working on the upstream version. 到你 fork repository 的 local cloned area 中，你可以將原
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Saturday, March 2, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/02/sw_ssl_tls_https/">
+        <h2 class="post-title">
+            SSL, TLS and HTTPS
+        </h2>
+	
+        <h3 class="post-subtitle">
+            What&#39;s the differences
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            Similarities: Security: Both SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are protocols designed to provide secure communication channels over the internet, encrypting data during transmission to prevent interception or eavesdropping by third parties. Encryption Algorithms: SSL and TLS support various encryption algorithms, including symmetric encryption, asymmetric encryption, and digital signature algorithms, to ensure data confidentiality, integrity, and authenticity. Handshake Protocol: SSL and TLS both require a handshake protocol
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Friday, February 23, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/02/sw_dbms/">
+        <h2 class="post-title">
+            Various dbms
+        </h2>
+	
+        <h3 class="post-subtitle">
+            What are the differences
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            Relational Databases: Structured Data: Data is organized in tables with predefined structures, each table consisting of fixed columns and column types. SQL Query Language: Relational databases typically use SQL (Structured Query Language) for executing queries and managing data. Strong Consistency: They usually provide ACID (Atomicity, Consistency, Isolation, Durability) properties, ensuring data consistency and reliability. Vertical Scaling: They often employ vertical scaling, meaning adding more hardware resources to improve performance. Example
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Friday, February 23, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/02/html_basics/">
+        <h2 class="post-title">
+            HTML Basics
         </h2>
 	
         <h3 class="post-subtitle">
@@ -209,10 +380,34 @@
 	
         <div class="post-content-preview">
 	
-            Mercurial and Git are both used for version control.
-Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach:
-Branching Model:
-Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows. Git: Uses a decentralized branching model, where all branches exist within the same repository.
+             All HTML elements can have attributes The href attribute of &lt;a&gt; specifies the URL of the page the link goes to The src attribute of &lt;img&gt; specifies the path to the image to be displayed The width and height attributes of &lt;img&gt; provide size information for images The alt attribute of &lt;img&gt; provides an alternate text for an image The style attribute is used to add styles to an element, such as color, font, size, and more The lang attribute of the &lt;html&gt; tag declares the language of the Web page The title attribute defines some extra information about an element 
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Chang-Wen on Tuesday, February 13, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/2024/02/sw-scm-mercurial-git/">
+        <h2 class="post-title">
+            Mercurial and Git
+        </h2>
+	
+        <h3 class="post-subtitle">
+            What&#39;s the differences
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            Mercurial and Git are both used for version control. Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach: Branching Model: Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows. Git: Uses a decentralized branching model, where
        
         </div>
     </a>
@@ -367,6 +562,64 @@ Mercurial: Employs a centralized branching model, meaning each branch has its ow
             
                
             
+               
+            
+               
+                    <a href="/tags/dbms" title="dbms">
+                        dbms
+                    </a>
+               
+            
+               
+                    <a href="/tags/dvcs" title="dvcs">
+                        dvcs
+                    </a>
+               
+            
+               
+                    <a href="/tags/english" title="english">
+                        english
+                    </a>
+               
+            
+               
+                    <a href="/tags/git" title="git">
+                        git
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/linux" title="linux">
+                        linux
+                    </a>
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/synonyms" title="synonyms">
+                        synonyms
+                    </a>
                
             
                

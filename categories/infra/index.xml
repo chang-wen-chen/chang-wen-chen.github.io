@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infra on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/categories/infra/</link>
+    <description>Recent content in Infra on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/categories/infra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux load</title>
+      <link>https://chang-wen-chen.github.io/2024/02/infra_linux_load/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/infra_linux_load/</guid>
+      <description>在Linux中，&amp;ldquo;load&amp;quot;通常指的是系統的負載情況，它用來表示系統當前正在處理的工作量。在Linux中，有三種類型的</description>
+    </item>
+    <item>
+      <title>Shell commands</title>
+      <link>https://chang-wen-chen.github.io/2024/02/infra_shell/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/infra_shell/</guid>
+      <description>set -euo pipefail 在Shell script中，set -euo pipefail 是設置script的選項，它們影響script的行為。逐個解釋這些選項： -e 這個選項使得scrip</description>
+    </item>
+    <item>
+      <title>Processes and jobs</title>
+      <link>https://chang-wen-chen.github.io/2024/02/infra_process_job/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/02/infra_process_job/</guid>
+      <description>In Linux systems, &amp;ldquo;process&amp;rdquo; and &amp;ldquo;job&amp;rdquo; are two distinct concepts representing different units of execution. Here&amp;rsquo;s the difference between them along with some common examples: Process: A process is an instance of a program running in the operating system. Each process has its own memory space, code, data, open files, resources, and state. Processes are independent of each other and cannot directly access the memory space of other processes. A</description>
+    </item>
+  </channel>
+</rss>

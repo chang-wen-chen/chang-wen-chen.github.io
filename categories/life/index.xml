@@ -6,14 +6,28 @@
     <description>Recent content in Life on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome to Chang-Wen&#39;s Blog</title>
-      <link>https://chang-wen-chen.github.io/2024/02/01/hello-world/</link>
+      <title>Note: Housing contract</title>
+      <link>https://chang-wen-chen.github.io/2024/03/life_housing_contract/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/life_housing_contract/</guid>
+      <description>不用理會口頭承諾 （Ｘ）貸款貸不到，現金補足，以繳價金沒收 （Ｏ）貸款貸不到，雙方合約無條件解除，以繳價金無條件返還 小心特約條款：「不可歸責於買</description>
+    </item>
+    <item>
+      <title>JPLT skill</title>
+      <link>https://chang-wen-chen.github.io/2024/03/jplt_prepare/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/jplt_prepare/</guid>
+      <description>N2 在日本求學、工作生活較適合 600-800 hr 學習 目標設定 N4 學習時間 晚上9-11 學習日檢 日文基礎 手寫五十音 手機背誦遊戲 單字：1500 字 文法： 大家的日本語初</description>
+    </item>
+    <item>
+      <title>Classic cocktail</title>
+      <link>https://chang-wen-chen.github.io/2024/02/life_classic_cocktail/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/01/hello-world/</guid>
-      <description>Learning</description>
+      <guid>https://chang-wen-chen.github.io/2024/02/life_classic_cocktail/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
