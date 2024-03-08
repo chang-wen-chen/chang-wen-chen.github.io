@@ -10,14 +10,14 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
-    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
+    <meta property="og:image" content="img/post-bg-coffee.jpeg">
+    <meta property="twitter:image" content="img/post-bg-coffee.jpeg" />
     
 
     
-    <meta name="title" content="Processes and jobs" />
-    <meta property="og:title" content="Processes and jobs" />
-    <meta property="twitter:title" content="Processes and jobs" />
+    <meta name="title" content="utter | say | convey | speak" />
+    <meta property="og:title" content="utter | say | convey | speak" />
+    <meta property="twitter:title" content="utter | say | convey | speak" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Processes and jobs | CozyDev</title>
+    <title>utter | say | convey | speak | CozyDev</title>
 
-    <link rel="canonical" href="/2024/02/infra_process_job/">
+    <link rel="canonical" href="/2024/03/utter_say_convey_speak/">
 
     
     
@@ -183,7 +183,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/post-bg-unix-linux.jpg')
+        background-image: url('/img/post-bg-coffee.jpeg')
     }
 </style>
 
@@ -195,17 +195,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/linux" title="Linux">
-                            Linux
+                        <a class="tag" href="/tags/english" title="English">
+                            English
                         </a>
                         
-                        <a class="tag" href="/tags/os" title="OS">
-                            OS
+                        <a class="tag" href="/tags/synonyms" title="Synonyms">
+                            Synonyms
                         </a>
                         
                     </div>
-                    <h1>Processes and jobs</h1>
-                    <h2 class="subheading">What&#39;s the differences</h2>
+                    <h1>utter | say | convey | speak</h1>
+                    <h2 class="subheading">What&#39;s the difference</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -213,7 +213,7 @@
                                 Eirik
                              
                             on 
-                            27 Feb, 2024
+                            28 Feb, 2024
                             
                             
                             
@@ -240,54 +240,43 @@
 
                 
 
-                <p><strong>In Linux systems, &ldquo;process&rdquo; and &ldquo;job&rdquo; are two distinct concepts representing different units of execution. Here&rsquo;s the difference between them along with some common examples:</strong></p>
-<ol>
-<li>
-<p><strong>Process:</strong></p>
+                <h3 id="tldr">TL;DR</h3>
+<pre tabindex="0"><code>**Utter**強調的是發出聲音或言語的行動
+**Say**則是用來表達一個具體的言論或意見
+**Convey**則指以各種方式傳達信息或感情
+**Speak**則是用來描述說某種語言的能力
+</code></pre><h3 id="utter"><strong>Utter</strong>:</h3>
 <ul>
-<li>A process is an instance of a program running in the operating system.</li>
-<li>Each process has its own memory space, code, data, open files, resources, and state.</li>
-<li>Processes are independent of each other and cannot directly access the memory space of other processes.</li>
-<li>A process can have multiple threads, which are units of parallel execution within the process.</li>
-<li><em>For example</em>, when you run a program on the system, the system creates a process for that program.</li>
+<li>&ldquo;utter&rdquo;（發出、講出）通常用來表示說話或表達意見時的強調，有時帶有一種<code>正式</code>或<code>嚴肅</code>的語氣。</li>
 </ul>
-</li>
-<li>
-<p><strong>Job:</strong></p>
 <ul>
-<li>A job typically refers to a collection of related commands or tasks that can be managed and executed as a single unit.</li>
-<li>A job can consist of one or more processes.</li>
-<li>Jobs are often associated with terminal sessions.</li>
-<li>Jobs can be executed in the foreground or background.</li>
-<li><em>For example</em>, in a command-line interface, you can use job control to start, pause, terminate, and manage jobs.</li>
+<li>English: &ldquo;He uttered a few words before leaving.&rdquo;</li>
+<li>繁體中文：「他離開前說了幾句話。」</li>
 </ul>
-</li>
-</ol>
-<p><strong>Common examples:</strong></p>
+<h3 id="say"><strong>Say</strong>:</h3>
 <ul>
-<li>When you launch a program in the terminal, the operating system creates a process for that program. For instance, running a text editor or compiler.</li>
-<li>When you initiate a set of tasks in the command line, they can be managed as a job. This might include a script containing multiple commands or a complex data processing task.</li>
-<li>In the command line, you can use job control to manage background jobs, such as putting a task in the background to run without occupying control of the current terminal.</li>
+<li>&ldquo;say&rdquo;（說）是最<code>常用</code>的用詞，用來指代說話或陳述觀點。</li>
 </ul>
-<hr>
-<p>在Linux系統中，<code>process（進程）</code>和<code>job（作業）</code>是兩個不同的概念，它們代表不同的執行單元。</p>
-<p>下面是它們的區別以及一些常見的例子：</p>
-<h3 id="進程process">進程（Process）：</h3>
-<p>進程是作業系統中正在執行的程式的實例。
-每個進程都有自己的記憶體空間、程式碼、資料、打開的檔案、資源和狀態。
-進程之間是相互獨立的，它們無法直接訪問其他進程的記憶體空間。
-一個進程可以擁有多個執行緒，執行緒是進程內部並行執行的單位。
-例如，當您在系統上執行一個程式時，系統會為該程式創建一個進程。</p>
-<h3 id="作業job">作業（Job）：</h3>
-<p>作業通常是一組相關的命令或任務的集合，可以作為一個單獨的單元來管理和執行。
-作業可以包含一個或多個進程。
-作業通常與終端會話（Terminal Session）相關聯。
-作業可以在前台或後台執行。
-例如，在命令列中，您可以使用作業控制來啟動、暫停、終止和管理作業。</p>
-<h4 id="常見例子">常見例子：</h4>
-<p>當您在終端中啟動一個程式時，作業系統會為該程式創建一個進程。例如，運行一個文字編輯器或編譯器。
-當您在命令列中啟動一個任務集合時，這些任務可以作為一個作業來管理。例如，一個包含了多個命令的腳本或一個複雜的資料處理任務。
-在命令列中，您可以使用作業控制來管理後台作業，例如將一個任務放到後台執行，讓它不佔用當前終端的控制權。</p>
+<ul>
+<li>English: &ldquo;She said that she would come back later.&rdquo;</li>
+<li>繁體中文：「她說她會稍後回來。」</li>
+</ul>
+<h3 id="convey"><strong>Convey</strong>:</h3>
+<ul>
+<li>&ldquo;convey&rdquo;<code>以各種方式傳達</code>(言語、行動或其他方式)訊息、感覺或思想。</li>
+</ul>
+<ul>
+<li>English: &ldquo;His smile conveyed a sense of warmth and friendliness.&rdquo;</li>
+<li>繁體中文：「他的微笑傳達了溫暖和友好的感覺。」</li>
+</ul>
+<h3 id="speak"><strong>Speak</strong>:</h3>
+<ul>
+<li>&ldquo;speak&rdquo;（說話）是最一般性的用詞，可以用來描述任何形式的口頭<code>表達能力</code>，包括<code>語言</code>、<code>聲音</code>等。</li>
+</ul>
+<ul>
+<li>English: &ldquo;I can speak French fluently.&rdquo;</li>
+<li>繁體中文：「我可以流利地說法語。」</li>
+</ul>
 
 
                 
@@ -297,13 +286,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2024/02/sw_ssl_tls_https/" data-toggle="tooltip" data-placement="top" title="SSL, TLS and HTTPS">&larr;
+                        <a href="/2024/02/infra_process_job/" data-toggle="tooltip" data-placement="top" title="Processes and jobs">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2024/03/utter_say_convey_speak/" data-toggle="tooltip" data-placement="top" title="utter | say | convey | speak">Next
+                        <a href="/2024/02/diff_suppose_conjecture/" data-toggle="tooltip" data-placement="top" title="suppose | conjecture">Next
                             Post &rarr;</a>
                     </li>
                     
