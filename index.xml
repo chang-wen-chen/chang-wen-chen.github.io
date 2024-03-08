@@ -6,14 +6,28 @@
     <description>Recent content on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SVE | SME</title>
+      <link>https://chang-wen-chen.github.io/2024/03/hw_isa_sve_sme/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/hw_isa_sve_sme/</guid>
+      <description>SVE SVE，或可擴充向量擴充（Scalable Vector Extensions），是一種新的指令集架構，專為向量處理設計。向量處理是一種並行處理，可用於</description>
+    </item>
+    <item>
+      <title>.war and .jar in Java</title>
+      <link>https://chang-wen-chen.github.io/2024/03/sw_java_war_jar/</link>
+      <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/sw_java_war_jar/</guid>
+      <description>在Java語言中，.war 和 .jar 是兩種不同的壓縮文件格式，通常用於打包和部署Java應用程序。它們之間的主要區別在於它們的用途和內容： .war (Web Application Archive):</description>
+    </item>
     <item>
       <title>Mobile photography</title>
       <link>https://chang-wen-chen.github.io/2024/03/life_mobile_photography/</link>
       <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/03/life_mobile_photography/</guid>
-      <description>手機攝影 三分線構圖法 黃金比例：看了很舒服的構圖 把物體放在左右下角的點上 或是這四個點上/附近 三角構圖 (人像) 勾勒出三角形，很適合女生 男生三角構</description>
+      <description>設定 照片打開ProRes 手機攝影 三分線構圖法 黃金比例：看了很舒服的構圖 把物體放在左右下角的點上 或是這四個點上/附近 三角構圖 (人像) 勾勒出三角</description>
     </item>
     <item>
       <title>Clock Tree Synthesis</title>
@@ -30,18 +44,18 @@
       <description>TDP - Thermal design power&#xA;3D V cache</description>
     </item>
     <item>
-      <title>Note: Housing contract</title>
-      <link>https://chang-wen-chen.github.io/2024/03/life_housing_contract/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/life_housing_contract/</guid>
-      <description>不用理會口頭承諾 （Ｘ）貸款貸不到，現金補足，以繳價金沒收 （Ｏ）貸款貸不到，雙方合約無條件解除，以繳價金無條件返還 小心特約條款：「不可歸責於買</description>
-    </item>
-    <item>
       <title>Python virtual environment management</title>
       <link>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</guid>
       <description>pip show pip list&#xA;Create venv command python -m venv venv_name&#xA;Activate venv cd venv/scripts ./activate&#xA;pip list&#xA;pip install flask&#xA;pip show flask</description>
+    </item>
+    <item>
+      <title>Real estate</title>
+      <link>https://chang-wen-chen.github.io/2024/03/life_real_estate/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/life_real_estate/</guid>
+      <description>Property tax Mortage loan Contract 不用理會口頭承諾 （Ｘ）貸款貸不到，現金補足，以繳價金沒收 （Ｏ）貸款貸不到，雙方合約無條件解除，以繳價金無條件返還 小心特約條款：「不</description>
     </item>
     <item>
       <title>DBMS Data Types</title>

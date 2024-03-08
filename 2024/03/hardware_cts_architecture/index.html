@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="/img/post-bg-unix-linux.jpg">
-    <meta property="twitter:image" content="/img/post-bg-unix-linux.jpg" />
+    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
+    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
     
 
     
@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="陳昶聞">
-    <meta property="og:description" content="陳昶聞" />
-    <meta property="twitter:description" content="陳昶聞" />
+    <meta name="description" content="CozyDev">
+    <meta property="og:description" content="CozyDev" />
+    <meta property="twitter:description" content="CozyDev" />
     
 
     
@@ -135,6 +135,8 @@
                     
                     
 		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
                         <li><a href="/about//">ABOUT</a></li>
                     
 		            <li>
@@ -204,10 +206,10 @@
                         
                             Posted by 
                             
-                                Chang-Wen
+                                Eirik
                              
                             on 
-                            Tuesday, March 5, 2024
+                            5 Mar, 2024
                             
                             
                             
@@ -245,7 +247,7 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2024/03/life_housing_contract/" data-toggle="tooltip" data-placement="top" title="Note: Housing contract">&larr;
+                        <a href="/2024/03/sw_python_venv/" data-toggle="tooltip" data-placement="top" title="Python virtual environment management">&larr;
                             Previous Post</a>
                     </li>
                     
@@ -306,43 +308,6 @@
                         
                         
                         
-                        <a href="/tags/dbms" title="dbms">
-                            dbms
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/dvcs" title="dvcs">
-                            dvcs
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/english" title="english">
-                            english
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/git" title="git">
-                            git
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <a href="/tags/linux" title="linux">
-                            linux
-                        </a>
                         
                         
                         
@@ -362,9 +327,26 @@
                         
                         
                         
-                        <a href="/tags/synonyms" title="synonyms">
-                            synonyms
-                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         
                         
                         
@@ -497,121 +479,6 @@
                         src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
                     </iframe>
                 </p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-<script>
-    function loadAsync(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-
-
-
-
-
-
-<script>
-    
-    if($('#tag_cloud').length !== 0){
-        loadAsync("/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-
-
-<script>
-    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
-
-
-
-
-
-
-<script type="text/javascript">
-    function generateCatalog(selector) {
-
-        
-        
-        
-        
-            _containerSelector = 'div.post-container'
-        
-
-        
-        var P = $(_containerSelector), a, n, t, l, i, c;
-        a = P.find('h1,h2,h3,h4,h5,h6');
-
-        
-        $(selector).html('')
-
-        
-        a.each(function () {
-            n = $(this).prop('tagName').toLowerCase();
-            i = "#" + $(this).prop('id');
-            t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
-            l = $('<li class="' + n + '_nav"></li>').append(c);
-            $(selector).append(l);
-        });
-        return true;
-    }
-
-    generateCatalog(".catalog-body");
-
-    
-    $(".catalog-toggle").click((function (e) {
-        e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
-    }))
-
-    
-
-
-    loadAsync("\/js\/jquery.nav.js", function () {
-        $('.catalog-body').onePageNav({
-            currentClass: "active",
-            changeHash: !1,
-            easing: "swing",
-            filter: "",
-            scrollSpeed: 700,
-            scrollOffset: 0,
-            scrollThreshold: .2,
-            begin: null,
-            end: null,
-            scrollChange: null,
-            padding: 80
-        });
-    });
-</script>
-
-
-
-
-
-
-</body>
-</html>
-/p>
             </div>
         </div>
     </div>

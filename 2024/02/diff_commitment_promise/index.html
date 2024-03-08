@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="/img/post-bg-unix-linux.jpg">
-    <meta property="twitter:image" content="/img/post-bg-unix-linux.jpg" />
+    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
+    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
     
 
     
@@ -21,9 +21,9 @@
     
 
     
-    <meta name="description" content="陳昶聞">
-    <meta property="og:description" content="陳昶聞" />
-    <meta property="twitter:description" content="陳昶聞" />
+    <meta name="description" content="CozyDev">
+    <meta property="og:description" content="CozyDev" />
+    <meta property="twitter:description" content="CozyDev" />
     
 
     
@@ -135,6 +135,8 @@
                     
                     
 		    
+                        <li><a href="/archive//">ARCHIVE</a></li>
+                    
                         <li><a href="/about//">ABOUT</a></li>
                     
 		            <li>
@@ -208,10 +210,10 @@
                         
                             Posted by 
                             
-                                Chang-Wen
+                                Eirik
                              
                             on 
-                            Thursday, February 1, 2024
+                            1 Feb, 2024
                             
                             
                             
@@ -328,43 +330,6 @@
                         
                         
                         
-                        <a href="/tags/dbms" title="dbms">
-                            dbms
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/dvcs" title="dvcs">
-                            dvcs
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/english" title="english">
-                            english
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/git" title="git">
-                            git
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <a href="/tags/linux" title="linux">
-                            linux
-                        </a>
                         
                         
                         
@@ -384,9 +349,26 @@
                         
                         
                         
-                        <a href="/tags/synonyms" title="synonyms">
-                            synonyms
-                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         
                         
                         
@@ -627,6 +609,57 @@
 </script>
 
 
+
+<script type="text/javascript">
+    
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    
+    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+
+    function setLang(newLang) {
+        var params = new URLSearchParams(document.location.search)
+        params.set("lang", newLang)
+        document.location.search = params.toString()  
+    }
+
+    
+    function _render() {
+        var lang = getLang()
+        
+        if (lang == "en") {
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $zh.style.display = "none";
+            $zh.classList.remove("active");
+            
+        } else {
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $zh.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+        }
+        
+        generateCatalog(".catalog-body");
+    }
+
+    
+    function onLanChange(index) {
+        if (index == 0) {
+            lang = "zh"
+        } else {
+            lang = "en"
+        }
+        setLang(lang)
+    }
+
+    
+    _render();
+</script>
 
 
 

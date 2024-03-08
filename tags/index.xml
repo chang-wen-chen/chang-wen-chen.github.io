@@ -6,8 +6,22 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ISA</title>
+      <link>https://chang-wen-chen.github.io/tags/isa/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/isa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://chang-wen-chen.github.io/tags/java/</link>
+      <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/java/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Photography</title>
       <link>https://chang-wen-chen.github.io/tags/photography/</link>
@@ -23,17 +37,17 @@
       <description></description>
     </item>
     <item>
-      <title>Housing</title>
-      <link>https://chang-wen-chen.github.io/tags/housing/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/housing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Python</title>
       <link>https://chang-wen-chen.github.io/tags/python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Real Estates</title>
+      <link>https://chang-wen-chen.github.io/tags/real-estates/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/real-estates/</guid>
       <description></description>
     </item>
     <item>

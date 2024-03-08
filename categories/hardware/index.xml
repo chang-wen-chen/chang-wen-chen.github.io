@@ -6,8 +6,15 @@
     <description>Recent content in Hardware on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SVE | SME</title>
+      <link>https://chang-wen-chen.github.io/2024/03/hw_isa_sve_sme/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/hw_isa_sve_sme/</guid>
+      <description>SVE SVE，或可擴充向量擴充（Scalable Vector Extensions），是一種新的指令集架構，專為向量處理設計。向量處理是一種並行處理，可用於</description>
+    </item>
     <item>
       <title>Clock Tree Synthesis</title>
       <link>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</link>
