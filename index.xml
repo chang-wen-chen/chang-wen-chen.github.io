@@ -44,13 +44,6 @@
       <description>CTS（Clock Tree Synthesis）、Multisource CTS 和時鐘網格（Clock Mesh）是在Digital IC design中用於時鐘</description>
     </item>
     <item>
-      <title>Clock Tree Synthesis</title>
-      <link>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</guid>
-      <description>TDP - Thermal design power&#xA;3D V cache</description>
-    </item>
-    <item>
       <title>Python virtual environment management</title>
       <link>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
@@ -63,6 +56,13 @@
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/03/life_real_estate/</guid>
       <description>Property tax Mortage loan Contract 不用理會口頭承諾 （Ｘ）貸款貸不到，現金補足，以繳價金沒收 （Ｏ）貸款貸不到，雙方合約無條件解除，以繳價金無條件返還 小心特約條款：「不</description>
+    </item>
+    <item>
+      <title>xPU</title>
+      <link>https://chang-wen-chen.github.io/2024/03/hw_xpu/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/hw_xpu/</guid>
+      <description>TDP - Thermal design power&#xA;3D V cache</description>
     </item>
     <item>
       <title>DBMS Data Types</title>

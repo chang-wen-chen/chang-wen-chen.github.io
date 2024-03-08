@@ -23,10 +23,10 @@
       <description>CTS（Clock Tree Synthesis）、Multisource CTS 和時鐘網格（Clock Mesh）是在Digital IC design中用於時鐘</description>
     </item>
     <item>
-      <title>Clock Tree Synthesis</title>
-      <link>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</link>
+      <title>xPU</title>
+      <link>https://chang-wen-chen.github.io/2024/03/hw_xpu/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</guid>
+      <guid>https://chang-wen-chen.github.io/2024/03/hw_xpu/</guid>
       <description>TDP - Thermal design power&#xA;3D V cache</description>
     </item>
   </channel>
