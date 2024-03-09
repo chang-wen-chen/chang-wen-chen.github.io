@@ -6,8 +6,15 @@
     <description>Recent content in Posts on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>utter | say | convey | speak</title>
+      <link>https://chang-wen-chen.github.io/2024/03/utter_say_convey_speak/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/2024/03/utter_say_convey_speak/</guid>
+      <description>TL;DR **utter**強調的是發出聲音或言語的行動 **say**則是用來表達一個具體的言論或意見 **convey**則指以各種方式傳達信息或感</description>
+    </item>
     <item>
       <title>Coffee</title>
       <link>https://chang-wen-chen.github.io/2024/03/life_coffee/</link>
@@ -44,14 +51,14 @@
       <description>CTS（Clock Tree Synthesis）、Multisource CTS 和時鐘網格（Clock Mesh）是在Digital IC design中用於時鐘</description>
     </item>
     <item>
-      <title>Python virtual environment management</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</link>
+      <title>Python</title>
+      <link>https://chang-wen-chen.github.io/2024/03/sw_python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</guid>
-      <description>pip show pip list&#xA;Create venv command python -m venv venv_name&#xA;Activate venv cd venv/scripts ./activate&#xA;pip list&#xA;pip install flask&#xA;pip show flask</description>
+      <guid>https://chang-wen-chen.github.io/2024/03/sw_python/</guid>
+      <description>venv (virtual environment) pip show pip list Create venv command python -m venv venv_name Activate venv cd venv/scripts ./activate pip list pip install flask pip show flask Static/Class/Abstract Methods 實現 Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method Static m</description>
     </item>
     <item>
-      <title>Real estate</title>
+      <title>Real estates</title>
       <link>https://chang-wen-chen.github.io/2024/03/life_real_estate/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/03/life_real_estate/</guid>
@@ -135,13 +142,6 @@
       <description>&amp;ldquo;Suppose&amp;rdquo; 和 &amp;ldquo;conjecture&amp;rdquo; 都是用來表達假設或猜測的詞語，但它們之間有些微的差異。 &amp;ldquo;Suppose&amp;rdquo; 意味著基於已知或可接受的前提下提出一個假設，通常假設是基於事實或常識的推論。它</description>
     </item>
     <item>
-      <title>utter | say | convey | speak</title>
-      <link>https://chang-wen-chen.github.io/2024/03/utter_say_convey_speak/</link>
-      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/utter_say_convey_speak/</guid>
-      <description>TL;DR **Utter**強調的是發出聲音或言語的行動 **Say**則是用來表達一個具體的言論或意見 **Convey**則指以各種方式傳達信息或感</description>
-    </item>
-    <item>
       <title>Processes and jobs</title>
       <link>https://chang-wen-chen.github.io/2024/02/infra_process_job/</link>
       <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
@@ -212,11 +212,11 @@
       <description>TLDR A commitment holds more weight than a simple promise They do differ in how they frame the distinction: Emphasis on intent: Commitment signifies a genuine desire to fulfill the promise, suggesting sincerity and motivation. Focus on strength: Commitment implies a stronger promise than one can readily deliver, highlighting its ambitious nature. Contrast with indulgence: Commitment stands against indulgence, emphasizing dedication and perseverance as key differentiators. In essence, commitments go</description>
     </item>
     <item>
-      <title>Tequila and Mezcal</title>
+      <title>Tequila | Mezcal</title>
       <link>https://chang-wen-chen.github.io/2024/02/life_tequila_mezcal/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/2024/02/life_tequila_mezcal/</guid>
-      <description>Tequila and Mezcal: What&amp;rsquo;s the Difference?&#xA;Tequila and mezcal are both Mexican spirits distilled from the agave plant. However, there are some key differences between them.&#xA;Tequila&#xA;Must be made from 100% blue agave plant. Can only be produced in five Mexican states: Jalisco, Nayarit, Guanajuato, Tamaulipas, and Michoacán. Typically distilled in stainless steel tanks. Usually unaged, but can also be aged in wooden barrels. Mezcal&#xA;Can be made from any type of agave plant, but most commonly espadín agave.</description>
+      <description>Tequila and Mezcal: What are the differences?&#xA;Tequila and mezcal are both Mexican spirits distilled from the agave plant. However, there are some key differences between them.&#xA;Tequila&#xA;Must be made from 100% blue agave plant. Can only be produced in five Mexican states: Jalisco, Nayarit, Guanajuato, Tamaulipas, and Michoacán. Typically distilled in stainless steel tanks. Usually unaged, but can also be aged in wooden barrels. Mezcal&#xA;Can be made from any type of agave plant, but most commonly espadín agave.</description>
     </item>
   </channel>
 </rss>

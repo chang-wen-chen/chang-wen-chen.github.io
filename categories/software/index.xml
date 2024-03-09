@@ -16,11 +16,11 @@
       <description>在Java語言中，.war 和 .jar 是兩種不同的壓縮文件格式，通常用於打包和部署Java應用程序。它們之間的主要區別在於它們的用途和內容： .war (Web Application Archive):</description>
     </item>
     <item>
-      <title>Python virtual environment management</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</link>
+      <title>Python</title>
+      <link>https://chang-wen-chen.github.io/2024/03/sw_python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_python_venv/</guid>
-      <description>pip show pip list&#xA;Create venv command python -m venv venv_name&#xA;Activate venv cd venv/scripts ./activate&#xA;pip list&#xA;pip install flask&#xA;pip show flask</description>
+      <guid>https://chang-wen-chen.github.io/2024/03/sw_python/</guid>
+      <description>venv (virtual environment) pip show pip list Create venv command python -m venv venv_name Activate venv cd venv/scripts ./activate pip list pip install flask pip show flask Static/Class/Abstract Methods 實現 Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method Static m</description>
     </item>
     <item>
       <title>DBMS Data Types</title>

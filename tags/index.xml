@@ -6,8 +6,22 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>English</title>
+      <link>https://chang-wen-chen.github.io/tags/english/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synonyms</title>
+      <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Coffee</title>
       <link>https://chang-wen-chen.github.io/tags/coffee/</link>
@@ -118,20 +132,6 @@
       <link>https://chang-wen-chen.github.io/tags/shell/</link>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/shell/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>English</title>
-      <link>https://chang-wen-chen.github.io/tags/english/</link>
-      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/english/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Synonyms</title>
-      <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
-      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
       <description></description>
     </item>
     <item>
