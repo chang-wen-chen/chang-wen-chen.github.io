@@ -10,14 +10,14 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
-    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
+    <meta property="og:image" content="img/post-bg-coffee.jpeg">
+    <meta property="twitter:image" content="img/post-bg-coffee.jpeg" />
     
 
     
-    <meta name="title" content="Various dbms" />
-    <meta property="og:title" content="Various dbms" />
-    <meta property="twitter:title" content="Various dbms" />
+    <meta name="title" content="underpin | consolidate" />
+    <meta property="og:title" content="underpin | consolidate" />
+    <meta property="twitter:title" content="underpin | consolidate" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Various dbms | CozyDev</title>
+    <title>underpin | consolidate | CozyDev</title>
 
-    <link rel="canonical" href="/2024/02/sw_dbms/">
+    <link rel="canonical" href="/2024/03/diff_underpin_consolidate/">
 
     
     
@@ -181,7 +181,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/post-bg-unix-linux.jpg')
+        background-image: url('/img/post-bg-coffee.jpeg')
     }
 </style>
 
@@ -193,12 +193,16 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/dbms" title="DBMS">
-                            DBMS
+                        <a class="tag" href="/tags/english" title="English">
+                            English
+                        </a>
+                        
+                        <a class="tag" href="/tags/synonyms" title="Synonyms">
+                            Synonyms
                         </a>
                         
                     </div>
-                    <h1>Various dbms</h1>
+                    <h1>underpin | consolidate</h1>
                     <h2 class="subheading">What are the differences</h2>
                     <span class="meta">
                         
@@ -207,7 +211,7 @@
                                 Eirik
                              
                             on 
-                            23 Feb, 2024
+                            10 Mar, 2024
                             
                             
                             
@@ -234,97 +238,36 @@
 
                 
 
-                <h4 id="relational-databases">Relational Databases:</h4>
-<p>Structured Data: Data is organized in tables with predefined structures, each table consisting of fixed columns and column types.</p>
-<p>SQL Query Language: Relational databases typically use SQL (Structured Query Language) for executing queries and managing data.</p>
-<p>Strong Consistency: They usually provide ACID (Atomicity, Consistency, Isolation, Durability) properties, ensuring data consistency and reliability.</p>
-<p>Vertical Scaling: They often employ vertical scaling, meaning adding more hardware resources to improve performance.</p>
-<p>Example Systems:</p>
+                <ul>
+<li>
+<p><strong>Underpin</strong> 通常指提供支撐或支持，以確保某事物的穩固或穩定。這可以是指物理上的支撐，也可以是指提供基礎或支持性質的抽象概念。例如：</p>
 <ul>
-<li>MySQL</li>
-<li>PostgreSQL</li>
-<li>Oracle Database</li>
-<li>Microsoft SQL Server</li>
-<li>SQLite</li>
+<li>
+<p>The study aims to underpin the theory with empirical evidence.
+這項研究旨在以實證證據來支持這個理論。</p>
+</li>
+<li>
+<p>Strong family values underpin the community&rsquo;s resilience.
+穩固的家庭價值觀支撐著社區的韌性。</p>
+</li>
 </ul>
-<h4 id="non-relational-databases-nosql">Non-relational Databases (NoSQL):</h4>
-<p>Flexible Schema: Data can be stored in various ways such as documents, graphs, key-value pairs, etc., and the structure can be adjusted flexibly.</p>
-<p>NoSQL Query Language: Each NoSQL database may use different query languages or APIs for accessing and manipulating data.</p>
-<p>Eventual Consistency: They typically provide eventual consistency, meaning data becomes consistent after a certain period.</p>
-<p>Horizontal Scaling: They usually achieve performance improvements through horizontal scaling, i.e., adding more nodes to increase processing capacity.</p>
-<p>Example Systems:</p>
+</li>
+<li>
+<p><strong>Consolidate</strong> 則意味著加強或鞏固某物，使其更穩固或更統一。這可能是指整合不同部分或要素，也可能是指加強某個概念或實體的地位或影響力。例如：</p>
 <ul>
-<li>MongoDB</li>
-<li>Cassandra</li>
-<li>Redis</li>
-<li>Amazon DynamoDB</li>
-<li>Couchbase</li>
-<li>These are two different types of databases, each with its own advantages and disadvantages in different application scenarios. The choice of which type of database to use depends on the application requirements, data structure, expected scalability, and other factors.</li>
+<li>
+<p>The company plans to consolidate its position in the market by acquiring smaller competitors.
+該公司計劃通過收購較小的競爭對手來鞏固其在市場上的地位。</p>
+</li>
+<li>
+<p>The government aims to consolidate various reforms to improve healthcare.
+政府旨在整合各種改革，以改善醫療保健。</p>
+</li>
 </ul>
-<hr>
-<p>關聯式資料庫和非關聯式資料庫（通常是指NoSQL資料庫）在設計和使用上有著一些顯著的差異。以下是它們之間的主要區別以及各自的系統示例：</p>
-<h4 id="關聯式資料庫">關聯式資料庫：</h4>
-<p>結構化資料： 資料以表格的形式組織，每個表格有預先定義的結構，包含固定的列和列的類型。</p>
-<p>SQL查詢語言： 關聯式資料庫通常使用SQL（Structured Query Language）來執行查詢和管理資料。</p>
-<p>強一致性： 通常提供ACID（原子性、一致性、隔離性、持久性）特性，確保資料的一致性和可靠性。</p>
-<p>垂直擴展： 通常採用垂直擴展，即增加更多的硬體資源來提高性能。</p>
-<p>示例系統：</p>
-<ul>
-<li>MySQL</li>
-<li>PostgreSQL</li>
-<li>Oracle Database</li>
-<li>Microsoft SQL Server</li>
-<li>SQLite</li>
+</li>
 </ul>
-<h4 id="非關聯式資料庫nosql">非關聯式資料庫（NoSQL）：</h4>
-<p>彈性模式： 資料可以以各種不同的方式儲存，例如文檔、圖形、鍵值對等，並且可以彈性地調整結構。</p>
-<p>NoSQL查詢語言： 每種NoSQL資料庫可能使用不同的查詢語言或API來存取和操作資料。</p>
-<p>最終一致性： 通常提供的是最終一致性，即在一段時間後資料會變得一致。</p>
-<p>水平擴展： 通常通過水平擴展來提高性能，即增加更多的節點以增加處理能力。</p>
-<p>示例系統：</p>
-<ul>
-<li>MongoDB</li>
-<li>Cassandra</li>
-<li>Redis</li>
-<li>Amazon DynamoDB</li>
-<li>Couchbase</li>
-</ul>
-<p>這些是兩種不同類型的資料庫，它們在不同的應用場景中有著各自的優缺點。選擇使用哪種類型的資料庫取決於應用的需求、資料的結構、預期的擴展性以及其他因素。</p>
-<h3 id="data-base-normalization">Data Base Normalization</h3>
-<p>Make the database cannot express redundant data.</p>
-<h3 id="the-normal-forms-safety-level">The normal forms (safety level)</h3>
-<p>From very danger to very safe:</p>
-<p>在資料庫正規化中，1NF（第一正規化）到5NF（第五正規化）代表了不同程度的資料庫表結構優化。以下是它們之間的差異，以及每個階段的例子和簡要說明：</p>
-<h4 id="第一正規化1nf-minimun-safety-level">第一正規化（1NF, minimun safety level）：</h4>
-<ol>
-<li>Using row order to convey information is not permitted</li>
-<li>Mxing data types within the same column is not permitted</li>
-<li>Having a table without a primary key is not permitted</li>
-<li>Repeating groups are not permitted</li>
-</ol>
-<p>確保每個資料庫表中的每個欄位都是原子性的，即每個欄位只包含單一值。
-例子：考慮一個訂單表格，每個訂單可能有多個商品，如果將商品以逗號分隔存儲在單個欄位中，這樣的訂單表就不符合1NF。應將商品拆分為獨立的行。</p>
-<h4 id="第二正規化2nf">第二正規化（2NF）：</h4>
-<p>Each non-key attribute must depend on the entire primary key</p>
-<ul>
-<li>Avoid deletion anomoly and update anomoly</li>
-</ul>
-<p>要求<code>每個</code>非主鍵欄位(non-key column)完全依賴於主鍵(key column)，並且不依賴於其他非主鍵欄位。
-例子：在訂單表格中，如果有商品描述和價格等欄位，但這些資訊僅與商品ID有關，則應該將商品描述和價格移至商品表格。</p>
-<h4 id="第三正規化3nf">第三正規化（3NF）：</h4>
-<p>Every non-key attribute in a table must depend on the key, the whole key, and nothing but the key.
-要求移除非<code>主鍵欄位之間的傳遞依賴</code>，即如果一個非主鍵欄位依賴於另一個非主鍵欄位，則應將其移至另一個表格。
-例子：在訂單表格中，如果有客戶地址和郵政編碼，但這些資訊僅與客戶ID有關，則應將客戶地址和郵政編碼移至客戶表格。</p>
-<h4 id="boyce-codd正規化bcnf">Boyce-Codd正規化（BCNF）：</h4>
-<p>Every attribute in a table must depend on the key, the whole key, and nothing but the key.
-類似於第三正規化，但對於特定情況下的多個候選鍵也進行了處理。
-例子：當資料庫表格具有多個候選鍵時，BCNF確保每個非主鍵屬性完全依賴於每個候選鍵，而不僅僅是某些候選鍵。</p>
-<h4 id="第五正規化5nf">第五正規化（5NF）：</h4>
-<p>The table(which must be in 4NF) cannot be describe as the logical result of joining some other table s together.
-進一步<code>分解表格以消除多值依賴</code>，即表格中的某些欄位值取決於另一個欄位的多個值組合。
-例子：如果一個資料表格包含一個欄位記錄每個客戶的所有電話號碼，但不同類型的電話號碼（家庭、辦公室、手機等）以不同的方式存儲，則可以將這些多值依賴分解為獨立的表格。</p>
-<h3 id="data-integrity">Data integrity</h3>
-<p>Data cannot be trust, because it disagree with itself (e.g, 2 bithday of a person)</p>
+<p><code>underpin</code> 更強調提供基礎或支持
+<code>consolidate</code> 則更強調加強或統一某物的地位或影響力。</p>
 
 
                 
@@ -334,13 +277,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2024/02/diff_appraise_evaluation/" data-toggle="tooltip" data-placement="top" title="appraise | evaluation">&larr;
+                        <a href="/2024/03/utter_say_convey_speak/" data-toggle="tooltip" data-placement="top" title="utter | say | convey | speak">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2024/02/sw_ssl_tls_https/" data-toggle="tooltip" data-placement="top" title="SSL, TLS and HTTPS">Next
+                        <a href="/2024/03/diff_stigmatize_insult/" data-toggle="tooltip" data-placement="top" title="stigmatize_insult">Next
                             Post &rarr;</a>
                     </li>
                     
