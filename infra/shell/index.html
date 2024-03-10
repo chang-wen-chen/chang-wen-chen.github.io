@@ -252,6 +252,35 @@
 </ol>
 <p>綜合起來，<code>set -euo pipefail</code> 這一設置可以使得Shell script更加robust，更容易發現和處理錯誤，以及更可靠地處理管道命令的失敗情況。</p>
 <hr>
+<h2 id="data-flow">Data flow</h2>
+<p>在Linux中，有一些用於將標準輸出和標準錯誤流重新定向的符號。這些符號包括 &gt;、&raquo;、&gt;&amp; 和 &raquo;&amp;。</p>
+<p><code>&gt;</code>這個符號用於將標準輸出（stdout）重定向到指定的文件或文件描述符。如果目標文件不存在，則會創建一個新文件；如果存在，則會被覆蓋。 (與 <code>1&gt;</code> 相同)</p>
+<p><code>&gt;&gt;</code>這個符號用於將標準輸出（stdout）附加到指定的文件或文件描述符末尾。如果目標文件不存在，則會創建一個新文件；如果存在，則會將輸出附加到現有文件的末尾。</p>
+<p><code>&gt;&amp;</code>這個符號用於將標準錯誤（stderr）重定向到與標準輸出相同的地方，也就是將錯誤輸出合併到標準輸出流中。(與<code>2&gt;&amp;1</code>以及<code>&amp;&gt;</code>相同)</p>
+<p><code>&gt;&gt;&amp;</code>這個符號用於將標準輸出和標準錯誤都重定向到指定的文件或文件描述符。這相當於使用 &gt; 或 &raquo; 將標準輸出和標準錯誤重定向到同一文件中。</p>
+<p>其他一些資料流向符號還包括：</p>
+<ul>
+<li><code>&lt;</code>用於將文件的內容作為輸入重定向到命令中。</li>
+<li><code>|</code>管道符號，用於將一個命令的輸出作為另一個命令的輸入。</li>
+<li><code>&amp;&gt;</code>將標準輸出和標準錯誤重定向到指定的文件中。</li>
+<li><code>&lt;&amp;</code>將文件或文件描述符的內容作為輸入重定向到命令中。</li>
+<li><code>&lt;&lt;</code>用於提供多行輸入，通常與 EOF 一起使用。</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat <span style="color:#f1fa8c">&lt;&lt; EOF
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&gt; This is line 1
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&gt; This is line 2
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&gt; This is line 3
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&gt; EOF</span>
+</span></span><span style="display:flex;"><span>This is line <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>This is line <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>This is line <span style="color:#bd93f9">3</span>
+</span></span></code></pre></div><p>這些符號在Linux和Unix系統中廣泛使用，用於管理命令的輸入、輸出和錯誤流。</p>
+<hr>
+<h3 id="lm_license_file">LM_LICENSE_FILE</h3>
+<p>LM 在 LM_LICENSE_FILE 中代表 &ldquo;License Manager&rdquo;。LM_LICENSE_FILE 是一個通用的環境變量名，被許多software供應商所采用，用於指定license file的位置，以便process在啟動時能夠讀取license並驗證用戶的license是否有效或過期。</p>
+<p>這個環境變量通常用於指定需要software license 的產品。當你運行需要license的software時，程序會查找這個環境變量，以確定license文件的位置。</p>
+<p>通常情況下，LM_LICENSE_FILE 環境變量的值是指向license文件的路徑。license文件通常是一個文本文件，其中包含了softwarelicense的詳細信息，比如license類型、有效期等。software在啟動時會讀取這個文件，並根據其中的信息來驗證用戶的license是否有效。</p>
 
 
                 
