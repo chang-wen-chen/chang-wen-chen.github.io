@@ -10,9 +10,9 @@
     <atom:link href="https://chang-wen-chen.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_python/</link>
+      <link>https://chang-wen-chen.github.io/software/python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_python/</guid>
+      <guid>https://chang-wen-chen.github.io/software/python/</guid>
       <description>venv (virtual environment) pip show pip list Create venv command python -m venv venv_name Activate venv cd venv/scripts ./activate pip list pip install flask pip show flask Static/Class/Abstract Methods 實現 Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method Static m</description>
     </item>
   </channel>

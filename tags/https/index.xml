@@ -10,9 +10,9 @@
     <atom:link href="https://chang-wen-chen.github.io/tags/https/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSL, TLS and HTTPS</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw_ssl_tls_https/</link>
+      <link>https://chang-wen-chen.github.io/software/ssl_tls_https/</link>
       <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw_ssl_tls_https/</guid>
+      <guid>https://chang-wen-chen.github.io/software/ssl_tls_https/</guid>
       <description>Similarities: Security: Both SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are protocols designed to provide secure communication channels over the internet, encrypting data during transmission to prevent interception or eavesdropping by third parties. Encryption Algorithms: SSL and TLS support various encryption algorithms, including symmetric encryption, asymmetric encryption, and digital signature algorithms, to ensure data confidentiality, integrity, and authenticity. Handshake Protocol: SSL and TLS both require a handshake protocol</description>
     </item>
   </channel>

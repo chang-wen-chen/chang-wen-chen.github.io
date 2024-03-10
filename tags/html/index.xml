@@ -10,9 +10,9 @@
     <atom:link href="https://chang-wen-chen.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML Basics</title>
-      <link>https://chang-wen-chen.github.io/2024/02/html_basics/</link>
+      <link>https://chang-wen-chen.github.io/software/html_basics/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/html_basics/</guid>
+      <guid>https://chang-wen-chen.github.io/software/html_basics/</guid>
       <description> All HTML elements can have attributes The href attribute of &amp;lt;a&amp;gt; specifies the URL of the page the link goes to The src attribute of &amp;lt;img&amp;gt; specifies the path to the image to be displayed The width and height attributes of &amp;lt;img&amp;gt; provide size information for images The alt attribute of &amp;lt;img&amp;gt; provides an alternate text for an image The style attribute is used to add styles to an element, such as color, font, size, and more The lang attribute of the &amp;lt;html&amp;gt; tag declares the language of the Web page The title attribute defines some extra information about an element </description>
     </item>
   </channel>

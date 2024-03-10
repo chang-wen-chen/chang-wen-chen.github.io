@@ -10,23 +10,23 @@
     <atom:link href="https://chang-wen-chen.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SVE | SME</title>
-      <link>https://chang-wen-chen.github.io/2024/03/hw_isa_sve_sme/</link>
+      <link>https://chang-wen-chen.github.io/hardware/isa_sve_sme/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/hw_isa_sve_sme/</guid>
+      <guid>https://chang-wen-chen.github.io/hardware/isa_sve_sme/</guid>
       <description>SVE SVE，或可擴充向量擴充（Scalable Vector Extensions），是一種新的指令集架構，專為向量處理設計。向量處理是一種並行處理，可用於</description>
     </item>
     <item>
       <title>Clock Tree Synthesis</title>
-      <link>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</link>
+      <link>https://chang-wen-chen.github.io/hardware/cts_architecture/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/hardware_cts_architecture/</guid>
+      <guid>https://chang-wen-chen.github.io/hardware/cts_architecture/</guid>
       <description>CTS（Clock Tree Synthesis）、Multisource CTS 和時鐘網格（Clock Mesh）是在Digital IC design中用於時鐘</description>
     </item>
     <item>
       <title>xPU</title>
-      <link>https://chang-wen-chen.github.io/2024/03/hw_xpu/</link>
+      <link>https://chang-wen-chen.github.io/hardware/xpu/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/hw_xpu/</guid>
+      <guid>https://chang-wen-chen.github.io/hardware/xpu/</guid>
       <description>TDP - Thermal design power&#xA;3D V cache</description>
     </item>
   </channel>

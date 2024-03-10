@@ -10,16 +10,16 @@
     <atom:link href="https://chang-wen-chen.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git rebase</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw_scm_git_rebase/</link>
+      <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw_scm_git_rebase/</guid>
+      <guid>https://chang-wen-chen.github.io/software/scm_git_rebase/</guid>
       <description>In your local clone of your forked repository, you can add the original GitHub repository as a &amp;ldquo;remote&amp;rdquo;. (&amp;ldquo;Remotes&amp;rdquo; are like nicknames for the URLs of repositories - origin is one, for example.) Then you can fetch all the branches from that upstream repository, and rebase your work to continue working on the upstream version. 到你 fork repository 的 local cloned area 中，你可以將原</description>
     </item>
     <item>
       <title>Mercurial and Git</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw-scm-mercurial-git/</link>
+      <link>https://chang-wen-chen.github.io/software/scm-mercurial-git/</link>
       <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw-scm-mercurial-git/</guid>
+      <guid>https://chang-wen-chen.github.io/software/scm-mercurial-git/</guid>
       <description>Mercurial and Git are both used for version control. Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach: Branching Model: Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows. Git: Uses a decentralized branching model, where</description>
     </item>
   </channel>

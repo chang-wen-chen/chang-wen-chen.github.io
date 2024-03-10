@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="CozyDev">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
+    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
+    
+
+    
+    <meta name="title" content="Linux load" />
+    <meta property="og:title" content="Linux load" />
+    <meta property="twitter:title" content="Linux load" />
+    
+
+    
+    <meta name="description" content="CozyDev">
+    <meta property="og:description" content="CozyDev" />
+    <meta property="twitter:description" content="CozyDev" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Linux load | CozyDev</title>
+
+    <link rel="canonical" href="/infra/linux_load/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLP6SS762D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DLP6SS762D');
+    </script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">CozyDev</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/hardware/">hardware</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/infra/">infra</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/life/">life</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/network/">network</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/software/">software</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/thesaurus/">thesaurus</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/post-bg-unix-linux.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/linux" title="Linux">
+                            Linux
+                        </a>
+                        
+                    </div>
+                    <h1>Linux load</h1>
+                    <h2 class="subheading">How does linux calculate it?</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Eirik
+                             
+                            on 
+                            29 Feb, 2024
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+
+                <p>在Linux中，&ldquo;load&quot;通常指的是系統的負載情況，它用來表示系統當前正在處理的工作量。在Linux中，有三種類型的負載指標，分別是：</p>
+<p>1分鐘平均負載（1-minute Load Average）
+5分鐘平均負載（5-minute Load Average）
+15分鐘平均負載（15-minute Load Average）
+這些平均負載是指過去1分鐘、5分鐘和15分鐘內系統的平均活動量。通常情況下，這三個指標會同時顯示，例如：</p>
+<p>lua
+Copy code
+load average: 0.08, 0.13, 0.15
+其中，0.08代表1分鐘內的平均負載，0.13代表5分鐘內的平均負載，0.15代表15分鐘內的平均負載。</p>
+<p>這些負載指標的計算方式是基於運行隊列的長度。運行隊列是指當前正在運行和等待運行的進程隊列長度。如果運行隊列的長度超過了系統的處理能力，系統的負載就會增加。</p>
+<p>在Linux系統中，可以通過多種方式查看系統的負載情況：</p>
+<p>使用 uptime 命令：在終端輸入 uptime 命令，會顯示系統的平均負載以及系統運行時間等信息。</p>
+<p>使用 top 或 htop 命令：在終端輸入 top 或 htop 命令，可以查看系統當前運行的進程以及系統的負載情況。</p>
+<p>查看 /proc/loadavg 文件：在終端輸入 cat /proc/loadavg 命令，可以直接查看系統的平均負載。</p>
+<p>使用 sysstat 工具：sysstat 是一個性能監控工具包，其中包含了 sar、iostat、mpstat 等工具，可以用來查看系統的負載情況以及其他性能指標。</p>
+<p>這些方法都可以用來查看Linux系統的負載情況，根據具體需求選擇合適的方法來監控系統性能。</p>
+<p>Linux系統的負載指標實際上是在描述系統中運行隊列的長度。這個隊列包含了正在運行的進程以及等待運行的進程。因此，負載指標的數字實際上代表了系統中等待運行的進程數的平均數量。</p>
+<p>具體來說，這些數字可以解讀如下：</p>
+<p>如果1分鐘、5分鐘、15分鐘的平均負載都小於系統的 CPU 核心數量，那麽系統的運行狀況是良好的，系統的處理能力足夠處理當前的工作負載。
+如果平均負載持續地高於 CPU 核心數量，表示系統的運行隊列中有大量的任務在等待執行，這可能意味著系統過載了，處理能力不足以應對當前的工作負載。
+負載數值的絕對大小並不是唯一的標準，因為不同系統的處理能力不同，負載在什麽水平被認為是高負載也會有所不同。一般來說，當負載持續高於系統 CPU 核心數量的 70-80% 時，就可以認為系統開始變得過載了。
+總的來說，負載指標是用來評估系統的運行狀況和負載情況的重要指標，通過監控這些指標可以及時發現系統是否過載，以及是否需要進行優化或者增加系統資源來應對高負載情況。</p>
+<pre tabindex="0"><code>$ uptime
+18:40:03 up  8:37,  1 user,  load average: 0.42 0.70 1.13
+    
+$ top
+top - 18:40:03 up  8:37,  1 user,  load average: 0.42 0.70 1.13
+    
+$ cat /proc/loadavg 
+0.42 0.70 1.13 2/1224 67252
+</code></pre><p>load = #running tasks + #uninterrupt tasks
+可以理解為正在運行的process 數</p>
+<p>如果load = CPU 核心數大概是理想的運行狀態，若load &gt; 5*CPU核心數 就是嚴重過載</p>
+<p>Reference to Load Average 負載解讀: 如果是 1 表示有一個 process 正在執行或等待 CPU 運算；5 表示有 5 個 process 正在執行或等待 CPU 運算</p>
+<p>load balance 的計算實際上不僅包含 running，實際上還會包含進入睡眠的 uninterruptible 類型的任務嗎?</p>
+<p>在 Linux 中，load average 展示的是以系統資源的角度，因此將包含正在工作以及等待工作（無論是 CPU / disk / uninterruptible lock）的任務
+在其他作業系統裡，load average 通常僅指 CPU 資源的負載</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/infra/shell/" data-toggle="tooltip" data-placement="top" title="Shell commands">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/life/jplt_prepare/" data-toggle="tooltip" data-placement="top" title="JPLT skill">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                <script src="https://utteranc.es/client.js"
+        repo="chang-wen-chen/chang-wen-chen.github.io"
+        issue-term="pathname"
+        label="Blog"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:eric81510@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/100000177908248">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/chang-wen-chen">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/eirik-chen-499454147">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    <li>
+                        <a target="_blank" href="https://medium.com/@eric81510">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/23330273">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            <li>
+                <a target="_blank" href="https://www.instagram.com/chang.wen.chen">
+                    <span class="fa-stack fa-lg">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="CozyDev" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; CozyDev 2024
+                    <br>
+                    <a href="https://github.com/chang-wen-chen">White Theme</a> by <a href="https://github.com/chang-wen-chen">Eirik</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

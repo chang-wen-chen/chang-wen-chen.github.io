@@ -10,65 +10,65 @@
     <atom:link href="https://chang-wen-chen.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.war and .jar in Java</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_java_war_jar/</link>
+      <link>https://chang-wen-chen.github.io/software/java_war_jar/</link>
       <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_java_war_jar/</guid>
+      <guid>https://chang-wen-chen.github.io/software/java_war_jar/</guid>
       <description>在Java語言中，.war 和 .jar 是兩種不同的壓縮文件格式，通常用於打包和部署Java應用程序。它們之間的主要區別在於它們的用途和內容： .war (Web Application Archive):</description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_python/</link>
+      <link>https://chang-wen-chen.github.io/software/python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_python/</guid>
+      <guid>https://chang-wen-chen.github.io/software/python/</guid>
       <description>venv (virtual environment) pip show pip list Create venv command python -m venv venv_name Activate venv cd venv/scripts ./activate pip list pip install flask pip show flask Static/Class/Abstract Methods 實現 Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method Static m</description>
     </item>
     <item>
       <title>DBMS Data Types</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_dbms_data_types/</link>
+      <link>https://chang-wen-chen.github.io/software/dbms_data_types/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_dbms_data_types/</guid>
+      <guid>https://chang-wen-chen.github.io/software/dbms_data_types/</guid>
       <description>結構化數據 (Structured Data): 結構化數據是以固定格式和結構存儲的數據。通常，結構化數據可以使用表格或者數據庫中的行和列來表示。 例子：關係型數據庫中的表格、E</description>
     </item>
     <item>
       <title>Google cloud storage options</title>
-      <link>https://chang-wen-chen.github.io/2024/03/sw_gcloud_storage/</link>
+      <link>https://chang-wen-chen.github.io/software/gcloud_storage/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/03/sw_gcloud_storage/</guid>
+      <guid>https://chang-wen-chen.github.io/software/gcloud_storage/</guid>
       <description>Google cloud provides 5 storage products: Cloud Storage Cloud SQL Cloud Spanner Firestore Cloud Bigtable 1. Cloud storage Google&amp;rsquo;s object storage product. It allows user to store any amount of data and retrieve it as often as needed. Fully managed scalable service that has wide variety of uses. Example: web archival and disaster recovery, website content, direct download. Primary use: Binary large-object storage (BLOB) Online contents: videos and photos Backup and archiving Storage of intermediate results object storage: store data as object but not as file and folder hierarchy(file storage), or as chunks of a disk(block storage)</description>
     </item>
     <item>
       <title>Git rebase</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw_scm_git_rebase/</link>
+      <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw_scm_git_rebase/</guid>
+      <guid>https://chang-wen-chen.github.io/software/scm_git_rebase/</guid>
       <description>In your local clone of your forked repository, you can add the original GitHub repository as a &amp;ldquo;remote&amp;rdquo;. (&amp;ldquo;Remotes&amp;rdquo; are like nicknames for the URLs of repositories - origin is one, for example.) Then you can fetch all the branches from that upstream repository, and rebase your work to continue working on the upstream version. 到你 fork repository 的 local cloned area 中，你可以將原</description>
     </item>
     <item>
       <title>SSL, TLS and HTTPS</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw_ssl_tls_https/</link>
+      <link>https://chang-wen-chen.github.io/software/ssl_tls_https/</link>
       <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw_ssl_tls_https/</guid>
+      <guid>https://chang-wen-chen.github.io/software/ssl_tls_https/</guid>
       <description>Similarities: Security: Both SSL (Secure Sockets Layer) and TLS (Transport Layer Security) are protocols designed to provide secure communication channels over the internet, encrypting data during transmission to prevent interception or eavesdropping by third parties. Encryption Algorithms: SSL and TLS support various encryption algorithms, including symmetric encryption, asymmetric encryption, and digital signature algorithms, to ensure data confidentiality, integrity, and authenticity. Handshake Protocol: SSL and TLS both require a handshake protocol</description>
     </item>
     <item>
       <title>Various dbms</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw_dbms/</link>
+      <link>https://chang-wen-chen.github.io/software/dbms/</link>
       <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw_dbms/</guid>
+      <guid>https://chang-wen-chen.github.io/software/dbms/</guid>
       <description>Relational Databases: Structured Data: Data is organized in tables with predefined structures, each table consisting of fixed columns and column types. SQL Query Language: Relational databases typically use SQL (Structured Query Language) for executing queries and managing data. Strong Consistency: They usually provide ACID (Atomicity, Consistency, Isolation, Durability) properties, ensuring data consistency and reliability. Vertical Scaling: They often employ vertical scaling, meaning adding more hardware resources to improve performance. Example</description>
     </item>
     <item>
       <title>HTML Basics</title>
-      <link>https://chang-wen-chen.github.io/2024/02/html_basics/</link>
+      <link>https://chang-wen-chen.github.io/software/html_basics/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/html_basics/</guid>
+      <guid>https://chang-wen-chen.github.io/software/html_basics/</guid>
       <description> All HTML elements can have attributes The href attribute of &amp;lt;a&amp;gt; specifies the URL of the page the link goes to The src attribute of &amp;lt;img&amp;gt; specifies the path to the image to be displayed The width and height attributes of &amp;lt;img&amp;gt; provide size information for images The alt attribute of &amp;lt;img&amp;gt; provides an alternate text for an image The style attribute is used to add styles to an element, such as color, font, size, and more The lang attribute of the &amp;lt;html&amp;gt; tag declares the language of the Web page The title attribute defines some extra information about an element </description>
     </item>
     <item>
       <title>Mercurial and Git</title>
-      <link>https://chang-wen-chen.github.io/2024/02/sw-scm-mercurial-git/</link>
+      <link>https://chang-wen-chen.github.io/software/scm-mercurial-git/</link>
       <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/sw-scm-mercurial-git/</guid>
+      <guid>https://chang-wen-chen.github.io/software/scm-mercurial-git/</guid>
       <description>Mercurial and Git are both used for version control. Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach: Branching Model: Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows. Git: Uses a decentralized branching model, where</description>
     </item>
   </channel>

@@ -6,13 +6,20 @@
     <description>Recent content in Shell on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Shell Display Forwarding</title>
+      <link>https://chang-wen-chen.github.io/infra/display_forwarding/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/display_forwarding/</guid>
+      <description>在Shell環境中，DISPLAY環境變數用於指定X Server的位置，以便圖形應用程序知道在哪裡顯示它們的視窗。通常，DISPLAY環境變</description>
+    </item>
+    <item>
       <title>Shell commands</title>
-      <link>https://chang-wen-chen.github.io/2024/02/infra_shell/</link>
+      <link>https://chang-wen-chen.github.io/infra/shell/</link>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/2024/02/infra_shell/</guid>
+      <guid>https://chang-wen-chen.github.io/infra/shell/</guid>
       <description>set -euo pipefail 在Shell script中，set -euo pipefail 是設置script的選項，它們影響script的行為。逐個解釋這些選項： -e 這個選項使得scrip</description>
     </item>
   </channel>
