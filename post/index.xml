@@ -6,8 +6,15 @@
     <description>Recent content in Posts on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OCV | AOCV | POCV | LVF</title>
+      <link>https://chang-wen-chen.github.io/hardware/timing_ocv/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/timing_ocv/</guid>
+      <description>OCV（On-Chip Variation）： OCV 是指在晶片上的元件之間存在的製造變異。這種變異可能來自於製造過程中的不確定性，例如晶圓製造、成</description>
+    </item>
     <item>
       <title>intimidate | threaten</title>
       <link>https://chang-wen-chen.github.io/thesaurus/intimidate_threaten/</link>
@@ -125,7 +132,7 @@
       <link>https://chang-wen-chen.github.io/hardware/xpu/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/hardware/xpu/</guid>
-      <description>TDP - Thermal design power&#xA;3D V cache</description>
+      <description>CPU model and performance Naming cenvention Intel AMD Example Core-i7-10875H Ryzen 7-5800H Series Core-i7 Ryzen 7 Generation 10 5 Performance 875 800 Product line H H Series 對比 -|-|- 入門|Pentium|Athlon 低階|Core-i3|Ryzen 3 中階|Cor</description>
     </item>
     <item>
       <title>DBMS Data Types</title>

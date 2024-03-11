@@ -234,8 +234,158 @@
 
                 
 
-                <p>TDP - Thermal design power</p>
-<p>3D V cache</p>
+                <h3 id="cpu-model-and-performance">CPU model and performance</h3>
+<h4 id="naming-cenvention">Naming cenvention</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Intel</th>
+<th>AMD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example</td>
+<td>Core-i7-10875H</td>
+<td>Ryzen 7-5800H</td>
+</tr>
+<tr>
+<td>Series</td>
+<td>Core-i7</td>
+<td>Ryzen 7</td>
+</tr>
+<tr>
+<td>Generation</td>
+<td>10</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>875</td>
+<td>800</td>
+</tr>
+<tr>
+<td>Product line</td>
+<td>H</td>
+<td>H</td>
+</tr>
+</tbody>
+</table>
+<h4 id="series-對比">Series 對比</h4>
+<p>-|-|-
+入門|Pentium|Athlon
+低階|Core-i3|Ryzen 3
+中階|Core-i5|Ryzen 5
+高階|Core-i7|Ryzen 7
+旗艦|Core-i9|Ryzen 9</p>
+<h4 id="product-line-對比">Product line 對比</h4>
+<ul>
+<li><a href="https://www.cpubenchmark.net/">CPU Benchmark</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Product line</th>
+<th>Intel</th>
+<th>AMD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>超低功耗</td>
+<td>$Y$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>低功耗</td>
+<td>$U$</td>
+<td>$U$</td>
+</tr>
+<tr>
+<td>加強內顯</td>
+<td>$G_{1/4/7}$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>蘋果特供</td>
+<td>$NG_{7}$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>高效能</td>
+<td>$H$</td>
+<td>$H$</td>
+</tr>
+<tr>
+<td>高效能(不鎖頻)</td>
+<td>$HK$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>高效能(低功耗)</td>
+<td>-</td>
+<td>$HS$</td>
+</tr>
+<tr>
+<td>極致效能(開放功耗)</td>
+<td>-</td>
+<td>$HX$</td>
+</tr>
+<tr>
+<td>主流(無意義)</td>
+<td>-</td>
+<td>$X$</td>
+</tr>
+<tr>
+<td>加強版主流</td>
+<td>-</td>
+<td>$XT$</td>
+</tr>
+<tr>
+<td>含內顯</td>
+<td>-</td>
+<td>$G$</td>
+</tr>
+<tr>
+<td>無內顯</td>
+<td>$F$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>節能</td>
+<td>$T$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>不鎖頻</td>
+<td>$K$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>HEDT 平台</td>
+<td>$X$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>HEDT 平台(頂級)</td>
+<td>$XE$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>不鎖頻(無內顯)</td>
+<td>$KF$</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tdp---thermal-design-power">TDP - Thermal design power</h4>
+<p>CPU 中的 TDP 指的是 Thermal Design Power（熱設計功耗），它是指 CPU 在正常工作情況下所產生的熱量。TDP 是由 CPU 製造商提供的一個指標，用來幫助系統設計師和製造商選擇適當的散熱方案，以確保 CPU 在正常工作情況下不會過熱。</p>
+<p>TDP 不是 CPU 實際功耗的代表，而是一個衡量 CPU 散熱需求的指標。然而，一般情況下，TDP 越高，表示 CPU 產生的熱量越多，需要更強大的散熱系統來保持穩定的溫度。</p>
+<h4 id="3d-v-cache">3D V cache</h4>
+<p>3D V-Cache 是 AMD 推出的一項新技術，屬於其 Ryzen 系列 CPU。它是一種堆疊式快取技術，通過將額外的快取層堆疊在 CPU 的晶片上，提高了快取容量，從而提升了處理器的效能。</p>
+<p>傳統上，CPU 的快取分為多級，包括 L1、L2 和 L3 快取。3D V-Cache 技術通過在晶片上增加額外的 L3 快取，提高了快取層次，減少了主記憶體和處理核心之間的資料傳輸延遲。這使得 CPU 能夠更快地存取和處理資料，從而提高了整體性能。</p>
+<p>3D V-Cache 技術可以提供更高的快取容量，更快的資料存取速度，進而增強處理器的性能表現。</p>
 
 
                 
@@ -297,6 +447,8 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+                        
+                        
                         
                         
                         
