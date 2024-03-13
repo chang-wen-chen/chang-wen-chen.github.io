@@ -6,8 +6,15 @@
     <description>Recent content in Git on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 02 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerrit</title>
+      <link>https://chang-wen-chen.github.io/software/scm_gerrit/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/scm_gerrit/</guid>
+      <description>Code Owners OWNERS file can sit in every directory layer in the repository</description>
+    </item>
     <item>
       <title>Git rebase</title>
       <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>

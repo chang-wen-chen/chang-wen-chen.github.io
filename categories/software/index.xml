@@ -6,8 +6,22 @@
     <description>Recent content in Software on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 07 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API models: gRPC | OpenAPI | REST</title>
+      <link>https://chang-wen-chen.github.io/software/api_models/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/api_models/</guid>
+      <description>gRPC OpenAPI REST </description>
+    </item>
+    <item>
+      <title>Gerrit</title>
+      <link>https://chang-wen-chen.github.io/software/scm_gerrit/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/scm_gerrit/</guid>
+      <description>Code Owners OWNERS file can sit in every directory layer in the repository</description>
+    </item>
     <item>
       <title>.war and .jar in Java</title>
       <link>https://chang-wen-chen.github.io/software/java_war_jar/</link>
@@ -44,7 +58,7 @@
       <description>In your local clone of your forked repository, you can add the original GitHub repository as a &amp;ldquo;remote&amp;rdquo;. (&amp;ldquo;Remotes&amp;rdquo; are like nicknames for the URLs of repositories - origin is one, for example.) Then you can fetch all the branches from that upstream repository, and rebase your work to continue working on the upstream version. 到你 fork repository 的 local cloned area 中，你可以將原</description>
     </item>
     <item>
-      <title>SSL, TLS and HTTPS</title>
+      <title>SSL | TLS | HTTPS</title>
       <link>https://chang-wen-chen.github.io/software/ssl_tls_https/</link>
       <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/ssl_tls_https/</guid>

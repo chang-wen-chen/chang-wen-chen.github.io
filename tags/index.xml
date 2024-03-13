@@ -6,8 +6,36 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API</title>
+      <link>https://chang-wen-chen.github.io/tags/api/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DVCS</title>
+      <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/dvcs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gerrit</title>
+      <link>https://chang-wen-chen.github.io/tags/gerrit/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/gerrit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://chang-wen-chen.github.io/tags/git/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/git/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Timing</title>
       <link>https://chang-wen-chen.github.io/tags/timing/</link>
@@ -111,20 +139,6 @@
       <link>https://chang-wen-chen.github.io/tags/google-cloud/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/google-cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DVCS</title>
-      <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
-      <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/dvcs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://chang-wen-chen.github.io/tags/git/</link>
-      <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>

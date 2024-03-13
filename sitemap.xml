@@ -2,22 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chang-wen-chen.github.io/tags/api/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/software/api_models/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chang-wen-chen.github.io/categories/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/post/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/software/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/dvcs/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/gerrit/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/software/scm_gerrit/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/git/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/categories/hardware/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/hardware/timing_ocv/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/post/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/timing/</loc>
@@ -86,9 +107,6 @@
     <loc>https://chang-wen-chen.github.io/tags/java/</loc>
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/software/</loc>
-    <lastmod>2024-03-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chang-wen-chen.github.io/life/mobile_photography/</loc>
     <lastmod>2024-03-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -133,12 +151,6 @@
   </url><url>
     <loc>https://chang-wen-chen.github.io/software/gcloud_storage/</loc>
     <lastmod>2024-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/dvcs/</loc>
-    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/git/</loc>
-    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/software/scm_git_rebase/</loc>
     <lastmod>2024-03-02T00:00:00+00:00</lastmod>
