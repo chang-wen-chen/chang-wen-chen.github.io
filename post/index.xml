@@ -6,8 +6,15 @@
     <description>Recent content in Posts on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>imperative | declarative</title>
+      <link>https://chang-wen-chen.github.io/software/imperative_declarative/</link>
+      <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/imperative_declarative/</guid>
+      <description>Imperative HOW you do something Imperative programming is a paradigm describing HOW the program should do something by explicitly specifying each instruction (or statement) step by step, which mutate the program&amp;rsquo;s state. Functional programming 是 Declarative Paradigm 的代表，邏輯為用較為抽象的程式碼，理解程式碼想要達到怎樣的目標，F</description>
+    </item>
     <item>
       <title>API models: gRPC | OpenAPI | REST</title>
       <link>https://chang-wen-chen.github.io/software/api_models/</link>
