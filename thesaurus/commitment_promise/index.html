@@ -238,9 +238,9 @@
 
                 
 
-                <p><strong>TLDR</strong></p>
-<pre tabindex="0"><code>A commitment holds more weight than a simple promise
-</code></pre><p>They do differ in how they frame the distinction:</p>
+                <ul>
+<li>A commitment holds more weight than a simple promise</li>
+</ul>
 <p><strong>Emphasis on intent:</strong></p>
 <ul>
 <li><em>Commitment</em> signifies a genuine desire to fulfill the promise, suggesting sincerity and motivation.</li>
@@ -256,7 +256,7 @@
 <p>In essence, commitments go beyond empty promises, demonstrating a willingness to put in the effort and potentially exceed expectations.</p>
 <p>&ldquo;<strong>Commitment</strong>&rdquo; typically implies a dedication or obligation to a certain course of action or relationship. It often involves a sense of duty or responsibility.</p>
 <p>&ldquo;<strong>Promise</strong>&rdquo; generally refers to a declaration or assurance that one will do something or that a particular outcome will occur. It&rsquo;s a pledge or guarantee of action or result.</p>
-<p>&ldquo;<strong>承諾</strong>&rdquo; 通常意味著對某種行動或關係的奉獻或義務。它通常涉及到一種責任或義務感。</p>
+<p>&ldquo;<strong>承諾</strong>&rdquo; 通常對某種行動或關係的奉獻或義務。它通常涉及到一種責任或義務感。</p>
 <p>&ldquo;<strong>諾言</strong>&rdquo; 一般是指對某件事情或某種結果的聲明或保證。它是對行動或結果的承諾或保證。</p>
 
 
@@ -317,7 +317,7 @@
                 
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="/tags/">Tags</a></h5>
                     <div class="tags">
                         
                         
@@ -619,57 +619,6 @@
 </script>
 
 
-
-<script type="text/javascript">
-    
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    
-    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
-
-    function setLang(newLang) {
-        var params = new URLSearchParams(document.location.search)
-        params.set("lang", newLang)
-        document.location.search = params.toString()  
-    }
-
-    
-    function _render() {
-        var lang = getLang()
-        
-        if (lang == "en") {
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-            
-        } else {
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
-        }
-        
-        generateCatalog(".catalog-body");
-    }
-
-    
-    function onLanChange(index) {
-        if (index == 0) {
-            lang = "zh"
-        } else {
-            lang = "en"
-        }
-        setLang(lang)
-    }
-
-    
-    _render();
-</script>
 
 
 
