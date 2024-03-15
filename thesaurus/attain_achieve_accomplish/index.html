@@ -10,14 +10,14 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
-    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
+    <meta property="og:image" content="img/post-bg-coffee.jpeg">
+    <meta property="twitter:image" content="img/post-bg-coffee.jpeg" />
     
 
     
-    <meta name="title" content="Python" />
-    <meta property="og:title" content="Python" />
-    <meta property="twitter:title" content="Python" />
+    <meta name="title" content="attain | achieve | accomplish" />
+    <meta property="og:title" content="attain | achieve | accomplish" />
+    <meta property="twitter:title" content="attain | achieve | accomplish" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Python | CozyDev</title>
+    <title>attain | achieve | accomplish | CozyDev</title>
 
-    <link rel="canonical" href="/software/python/">
+    <link rel="canonical" href="/thesaurus/attain_achieve_accomplish/">
 
     
     
@@ -181,7 +181,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/post-bg-unix-linux.jpg')
+        background-image: url('/img/post-bg-coffee.jpeg')
     }
 </style>
 
@@ -193,13 +193,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/python" title="Python">
-                            Python
+                        <a class="tag" href="/tags/english" title="English">
+                            English
+                        </a>
+                        
+                        <a class="tag" href="/tags/synonyms" title="Synonyms">
+                            Synonyms
                         </a>
                         
                     </div>
-                    <h1>Python</h1>
-                    <h2 class="subheading"></h2>
+                    <h1>attain | achieve | accomplish</h1>
+                    <h2 class="subheading">What are the differences</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -207,7 +211,7 @@
                                 Eirik
                              
                             on 
-                            5 Mar, 2024
+                            15 Mar, 2024
                             
                             
                             
@@ -234,89 +238,30 @@
 
                 
 
-                <h3 id="cpython">Cpython</h3>
-<h4 id="py_incref-and-py_decref">Py_INCREF() and Py_DECREF()</h4>
-<p>While Py_INCREF() and Py_DECREF() are essential components of Python&rsquo;s memory management system, they&rsquo;re not the ideal way to directly count how many times a Python variable is used. Let me explain why and offer better alternatives:</p>
-<p>Role: These functions are at the heart of Python&rsquo;s reference counting garbage collection.
-Py_INCREF(object): Increments the reference count of an object. This indicates that the object is in use and prevents it from being prematurely destroyed.
-Py_DECREF(object): Decrements the reference count of an object. If the count reaches zero, Python knows the object is no longer needed and deallocates its memory.
-Why They&rsquo;re Not Ideal for Counting Usage:</p>
-<p>Indirect: Reference counts don&rsquo;t directly equate to variable usage. A variable might hold a reference to an object, but other variables or data structures could also hold references to the same object.
-Internal Management: Reference counting is primarily an internal mechanism for Python&rsquo;s garbage collector. Manipulating it directly can lead to memory leaks or premature deallocation if not done very carefully.
-Better Alternatives for Counting Variable Usage</p>
-<p>Simple Counter:  Maintain a separate counter variable. Increment it  whenever you use the variable you&rsquo;re interested in tracking.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>my_var <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">5</span>
-</span></span><span style="display:flex;"><span>usage_count <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Each time you use my_var:</span>
-</span></span><span style="display:flex;"><span>usage_count <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span> 
-</span></span></code></pre></div><p>Function Wrapping/Decorators: Create a wrapper function or a decorator that automatically increments a counter before or after the original function is called. This is useful if you want to track how often a specific function using the variable is executed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">track_usage</span>(func):
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">wrapper</span>(<span style="color:#ff79c6">*</span>args, <span style="color:#ff79c6">**</span>kwargs):
-</span></span><span style="display:flex;"><span>        wrapper<span style="color:#ff79c6">.</span>counter <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">return</span> func(<span style="color:#ff79c6">*</span>args, <span style="color:#ff79c6">**</span>kwargs)
-</span></span><span style="display:flex;"><span>    wrapper<span style="color:#ff79c6">.</span>counter <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> wrapper
-</span></span></code></pre></div><p>Profiling Tools: For sophisticated analysis, including precise measurements of where and how often your code uses different variables, use Python profiling tools like:</p>
-<p>cProfile: Built-in module for profiling Python code.
-line_profiler: Provides line-by-line profiling information.</p>
-<h4 id="pyobject-attribute">PyObject attribute</h4>
-<p>Complexity: Modifying the CPython source requires familiarity with C and a good understanding of Python&rsquo;s internal object representation.
-Overhead: These modifications will introduce overhead to your Python execution. The impact depends on the complexity of your changes.
-Targeted Tracking: This method allows fine-grained tracking but necessitates recompiling your Python interpreter.
-Steps</p>
-<p>Obtain CPython Source: Download the source code of the specific Python version you&rsquo;re using from <a href="https://www.python.org/downloads/source/">https://www.python.org/downloads/source/</a>
-Locate Relevant Structures:
-The primary structure to focus on is PyObject. It represents the base of all Python objects. You&rsquo;ll likely need to modify this structure or related code within the Objects directory of the CPython source.
-Add Counters:
-Consider adding members to the PyObject structure to serve as counters:
-assignment_count
-modification_count
-access_count
-Instrument Code:
-Carefully modify the relevant portions of the CPython source where assignments, modifications, and object retrievals occur. Key places to look:
-Objects/object.c: Contains core object manipulation functions.
-Include/object.h: Header file for PyObject.
-Bytecode instructions within the interpreter loop (ceval.c)
-Recompilation:
-Follow the CPython build instructions to recompile your modified interpreter.
-Challenges and Notes</p>
-<p>Synchronization: If your Python code is multithreaded, ensure your counter updates are thread-safe.
-Differentiating Modification: Distinguishing between true modifications (altering the object&rsquo;s value) versus simple reassignments might require additional logic.
-Example (Simplified)</p>
-<p>Let&rsquo;s imagine a highly simplified modification within Objects/object.c to track object creation (similar to assignments):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#6272a4">/* ...existing code... */</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">typedef</span> <span style="color:#ff79c6">struct</span> _object {
-</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* ...existing members... */</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd">int</span> creation_count; 
-</span></span><span style="display:flex;"><span>} PyObject;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* ... somewhere where objects are created ... */</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>PyObject <span style="color:#ff79c6">*</span>new_object <span style="color:#ff79c6">=</span> <span style="color:#6272a4">/* ... object creation logic ... */</span>
-</span></span><span style="display:flex;"><span>new_object<span style="color:#ff79c6">-&gt;</span>creation_count<span style="color:#ff79c6">++</span>; 
-</span></span></code></pre></div><p>Before Undertaking This</p>
-<p>Consider whether less invasive methods might achieve your goal:</p>
-<p>Could profiling tools provide the insights you need without CPython modifications?
-Would targeted function wrapping or decorators (as suggested previously) be sufficient?</p>
-<h3 id="venv-virtual-environment">venv (virtual environment)</h3>
-<p>pip show <!-- raw HTML omitted --></p>
-<p>pip list</p>
-<h4 id="create-venv-command">Create venv command</h4>
-<p>python -m venv <code>venv_name</code></p>
-<h4 id="activate-venv">Activate venv</h4>
-<p>cd venv/scripts
-./activate</p>
-<p>pip list</p>
-<p>pip install flask</p>
-<p>pip show flask</p>
-<h3 id="staticclassabstract-methods-實現">Static/Class/Abstract Methods 實現</h3>
+                <p>這三個詞都是指完成某事或達成某個目標</p>
+<h3 id="attain"><strong>Attain</strong>:</h3>
 <ul>
-<li>Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method</li>
-<li>Static method：靜態方法，不帶 instance 以及 class 為參數的 method</li>
-<li>Class method：類方法，帶有 class 為參數的 method</li>
-<li>Abstract method：抽象方法，尚未被實作且 children class 一定要用 override來實作之，用來實現類似 Java interface 或 C++ pure virtual function</li>
+<li><code>Attain</code>強調達到某種目標或獲得某種<code>地位</code>、成就，通常帶有一定的努力或困難。</li>
+<li>He finally attained a high score in the exam, which had been his dream for many years.</li>
+<li>他終於在考試中取得了高分，這是他多年來的夢想。</li>
+</ul>
+<h3 id="achieve"><strong>Achieve</strong>:</h3>
+<ul>
+<li><code>Achieve</code>指完成一個<code>目標</code>、達成一項<code>目標</code>，通常強調經過努力、計劃或技能而達成。</li>
+<li>She worked hard and eventually achieved her dream of becoming a top scientist.</li>
+<li>她努力工作，最終實現了自己成為一名頂尖科學家的夢想。</li>
+</ul>
+<h3 id="accomplish"><strong>Accomplish</strong>:</h3>
+<ul>
+<li><code>Accomplish</code>指完成或實現某件事情、任務或目標，常用於形容一個任務或目標被成功地實現或完成。</li>
+<li>Our team accomplished the project before the deadline, which was a great achievement.</li>
+<li>我們團隊在截止日期之前完成了這個項目，這是一項了不起的成就。</li>
+</ul>
+<p>這三個詞都用於描述完成某事或實現某個目標</p>
+<ul>
+<li>attain 偏向於達到一個地位或狀態</li>
+<li>achieve 強調完成一項任務或目標</li>
+<li>accomplish 則強調完成的行動或活動</li>
 </ul>
 
 
@@ -327,15 +272,10 @@ Would targeted function wrapping or decorators (as suggested previously) be suff
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/life/real_estate/" data-toggle="tooltip" data-placement="top" title="Real estates">&larr;
+                        <a href="/software/imperative_declarative/" data-toggle="tooltip" data-placement="top" title="imperative | declarative">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/hardware/cts_architecture/" data-toggle="tooltip" data-placement="top" title="Clock Tree Synthesis">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

@@ -41,7 +41,7 @@
       <link>https://chang-wen-chen.github.io/software/python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/python/</guid>
-      <description>venv (virtual environment) pip show pip list Create venv command python -m venv venv_name Activate venv cd venv/scripts ./activate pip list pip install flask pip show flask Static/Class/Abstract Methods 實現 Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method Static m</description>
+      <description>Cpython Py_INCREF() and Py_DECREF() While Py_INCREF() and Py_DECREF() are essential components of Python&amp;rsquo;s memory management system, they&amp;rsquo;re not the ideal way to directly count how many times a Python variable is used. Let me explain why and offer better alternatives: Role: These functions are at the heart of Python&amp;rsquo;s reference counting garbage collection. Py_INCREF(object): Increments the reference count of an object. This indicates that the object is in use and</description>
     </item>
     <item>
       <title>DBMS Data Types</title>

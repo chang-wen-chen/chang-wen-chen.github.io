@@ -6,8 +6,15 @@
     <description>Recent content on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>attain | achieve | accomplish</title>
+      <link>https://chang-wen-chen.github.io/thesaurus/attain_achieve_accomplish/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/thesaurus/attain_achieve_accomplish/</guid>
+      <description>這三個詞都是指完成某事或達成某個目標 Attain: Attain強調達到某種目標或獲得某種地位、成就，通常帶有一定的努力或困難。 He finally attained a high score in the exam, which had been his</description>
+    </item>
     <item>
       <title>imperative | declarative</title>
       <link>https://chang-wen-chen.github.io/software/imperative_declarative/</link>
@@ -139,7 +146,7 @@
       <link>https://chang-wen-chen.github.io/software/python/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/python/</guid>
-      <description>venv (virtual environment) pip show pip list Create venv command python -m venv venv_name Activate venv cd venv/scripts ./activate pip list pip install flask pip show flask Static/Class/Abstract Methods 實現 Instance method：實例方法，即帶有 instance 為參數的 method，為大家最常使用的 method Static m</description>
+      <description>Cpython Py_INCREF() and Py_DECREF() While Py_INCREF() and Py_DECREF() are essential components of Python&amp;rsquo;s memory management system, they&amp;rsquo;re not the ideal way to directly count how many times a Python variable is used. Let me explain why and offer better alternatives: Role: These functions are at the heart of Python&amp;rsquo;s reference counting garbage collection. Py_INCREF(object): Increments the reference count of an object. This indicates that the object is in use and</description>
     </item>
     <item>
       <title>Real estates</title>
