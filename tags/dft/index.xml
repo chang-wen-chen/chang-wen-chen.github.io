@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DFT on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/dft/</link>
+    <description>Recent content in DFT on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/dft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IEEE P1687 IJTAG</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_ijtag/</link>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_ijtag/</guid>
+      <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
+    </item>
+  </channel>
+</rss>
