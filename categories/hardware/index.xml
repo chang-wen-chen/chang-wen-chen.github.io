@@ -6,14 +6,14 @@
     <description>Recent content in Hardware on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>IEEE P1687 IJTAG</title>
-      <link>https://chang-wen-chen.github.io/hardware/dft_ijtag/</link>
-      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/hardware/dft_ijtag/</guid>
-      <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
+      <title>DFT Basics</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_basics/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_basics/</guid>
+      <description>Wafer level testing (Wafer Sort) Burn_in Testing (elevate voltage and temperature) x-axis (clock period) y-axis (Vdd) Final test(pass/fail) and Bin Sorting Parametric Tests(voltage, temperature and clock) Shmoo plot Wafer Sort | probe test Testing on the wafer (before diced) Check open/short on the pads Measure gate threshold, ploy sheet resistence,&amp;hellip;etc Testing with probe cards cost 50~100k dollar depends on the yield and the cost of the packaging (economic problem) DC</description>
     </item>
     <item>
       <title>IEEE P1687 IJTAG</title>
@@ -23,11 +23,11 @@
       <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
     </item>
     <item>
-      <title>IEEE P1687 IJTAG</title>
-      <link>https://chang-wen-chen.github.io/hardware/dft_ijtag/</link>
+      <title>Verification | Testing</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_testing_verification/</link>
       <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/hardware/dft_ijtag/</guid>
-      <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_testing_verification/</guid>
+      <description> Verification Testing Verifies correctness of the design Verifies correctness of manufactured hardware Performed by simulation, hardware emulation or formal methods Test generation and test application Performed once prior to manufacturing Test application performed on every manufactured device Reponsible for quality of the design Responsible for quality of devices </description>
     </item>
     <item>
       <title>OCV | AOCV | POCV | LVF</title>

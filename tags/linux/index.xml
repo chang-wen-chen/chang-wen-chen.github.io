@@ -6,14 +6,14 @@
     <description>Recent content in Linux on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Linux load</title>
-      <link>https://chang-wen-chen.github.io/infra/linux_load/</link>
-      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/infra/linux_load/</guid>
-      <description>在Linux中，&amp;ldquo;load&amp;quot;通常指的是系統的負載情況，它用來表示系統當前正在處理的工作量。在Linux中，有三種類型的</description>
+      <title>Linux Kernal</title>
+      <link>https://chang-wen-chen.github.io/infra/linux_kernal/</link>
+      <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/linux_kernal/</guid>
+      <description>What is Linux Kernal The kernal is a program Often with a name like vmlinuz- Loaded a run by a noot loader, like GRUB(linux) GRUB: Load the Kernal program from disk to memory, and transfer the control to kernal The Kernal is an API System calls Virtual file system entries (not really a directory) proc sys debugfs Device files(standard system calls, read, write, open,&amp;hellip;etc) The Kernal is a gatekeeper Enforce</description>
     </item>
     <item>
       <title>Processes and jobs</title>

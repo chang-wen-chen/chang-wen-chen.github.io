@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="CozyDev">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
+    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
+    
+
+    
+    <meta name="title" content="DFT Basics" />
+    <meta property="og:title" content="DFT Basics" />
+    <meta property="twitter:title" content="DFT Basics" />
+    
+
+    
+    <meta name="description" content="CozyDev">
+    <meta property="og:description" content="CozyDev" />
+    <meta property="twitter:description" content="CozyDev" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>DFT Basics | CozyDev</title>
+
+    <link rel="canonical" href="/hardware/dft_basics/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLP6SS762D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DLP6SS762D');
+    </script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">CozyDev</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/hardware/">hardware</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/infra/">infra</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/life/">life</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/network/">network</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/software/">software</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/thesaurus/">thesaurus</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/about//">ABOUT</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/post-bg-unix-linux.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dft" title="DFT">
+                            DFT
+                        </a>
+                        
+                    </div>
+                    <h1>DFT Basics</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Eirik
+                             
+                            on 
+                            26 Mar, 2024
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+
+                <p>Wafer level testing (Wafer Sort)</p>
+<p>Burn_in Testing (elevate voltage and temperature)
+x-axis (clock period)
+y-axis (Vdd)
+Final test(pass/fail) and Bin Sorting</p>
+<p>Parametric Tests(voltage, temperature and clock)</p>
+<ul>
+<li>Shmoo plot</li>
+</ul>
+<h2 id="wafer-sort--probe-test">Wafer Sort | probe test</h2>
+<ul>
+<li>Testing on the wafer (before diced)</li>
+<li>Check open/short on the pads</li>
+<li>Measure gate threshold, ploy sheet resistence,&hellip;etc</li>
+</ul>
+<h2 id="testing-with-probe-cards">Testing with probe cards</h2>
+<p>cost 50~100k dollar
+depends on the yield and the cost of the packaging (economic problem)</p>
+<h2 id="dc-electrical-tests">DC electrical Tests</h2>
+<ul>
+<li>DC contact tests - Calculate pin res</li>
+<li>Power consumpsion test - Measure max current at worst case temperature</li>
+<li>Output short circuit test - Measure current driven when output is short</li>
+<li>Output drive current test - Measure current for <code>1</code> and <code>0</code> outputs</li>
+<li>Threshold tests - Measure VIH and VIL of input pads</li>
+</ul>
+<h2 id="ac-parametric-tests">AC Parametric Tests</h2>
+<ul>
+<li>Rise/Fall time tests</li>
+<li>Setup/Hold time tests</li>
+<li>Propagation delay tests</li>
+</ul>
+<h2 id="brun-in-test--stress-test">Brun-in Test | Stress Test</h2>
+<p>Put chips in the oven</p>
+<ul>
+<li>Subject chips to high temperature and over-voltage supply, while running production tests.</li>
+<li>Long simulation time with high temperature (simulation years of aging)</li>
+<li>Plot in bathtub curve</li>
+<li>Target catches: Find out infant mortality (weak connection)</li>
+</ul>
+<h2 id="die-cost">Die Cost</h2>
+<ul>
+<li>Wafer Cost / Dies per Wafer * Die Yield (#Good dies)</li>
+<li>IC Cost = Die Cost + Testing Cost + Packaging Cost / Final Test Yield</li>
+</ul>
+<h2 id="defect-level-dl">Defect Level (DL)</h2>
+<ul>
+<li>The ratio of faulty chips among the chips that pass tests, measured in DPM (&laquo;500DPM)</li>
+<li>DL = 1-Y^(1-FC) , 0&lt; DL &lt; 1-Y</li>
+</ul>
+<h1 id="testing-processes">Testing Processes</h1>
+<ul>
+<li>Fault Modeling</li>
+<li>Test Generation</li>
+<li>Fault Simulation
+<ul>
+<li>Given a circuit, a set of faults F, and a set of test vectors T, determines the faults in F are tested by the vectors in T.</li>
+</ul>
+</li>
+</ul>
+<h2 id="terminologies">Terminologies</h2>
+<table>
+<thead>
+<tr>
+<th>Defects</th>
+<th>Faults</th>
+<th>Errors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical phenomenon</td>
+<td>Abstract representation</td>
+<td>Operational results</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Different types of defects can cause same fault.</li>
+</ul>
+<h3 id="common-fault-models">Common Fault Models</h3>
+<ul>
+<li>Stuck-At Fault (s/0, s/1)</li>
+<li>Transition/Delay Faults ()</li>
+<li>Other fault models(open/short/bridging)</li>
+</ul>
+<h3 id="concurrent-fault-simulation">Concurrent Fault Simulation</h3>
+<p>用現在test pattern 在每一個gate會產生的golden output當作reference
+對每個gate 做fault:input:output的列表forward propagate
+就可以知道當前的pattern可以detect到的fault list
+進而得知fault coverage</p>
+<h3 id="test-genreration">Test Genreration</h3>
+<h4 id="d-algorithm">D-algorithm</h4>
+<p>把faulty site 記為D ，直到propagate 到observation point or PPO 為止，
+再做backtracking 找出必要assign 的PPI 和assign value (也可能是don&rsquo;t care bit X)</p>
+<h2 id="test-generation-is-slower-than-test-simulation">Test generation is slower than test simulation!</h2>
+<h1 id="design-for-test">Design For Test</h1>
+<p>Because circuit PI/PO are limited, it&rsquo;s hard to control the states through ultiple pipelines</p>
+<ul>
+<li>Ad hoc</li>
+<li>Scan Chains
+<ul>
+<li>Scan-In</li>
+<li>Scan-Out</li>
+<li>Scan Enable</li>
+</ul>
+</li>
+<li>Built-in Self Test (BIST)</li>
+</ul>
+<p>Shorter scan chain
+Scan clock is usually slow (100-200MHz)
+Usually implement <code>parallel scan</code></p>
+<p>Special care needs to be taken to avoid undesirable conditions during scan, e.g, bus contentions, resets, clock gates
+One ther problem is excessive current draw due to many flops toggling at the same clock</p>
+<h3 id="how-ac-testing-switch-from-slow-sfift-clock-to-on-chip-clock-and-switch-it-back-in-accuracte-number-of-clock-cycles-">How AC testing switch from slow sfift clock to on-chip clock and switch it back in accuracte number of clock cycles ?</h3>
+<h3 id="iddq-test">IDDQ Test</h3>
+<p>Test the quiescent power consumption</p>
+<p>Pros:</p>
+<ul>
+<li>Covers non-stuck-at faults</li>
+<li>Cheap test equipments</li>
+<li>Few test patterns</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Slow current measurment</li>
+<li>Difficult to measure proper IDDQ threshold</li>
+<li>Not practicable for sub-micron processes</li>
+</ul>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/hardware/dft_ijtag/" data-toggle="tooltip" data-placement="top" title="IEEE P1687 IJTAG">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/infra/linux_kernal/" data-toggle="tooltip" data-placement="top" title="Linux Kernal">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                <script src="https://utteranc.es/client.js"
+        repo="chang-wen-chen/chang-wen-chen.github.io"
+        issue-term="pathname"
+        label="Blog"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">Tags</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:eric81510@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/100000177908248">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/chang-wen-chen">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/eirik-chen-499454147">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    <li>
+                        <a target="_blank" href="https://medium.com/@eric81510">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/23330273">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            <li>
+                <a target="_blank" href="https://www.instagram.com/chang.wen.chen">
+                    <span class="fa-stack fa-lg">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </li>
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="CozyDev" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; CozyDev 2024
+                    <br>
+                    <a href="https://github.com/chang-wen-chen">White Theme</a> by <a href="https://github.com/chang-wen-chen">Eirik</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -6,21 +6,21 @@
     <description>Recent content in Infra on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/infra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Kernal</title>
+      <link>https://chang-wen-chen.github.io/infra/linux_kernal/</link>
+      <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/linux_kernal/</guid>
+      <description>What is Linux Kernal The kernal is a program Often with a name like vmlinuz- Loaded a run by a noot loader, like GRUB(linux) GRUB: Load the Kernal program from disk to memory, and transfer the control to kernal The Kernal is an API System calls Virtual file system entries (not really a directory) proc sys debugfs Device files(standard system calls, read, write, open,&amp;hellip;etc) The Kernal is a gatekeeper Enforce</description>
+    </item>
     <item>
       <title>Shell Display Forwarding</title>
       <link>https://chang-wen-chen.github.io/infra/display_forwarding/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/infra/display_forwarding/</guid>
       <description>在Shell環境中，DISPLAY環境變數用於指定X Server的位置，以便圖形應用程序知道在哪裡顯示它們的視窗。通常，DISPLAY環境變</description>
-    </item>
-    <item>
-      <title>Linux load</title>
-      <link>https://chang-wen-chen.github.io/infra/linux_load/</link>
-      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/infra/linux_load/</guid>
-      <description>在Linux中，&amp;ldquo;load&amp;quot;通常指的是系統的負載情況，它用來表示系統當前正在處理的工作量。在Linux中，有三種類型的</description>
     </item>
     <item>
       <title>Shell commands</title>

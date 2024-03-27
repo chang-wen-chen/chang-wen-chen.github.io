@@ -6,14 +6,21 @@
     <description>Recent content on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 23 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>IEEE P1687 IJTAG</title>
-      <link>https://chang-wen-chen.github.io/hardware/dft_ijtag/</link>
-      <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/hardware/dft_ijtag/</guid>
-      <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
+      <title>Linux Kernal</title>
+      <link>https://chang-wen-chen.github.io/infra/linux_kernal/</link>
+      <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/linux_kernal/</guid>
+      <description>What is Linux Kernal The kernal is a program Often with a name like vmlinuz- Loaded a run by a noot loader, like GRUB(linux) GRUB: Load the Kernal program from disk to memory, and transfer the control to kernal The Kernal is an API System calls Virtual file system entries (not really a directory) proc sys debugfs Device files(standard system calls, read, write, open,&amp;hellip;etc) The Kernal is a gatekeeper Enforce</description>
+    </item>
+    <item>
+      <title>DFT Basics</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_basics/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_basics/</guid>
+      <description>Wafer level testing (Wafer Sort) Burn_in Testing (elevate voltage and temperature) x-axis (clock period) y-axis (Vdd) Final test(pass/fail) and Bin Sorting Parametric Tests(voltage, temperature and clock) Shmoo plot Wafer Sort | probe test Testing on the wafer (before diced) Check open/short on the pads Measure gate threshold, ploy sheet resistence,&amp;hellip;etc Testing with probe cards cost 50~100k dollar depends on the yield and the cost of the packaging (economic problem) DC</description>
     </item>
     <item>
       <title>IEEE P1687 IJTAG</title>
@@ -23,11 +30,11 @@
       <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
     </item>
     <item>
-      <title>IEEE P1687 IJTAG</title>
-      <link>https://chang-wen-chen.github.io/hardware/dft_ijtag/</link>
+      <title>Verification | Testing</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_testing_verification/</link>
       <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/hardware/dft_ijtag/</guid>
-      <description>ICL ICL 檔案代表 Instrument Connectivity Language，用於描述測試儀器與待測晶片之間的連接資訊。 測試儀器的類型和配置 待測晶片的測試引腳 測試儀器與待測晶片之間的連</description>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_testing_verification/</guid>
+      <description> Verification Testing Verifies correctness of the design Verifies correctness of manufactured hardware Performed by simulation, hardware emulation or formal methods Test generation and test application Performed once prior to manufacturing Test application performed on every manufactured device Reponsible for quality of the design Responsible for quality of devices </description>
     </item>
     <item>
       <title>attain | achieve | accomplish</title>
@@ -210,13 +217,6 @@
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/life/jplt_prepare/</guid>
       <description>N2 在日本求學、工作生活較適合 600-800 hr 學習 目標設定 N4 學習時間 晚上9-11 學習日檢 日文基礎 手寫五十音 手機背誦遊戲 單字：1500 字 文法： 大家的日本語初</description>
-    </item>
-    <item>
-      <title>Linux load</title>
-      <link>https://chang-wen-chen.github.io/infra/linux_load/</link>
-      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/infra/linux_load/</guid>
-      <description>在Linux中，&amp;ldquo;load&amp;quot;通常指的是系統的負載情況，它用來表示系統當前正在處理的工作量。在Linux中，有三種類型的</description>
     </item>
     <item>
       <title>Shell commands</title>
