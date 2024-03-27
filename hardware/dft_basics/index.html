@@ -363,6 +363,152 @@ One ther problem is excessive current draw due to many flops toggling at the sam
 <li>Difficult to measure proper IDDQ threshold</li>
 <li>Not practicable for sub-micron processes</li>
 </ul>
+<h2 id="build-in-self-test">Build-in Self Test</h2>
+<p>Since ATE is expensive
+Especially for memories</p>
+<ul>
+<li>BIST Enable</li>
+<li>Test control logic will output pass|fail</li>
+<li>Can run at-speed</li>
+</ul>
+<h3 id="bist-architecture">BIST Architecture</h3>
+<ul>
+<li>Controller Counter</li>
+<li>TG(Test Generator)</li>
+<li>ORA(Output Response Analyzer)</li>
+<li>Golden Value Storage ROM</li>
+</ul>
+<h3 id="lfsrlinear-feedback-shift-register">LFSR(Linear Feedback Shift Register)</h3>
+<ul>
+<li>Pseudo-Random Pattern Generator</li>
+<li>Patterns depends on :
+<ul>
+<li>Feedback function (XOR, XNOR)</li>
+<li>Tap Selection</li>
+<li>Seed(initial value)</li>
+</ul>
+</li>
+<li>Properties
+<ul>
+<li>Tap described by characteristic polynomial</li>
+<li>Primitive Polynomials cannot be factored</li>
+<li>Cannot initialize all 0 or all 1</li>
+</ul>
+</li>
+</ul>
+<h3 id="response-compaction">Response Compaction</h3>
+<ul>
+<li>A response compactor (not compressor) reduce the response into a <code>signature</code> (hashing) before final bist comparison</li>
+<li>The golden signature is stored on-chip
+<ul>
+<li>Similar to cyclic redundency check(CRC)</li>
+</ul>
+</li>
+<li>This is basically a many-to-one mapping
+<ul>
+<li>Can cause alias(low probability)</li>
+</ul>
+</li>
+<li>2 approaches
+<ul>
+<li>Signature Analyzer
+<ul>
+<li>Compact a serial bit stream into an LFSR based compator</li>
+</ul>
+</li>
+<li>Multiple-input Signature Register(MISR)
+<ul>
+<li>compact several bit streams in parallel</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="mbist">MBIST</h3>
+<ul>
+<li>Implements commonly used testing algorithm
+<ul>
+<li>Zero-One</li>
+<li>Checkboard</li>
+<li>GALPAT</li>
+<li>Walking 1/0</li>
+<li>March (Most popular)</li>
+</ul>
+</li>
+</ul>
+<h3 id="bisrbuild-in-self-repair">BISR(Build-in Self Repair)</h3>
+<ul>
+<li>In memory</li>
+<li>To avoid yield loss redundant or spare rows and column are added</li>
+<li>Memory repair swaps out faulty rows|colums for spare ones</li>
+</ul>
+<h3 id="lbistlogic-built-in-self-test">LBIST(Logic Built-in Self Test)</h3>
+<h2 id="ieee11491-boundary-scan-jtag">IEEE1149.1 Boundary scan (JTAG)</h2>
+<ul>
+<li>
+<p>How about board testing?</p>
+<ul>
+<li>Need to verify solder joints are good</li>
+<li>Drive pin to 0 -&gt; 1</li>
+<li>Check all connected pins gets the value</li>
+</ul>
+</li>
+<li>
+<p>Through-hold boards used <code>bed of nails</code></p>
+</li>
+<li>
+<p>SMT and BGA boards connot easily contact pins</p>
+</li>
+<li>
+<p>JTAG(Joint Test Action Group) Standard</p>
+<ul>
+<li>Build capability to observing and controlling pins into each chip to make board test easier</li>
+</ul>
+</li>
+<li>
+<p>Used for board (PCB) level testing</p>
+</li>
+<li>
+<p>Implementation</p>
+<ul>
+<li>TAP controller (Test Access Point)</li>
+<li>4 dedicated IO pins
+<ul>
+<li>TCK test clock</li>
+<li>TMS test mode select</li>
+<li>TDI test data in</li>
+<li>TDO test data out</li>
+<li>TRST test reset (optional)</li>
+</ul>
+</li>
+<li>Allows to drive and sample the device IO pins</li>
+<li>Implementation is described in BSDL(Boundary Scan Description Language)</li>
+</ul>
+</li>
+</ul>
+<h3 id="11491-wrapper">1149.1 Wrapper</h3>
+<ul>
+<li>TDRs</li>
+<li>Important Test Modes
+<ul>
+<li>EXTEST
+<ul>
+<li>Test the interconnection betweens devices|chips.</li>
+</ul>
+</li>
+<li>BYPASS
+<ul>
+<li>Forword test to next devices|chips.</li>
+</ul>
+</li>
+<li>INTEST
+<ul>
+<li>Test the internal logic of a devices|chips.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
                 
