@@ -109,6 +109,10 @@
                     
                         
                         <li>
+                            <a href="/categories/finance/">finance</a>
+                        </li>
+                        
+                        <li>
                             <a href="/categories/hardware/">hardware</a>
                         </li>
                         
@@ -257,6 +261,56 @@
 <li>ICL 檔案提供測試儀器與待測晶片之間的連接資訊</li>
 <li>PDL 檔案提供測試程序。這兩個檔案一起用於自動執行DFT測試，以確保晶片的製造品質。</li>
 </ul>
+<p>Industry trend: To use more IPs of all size, types and test access/control methods
+Examples: PLL, clock control, power control, sensors, mixed-signal IPs, IP w/&amp;wo/ built-in test</p>
+<p>How to access these IPs from die / system / board level?
+For:</p>
+<ul>
+<li>Test pattern debug</li>
+<li>Hardware debug</li>
+<li>Production test</li>
+<li>Failure analysis</li>
+</ul>
+<p>TAP: Test Access Point</p>
+<ul>
+<li>TCK</li>
+<li>TMS</li>
+<li>TDI</li>
+<li>TDO</li>
+</ul>
+<p>WTAP: Wrapped the core, will be wrapped within one TAP
+IEEE 1149.1 / 1500 Model: Boundary Test / BIST
+1500 from the inside of the IP to the outside of the IP
+IP company have to carry the costs of their solution</p>
+<p>P1687 適合plug and play!
+P1687 IJTAG 和業界比較接軌，也support 1149.1 TAP，也讀得懂1500 core access
+An IP with a P1687 compliant interface is named instrument
+IJTAG includes 3 main aspects
+Rules for P1687 instruments realization:
+Port function, timing, connection rules
+P1687 does not enforce any particular implementation</p>
+<h3 id="p1687-和-114911500-相比有任何缺點嗎">P1687 和 1149.1/1500 相比有任何缺點嗎？</h3>
+<p>與 P1687 相比，1149.1/1500 協議具有以下優點：
+更簡單：1149.1/1500 協議的結構更簡單，更容易理解和實現。
+更靈活：1149.1/1500 協議提供了更多的靈活性，可以支持更廣泛的測試需求。
+更低成本：1149.1/1500 協議的成本更低，可以降低 SoC 設計的成本。</p>
+<p>1149.1/1500 協議具有以下特點：
+使用四根測試引腳：1149.1/1500 協議只需要四根測試引腳，就可以實現對 SoC 的測試。
+支持邊界掃描：1149.1/1500 協議支持邊界掃描，可以測試 SoC 的邊界掃描鏈中的所有寄存器。
+支持內建測試：1149.1/1500 協議支持內建測試，可以測試 SoC 內部的邏輯電路。</p>
+<p>但1149.1/1500 協議也有一些缺點：
+測試速度較慢：1149.1/1500 協議的測試速度較慢，因為它需要通過四根測試引腳來傳輸測試數據。
+測試覆蓋率較低：1149.1/1500 協議的測試覆蓋率較低，因為它只能測試 SoC 的邊界掃描鏈中的寄存器。</p>
+<p>P1687 協議是一種基於 IEEE 1149.1 標準的測試協議，它具有以下特點：
+使用多根測試引腳：P1687 協議可以使用多根測試引腳，可以提高測試速度。
+支持多種測試模式：P1687 協議支持多種測試模式，可以提高測試覆蓋率。</p>
+<p>P1687 協議的缺點是：
+結構較複雜：P1687 協議的結構較複雜，更難理解和實現。
+成本較高：P1687 協議的成本較高，會增加 SoC 設計的成本。</p>
+<h4 id="總結">總結</h4>
+<p>1149.1/1500 協議和 P1687 協議各有優缺點。1149.1/1500 協議更簡單、更靈活、成本更低，但測試速度較慢、測試覆蓋率較低。P1687 協議測試速度更快、測試覆蓋率更高，但結構較複雜、成本較高。
+在 VLSI DFT 設計中，可以根據具體的需求選擇合適的測試協議。如果需要簡單、靈活、低成本的測試解決方案，可以選擇 1149.1/1500 協議。如果需要更高測試速度和測試覆蓋率，可以選擇 P1687 協議。</p>
+<p>IJTAG 增加 port number 或 設計複雜度來trade 測試速度和 test coverage</p>
 
 
                 
@@ -318,6 +372,10 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">Tags</a></h5>
                     <div class="tags">
+                        
+                        
+                        
+                        
                         
                         
                         

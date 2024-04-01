@@ -6,8 +6,15 @@
     <description>Recent content on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Structure</title>
+      <link>https://chang-wen-chen.github.io/software/data_structures/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/data_structures/</guid>
+      <description>Linked List Linked list swap file system read CMD pointer manipulate </description>
+    </item>
     <item>
       <title>Linux Kernal</title>
       <link>https://chang-wen-chen.github.io/infra/linux_kernal/</link>
@@ -133,6 +140,13 @@
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/thesaurus/utter_say_convey_speak/</guid>
       <description>TL;DR utter強調的是發出聲音或言語的行動 say則是用來表達一個具體的言論或意見 convey則指以各種方式傳達信息或感情 speak則是用來描述</description>
+    </item>
+    <item>
+      <title>Coffee</title>
+      <link>https://chang-wen-chen.github.io/fin/basics/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/fin/basics/</guid>
+      <description>Angel Investment Stream 天使投資流，它是一種投資方式，通常指的是個人投資者或小型投資團體向初創企業提供資金支持的過程。這些投資者被稱為「天使投資者」，因為他們</description>
     </item>
     <item>
       <title>Coffee</title>

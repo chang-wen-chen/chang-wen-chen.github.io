@@ -6,8 +6,15 @@
     <description>Recent content in Software on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Structure</title>
+      <link>https://chang-wen-chen.github.io/software/data_structures/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/data_structures/</guid>
+      <description>Linked List Linked list swap file system read CMD pointer manipulate </description>
+    </item>
     <item>
       <title>imperative | declarative</title>
       <link>https://chang-wen-chen.github.io/software/imperative_declarative/</link>

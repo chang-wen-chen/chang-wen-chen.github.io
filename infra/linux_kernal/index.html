@@ -109,6 +109,10 @@
                     
                         
                         <li>
+                            <a href="/categories/finance/">finance</a>
+                        </li>
+                        
+                        <li>
                             <a href="/categories/hardware/">hardware</a>
                         </li>
                         
@@ -335,7 +339,10 @@ $ cat /proc/loadavg
 <p>load balance 的計算實際上不僅包含 running，實際上還會包含進入睡眠的 uninterruptible 類型的任務嗎?</p>
 <p>在 Linux 中，load average 展示的是以系統資源的角度，因此將包含正在工作以及等待工作（無論是 CPU / disk / uninterruptible lock）的任務
 在其他作業系統裡，load average 通常僅指 CPU 資源的負載</p>
-
+<h3 id="how-to-add-users-to-sudo-list">How to add users to sudo list?</h3>
+<p>Open the sudoers file(<code>/etc/sudoers</code>) for editing: You should use the visudo command, which opens the sudoers file in a safe manner to prevent corruption. This command ensures that only one person is editing the file at a time and checks for syntax errors before saving.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo visudo
+</span></span></code></pre></div>
 
                 
 
@@ -348,6 +355,11 @@ $ cat /proc/loadavg
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/software/data_structures/" data-toggle="tooltip" data-placement="top" title="Data Structure">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
                 
@@ -391,6 +403,10 @@ $ cat /proc/loadavg
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">Tags</a></h5>
                     <div class="tags">
+                        
+                        
+                        
+                        
                         
                         
                         
