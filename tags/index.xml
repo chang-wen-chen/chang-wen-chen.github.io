@@ -6,8 +6,36 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVCS</title>
+      <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/dvcs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>English</title>
+      <link>https://chang-wen-chen.github.io/tags/english/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://chang-wen-chen.github.io/tags/git/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synonyms</title>
+      <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
+      <description></description>
+    </item>
     <item>
       <title>LinkedList</title>
       <link>https://chang-wen-chen.github.io/tags/linkedlist/</link>
@@ -44,20 +72,6 @@
       <description></description>
     </item>
     <item>
-      <title>English</title>
-      <link>https://chang-wen-chen.github.io/tags/english/</link>
-      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/english/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Synonyms</title>
-      <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
-      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>FP</title>
       <link>https://chang-wen-chen.github.io/tags/fp/</link>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
@@ -79,24 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>DVCS</title>
-      <link>https://chang-wen-chen.github.io/tags/dvcs/</link>
-      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/dvcs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Gerrit</title>
       <link>https://chang-wen-chen.github.io/tags/gerrit/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/gerrit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://chang-wen-chen.github.io/tags/git/</link>
-      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>

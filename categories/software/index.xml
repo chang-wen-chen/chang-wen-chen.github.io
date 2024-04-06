@@ -6,8 +6,22 @@
     <description>Recent content in Software on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git rerere</title>
+      <link>https://chang-wen-chen.github.io/software/scm_git_rerere/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/scm_git_rerere/</guid>
+      <description>git rerere 是 Git 中的一個功能，全名是 &amp;ldquo;reuse recorded resolution&amp;rdquo; 意思是重複使用已記錄的解決方案。當你在合併分支或應用補丁時，常常會遇到需要手動解決的衝突情況。但是如果你在</description>
+    </item>
+    <item>
+      <title>git stash</title>
+      <link>https://chang-wen-chen.github.io/software/scm_git_stash/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/software/scm_git_stash/</guid>
+      <description>在開發軟體時，可能會遇到一種情境：當某個系統開發已經進行到一半，突然被老闆或客戶「插隊」，需要緊急修正一個現有系統的 Bug 或添加一個功能。 這時候</description>
+    </item>
     <item>
       <title>Data Structure</title>
       <link>https://chang-wen-chen.github.io/software/data_structures/</link>
