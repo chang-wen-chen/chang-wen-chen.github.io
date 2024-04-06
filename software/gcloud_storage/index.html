@@ -301,8 +301,32 @@ If you need finer control, ACL can be created.</p>
 <li>Keep only the <strong>n</strong> most recent versions (Need versinoing enabled)</li>
 </ul>
 </li>
+<li>
+<p>There are 4 primary storage classes in Cloud storage</p>
+</li>
 </ul>
+<ol>
+<li>Standard Storage: best for <code>hot data</code>, which means frequently access. Or fit for data only store in brief of time.</li>
+<li>Nearline Storage: Infrequently access data(e,g. once a month or less)</li>
+<li>Coldline Storage: Infrequently access data(e,g. once per 90 days at most)</li>
+<li>Archive Storage: Infrequently access data(e,g. once a year or less, low-cost)</li>
+</ol>
+<h5 id="features">Features</h5>
+<ul>
+<li>Unlimited storage (no min object size)</li>
+<li>Worldwide accessibility and locations</li>
+<li>Low latency and high durability</li>
+<li>A uniform experience</li>
+<li>Geo-redundancy</li>
+</ul>
+<h5 id="autoclass">Autoclass</h5>
+<ul>
+<li>Auto move data to colder storage to reduce cost</li>
+<li>Auto move data to hotter storage for optimal accesses</li>
+</ul>
+<p>Data traveling between customers&rsquo; device and storage through HTTPS/TLS</p>
 <h4 id="2-cloud-sql">2. Cloud SQL</h4>
+<p>Cloud SQL offers fully relational databases including MySQL, PostgreSQL and SQL Server as a service</p>
 <h4 id="3-cloud-spanner">3. Cloud Spanner</h4>
 <h4 id="4-firestore">4. Firestore</h4>
 <h4 id="5-cloud-bigtable">5. Cloud Bigtable</h4>
@@ -367,6 +391,8 @@ If you need finer control, ACL can be created.</p>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">Tags</a></h5>
                     <div class="tags">
+                        
+                        
                         
                         
                         

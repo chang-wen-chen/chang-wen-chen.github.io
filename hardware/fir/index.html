@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Mercurial and Git" />
-    <meta property="og:title" content="Mercurial and Git" />
-    <meta property="twitter:title" content="Mercurial and Git" />
+    <meta name="title" content="FIR forms: direct | transpose" />
+    <meta property="og:title" content="FIR forms: direct | transpose" />
+    <meta property="twitter:title" content="FIR forms: direct | transpose" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Mercurial and Git | CozyDev</title>
+    <title>FIR forms: direct | transpose | CozyDev</title>
 
-    <link rel="canonical" href="/software/scm-mercurial-git/">
+    <link rel="canonical" href="/hardware/fir/">
 
     
     
@@ -197,21 +197,13 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/dvcs" title="DVCS">
-                            DVCS
-                        </a>
-                        
-                        <a class="tag" href="/tags/git" title="Git">
-                            Git
-                        </a>
-                        
-                        <a class="tag" href="/tags/mercurial" title="Mercurial">
-                            Mercurial
+                        <a class="tag" href="/tags/fir" title="FIR">
+                            FIR
                         </a>
                         
                     </div>
-                    <h1>Mercurial and Git</h1>
-                    <h2 class="subheading">What are the differencess</h2>
+                    <h1>FIR forms: direct | transpose</h1>
+                    <h2 class="subheading">What are the differences</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -219,7 +211,7 @@
                                 Eirik
                              
                             on 
-                            2 Feb, 2024
+                            16 Mar, 2024
                             
                             
                             
@@ -246,52 +238,125 @@
 
                 
 
-                <p>Mercurial and Git are both used for version control.</p>
-<p>Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach:</p>
-<h4 id="branching-model">Branching Model:</h4>
-<p>Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows.</p>
-<p>Git: Uses a decentralized branching model, where all branches exist within the same repository. Switching branches only requires a quick command, making it more powerful and efficient for handling many branches.</p>
-<h4 id="history-rewriting">History Rewriting:</h4>
-<p>Mercurial: Generally discourages changing history after it&rsquo;s committed. This promotes stability and prevents confusion, but can limit flexibility for fixing past mistakes.</p>
-<p>Git: Allows rewriting history through commands like git rebase. This offers more control but can be complex and introduce merge conflicts if not done carefully.</p>
-<h4 id="performance">Performance:</h4>
-<p>Mercurial: Often considered faster for basic operations like cloning and committing, especially for large repositories.</p>
-<p>Git: May be slower for simple tasks, but scales better for complex operations involving many branches and merges.</p>
-<h4 id="community-and-adoption">Community and Adoption:</h4>
-<p>Mercurial: Smaller user base and community compared to Git, but with dedicated supporters who appreciate its simplicity and stability.</p>
-<p>Git: Dominant DVCS with a much larger user base and community, leading to more resources, tools, and integrations.</p>
-<h4 id="other-differences">Other Differences:</h4>
-<p>Command syntax: Git&rsquo;s commands can be more complex and cryptic compared to Mercurial&rsquo;s more user-friendly approach.</p>
-<p>Extensions: Both offer extension systems for additional features, but Git&rsquo;s ecosystem is much larger and more diverse.
-Choosing the Right Tool:</p>
-<h4 id="the-best-choice-depends-on-your-needs-and-priorities">The best choice depends on your needs and priorities:</h4>
-<p>For beginners: Mercurial&rsquo;s simpler branching model and user-friendly commands might be easier to learn.</p>
-<p>For complex workflows with many branches: Git&rsquo;s flexibility and powerful branching model offer more control and scalability.</p>
-<p>For large teams and integration with other tools: Git&rsquo;s wider community and larger ecosystem might be more advantageous.</p>
-<hr>
-<p>Mercurial和Git都用於版本控制。</p>
-<p>Mercurial（Hg）和Git都是流行的分佈式版本控制系統（DVCS），但它們在方法上有一些關鍵的區別：</p>
-<h4 id="分支模型">分支模型：</h4>
-<p>Mercurial：採用集中式分支模型，每個分支都有自己單獨的目錄。切換分支涉及更改目錄。
-這對於初學者來說可能更簡單，但對於複雜的工作流程來說較不靈活。</p>
-<p>Git：使用分散式分支模型，所有分支都存在於同一個存儲庫中。切換分支只需要快速的命令，使其更強大和高效，用於處理許多分支。</p>
-<h4 id="歷史重寫">歷史重寫：</h4>
-<p>Mercurial：通常不鼓勵在提交後更改歷史。這有助於穩定性並防止混淆，但可能會限制修復過去錯誤的靈活性。</p>
-<p>Git：允許通過git rebase等命令重寫歷史。這提供了更多控制，但如果不小心進行，可能會復雜並引入合併衝突。</p>
-<h4 id="性能">性能：</h4>
-<p>Mercurial：通常被認為對於克隆和提交等基本操作更快，尤其是對於大型存儲庫。</p>
-<p>Git：對於簡單任務可能會較慢，但對於涉及許多分支和合併的複雜操作更具可擴展性。</p>
-<h4 id="社區和採用">社區和採用：</h4>
-<p>Mercurial：與Git相比，用戶基數和社區較小，但有專注於其簡單性和穩定性的支持者。</p>
-<p>Git：是主導的DVCS，擁有更大的用戶基數和社區，這導致更多的資源、工具和集成。</p>
-<h4 id="其他區別">其他區別：</h4>
-<p>命令語法：與Mercurial的用戶友好方法相比，Git的命令可能更複雜和神秘。</p>
-<p>擴展：兩者都提供了用於附加功能的擴展系統，但Git的生態系統更大更多樣。</p>
-<h4 id="選擇合適的工具">選擇合適的工具：</h4>
-<p>最佳選擇取決於您的需求和優先順序：</p>
-<p>對於初學者：Mercurial的較簡單的分支模型和用戶友好的命令可能更容易學習。</p>
-<p>對於具有許多分支的複雜工作流程：Git的靈活性和強大的分支模型提供了更多控制和可擴展性。</p>
-<p>對於大型團隊和與其他工具的集成：Git的更廣泛的社區和更大的生態系統可能更有優勢。</p>
+                <p>FIR濾波器是一種常用的濾波器，其結構可以分為direct form和transpose form兩種。</p>
+<h3 id="面積">面積</h3>
+<p>在面積方面，direct form的結構比較簡單，只需要一個乘法器和一個加法器，因此面積比較小。而transpose form的結構比較複雜，需要多個乘法器和加法器，因此面積比較大。</p>
+<h3 id="速度">速度</h3>
+<p>在速度方面，transpose form的結構比較快，因為其結構可以將乘法和加法操作並行處理。而direct form的結構只能串行處理乘法和加法操作，因此速度比較慢。</p>
+<p>direct form的結構面積小，但速度慢；transpose form的結構面積大，但速度快。在實際應用中，可以根據具體的需求來選擇合適的結構。</p>
+<p>FIR direct form和transpose form的比較：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Direct form</th>
+<th>Transpose form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>面積</td>
+<td>小</td>
+<td>大</td>
+</tr>
+<tr>
+<td>速度</td>
+<td>慢</td>
+<td>快</td>
+</tr>
+<tr>
+<td>乘法器數量</td>
+<td>1</td>
+<td>多個</td>
+</tr>
+<tr>
+<td>加法器數量</td>
+<td>1</td>
+<td>多個</td>
+</tr>
+<tr>
+<td>結構簡單度</td>
+<td>簡單</td>
+<td>複雜</td>
+</tr>
+<tr>
+<td>以下是一些具體的比較：</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>在面積方面，direct form的結構只需要一個乘法器和一個加法器，而transpose form的結構需要多個乘法器和加法器。因此，在面積方面，direct form的結構要小於transpose form的結構。
+在速度方面，transpose form的結構可以將乘法和加法操作並行處理，而direct form的結構只能串行處理乘法和加法操作。因此，在速度方面，transpose form的結構要快於direct form的結構。
+以下是一些具體的應用場景：</p>
+<p>在對面積要求較高的應用中，可以使用direct form的結構。例如，在移動設備中，面積是需要考慮的重要因素。
+在對速度要求較高的應用中，可以使用transpose form的結構。例如，在通信系統中，速度是需要考慮的重要因素。
+在數位IC設計工程師面試中，如果被問到FIR的direct form以及transpose form比較，可以從面積和速度兩個方面來回答。</p>
+<p>在面積方面，可以指出direct form的結構比較簡單，只需要一個乘法器和一個加法器，因此面積比較小。
+在速度方面，可以指出transpose form的結構可以將乘法和加法操作並行處理，因此速度比較快。
+此外，還可以補充一些具體的應用場景。</p>
+<p>例如，可以指出direct form的結構可以用於移動設備等對面積要求較高的應用中。
+可以指出transpose form的結構可以用於通信系統等對速度要求較高的應用中。
+個人資料相片
+可以個別秀出這兩種的結構圖嗎
+顯示草稿</p>
+<p>FIR direct form的結構圖如下：</p>
+<p>x[n]是輸入信號，y[n]是輸出信號，h[n]是濾波器的係數。</p>
+<p>FIR transpose form的結構圖如下：</p>
+<p>x[n]是輸入信號，y[n]是輸出信號，h[n]是濾波器的係數。</p>
+<p>兩種結構的比較：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Direct form</th>
+<th>Transpose form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>結構</td>
+<td>串行</td>
+<td>並行</td>
+</tr>
+<tr>
+<td>乘法器數量</td>
+<td>1</td>
+<td>多個</td>
+</tr>
+<tr>
+<td>加法器數量</td>
+<td>1</td>
+<td>多個</td>
+</tr>
+<tr>
+<td>延遲器數量</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>結構簡單度</td>
+<td>簡單</td>
+<td>複雜</td>
+</tr>
+<tr>
+<td>從結構圖可以看出，direct form的結構比較簡單，而transpose form的結構比較複雜。</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>direct form的結構只需要一個乘法器和一個加法器，而transpose form的結構需要多個乘法器和加法器。</p>
+<p>direct form的結構是串行的，而transpose form的結構是並行的。</p>
+<p>兩種結構的優缺點：</p>
+<p>Direct form</p>
+<p>優點：結構簡單，面積小
+缺點：速度慢
+Transpose form</p>
+<p>優點：速度快
+缺點：結構複雜，面積大
+在實際應用中，可以根據具體的需求來選擇合適的結構。</p>
+<p>例如，在對面積要求較高的應用中，可以使用direct form的結構。在對速度要求較高的應用中，可以使用transpose form的結構。</p>
 
 
                 
@@ -301,13 +366,13 @@ Choosing the Right Tool:</p>
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/life/classic_cocktail/" data-toggle="tooltip" data-placement="top" title="Classic cocktail">&larr;
+                        <a href="/thesaurus/attain_achieve_accomplish/" data-toggle="tooltip" data-placement="top" title="attain | achieve | accomplish">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/software/html_basics/" data-toggle="tooltip" data-placement="top" title="HTML Basics">Next
+                        <a href="/hardware/dft_testing_verification/" data-toggle="tooltip" data-placement="top" title="Verification | Testing">Next
                             Post &rarr;</a>
                     </li>
                     

@@ -10,14 +10,14 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="img/post-bg-unix-linux.jpg">
-    <meta property="twitter:image" content="img/post-bg-unix-linux.jpg" />
+    <meta property="og:image" content="https://chang-wen-chen.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://chang-wen-chen.github.io/img/home-bg-jeep.jpg" />
     
 
     
-    <meta name="title" content="Mercurial and Git" />
-    <meta property="og:title" content="Mercurial and Git" />
-    <meta property="twitter:title" content="Mercurial and Git" />
+    <meta name="title" content="FIR" />
+    <meta property="og:title" content="FIR" />
+    <meta property="twitter:title" content="FIR" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Mercurial and Git | CozyDev</title>
+    <title>FIR | CozyDev</title>
 
-    <link rel="canonical" href="/software/scm-mercurial-git/">
+    <link rel="canonical" href="/tags/fir/">
 
     
     
@@ -182,49 +182,14 @@
 
 
 
-
-<style type="text/css">
-    header.intro-header {
-        background-image: url('/img/post-bg-unix-linux.jpg')
-    }
-</style>
-
-<header class="intro-header" >
-
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/dvcs" title="DVCS">
-                            DVCS
-                        </a>
-                        
-                        <a class="tag" href="/tags/git" title="Git">
-                            Git
-                        </a>
-                        
-                        <a class="tag" href="/tags/mercurial" title="Mercurial">
-                            Mercurial
-                        </a>
-                        
-                    </div>
-                    <h1>Mercurial and Git</h1>
-                    <h2 class="subheading">What are the differencess</h2>
-                    <span class="meta">
-                        
-                            Posted by 
-                            
-                                Eirik
-                             
-                            on 
-                            2 Feb, 2024
-                            
-                            
-                            
-                            
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>CozyDev </h1>
+                    
+		    <span class="subheading">Stay curious</span>
                 </div>
             </div>
         </div>
@@ -233,214 +198,276 @@
 
 
 
-
-<article>
-    <div class="container">
-        <div class="row">
-
+  
+<div data-pagefind-ignore="all" class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
+<div data-pagefind-ignore="all">
 
-                
-
-                <p>Mercurial and Git are both used for version control.</p>
-<p>Both Mercurial (Hg) and Git are popular distributed version control systems (DVCS), but they have some key differences in their approach:</p>
-<h4 id="branching-model">Branching Model:</h4>
-<p>Mercurial: Employs a centralized branching model, meaning each branch has its own separate directory. Switching branches involves changing directories. This can be simpler for beginners but less flexible for complex workflows.</p>
-<p>Git: Uses a decentralized branching model, where all branches exist within the same repository. Switching branches only requires a quick command, making it more powerful and efficient for handling many branches.</p>
-<h4 id="history-rewriting">History Rewriting:</h4>
-<p>Mercurial: Generally discourages changing history after it&rsquo;s committed. This promotes stability and prevents confusion, but can limit flexibility for fixing past mistakes.</p>
-<p>Git: Allows rewriting history through commands like git rebase. This offers more control but can be complex and introduce merge conflicts if not done carefully.</p>
-<h4 id="performance">Performance:</h4>
-<p>Mercurial: Often considered faster for basic operations like cloning and committing, especially for large repositories.</p>
-<p>Git: May be slower for simple tasks, but scales better for complex operations involving many branches and merges.</p>
-<h4 id="community-and-adoption">Community and Adoption:</h4>
-<p>Mercurial: Smaller user base and community compared to Git, but with dedicated supporters who appreciate its simplicity and stability.</p>
-<p>Git: Dominant DVCS with a much larger user base and community, leading to more resources, tools, and integrations.</p>
-<h4 id="other-differences">Other Differences:</h4>
-<p>Command syntax: Git&rsquo;s commands can be more complex and cryptic compared to Mercurial&rsquo;s more user-friendly approach.</p>
-<p>Extensions: Both offer extension systems for additional features, but Git&rsquo;s ecosystem is much larger and more diverse.
-Choosing the Right Tool:</p>
-<h4 id="the-best-choice-depends-on-your-needs-and-priorities">The best choice depends on your needs and priorities:</h4>
-<p>For beginners: Mercurial&rsquo;s simpler branching model and user-friendly commands might be easier to learn.</p>
-<p>For complex workflows with many branches: Git&rsquo;s flexibility and powerful branching model offer more control and scalability.</p>
-<p>For large teams and integration with other tools: Git&rsquo;s wider community and larger ecosystem might be more advantageous.</p>
-<hr>
-<p>Mercurial和Git都用於版本控制。</p>
-<p>Mercurial（Hg）和Git都是流行的分佈式版本控制系統（DVCS），但它們在方法上有一些關鍵的區別：</p>
-<h4 id="分支模型">分支模型：</h4>
-<p>Mercurial：採用集中式分支模型，每個分支都有自己單獨的目錄。切換分支涉及更改目錄。
-這對於初學者來說可能更簡單，但對於複雜的工作流程來說較不靈活。</p>
-<p>Git：使用分散式分支模型，所有分支都存在於同一個存儲庫中。切換分支只需要快速的命令，使其更強大和高效，用於處理許多分支。</p>
-<h4 id="歷史重寫">歷史重寫：</h4>
-<p>Mercurial：通常不鼓勵在提交後更改歷史。這有助於穩定性並防止混淆，但可能會限制修復過去錯誤的靈活性。</p>
-<p>Git：允許通過git rebase等命令重寫歷史。這提供了更多控制，但如果不小心進行，可能會復雜並引入合併衝突。</p>
-<h4 id="性能">性能：</h4>
-<p>Mercurial：通常被認為對於克隆和提交等基本操作更快，尤其是對於大型存儲庫。</p>
-<p>Git：對於簡單任務可能會較慢，但對於涉及許多分支和合併的複雜操作更具可擴展性。</p>
-<h4 id="社區和採用">社區和採用：</h4>
-<p>Mercurial：與Git相比，用戶基數和社區較小，但有專注於其簡單性和穩定性的支持者。</p>
-<p>Git：是主導的DVCS，擁有更大的用戶基數和社區，這導致更多的資源、工具和集成。</p>
-<h4 id="其他區別">其他區別：</h4>
-<p>命令語法：與Mercurial的用戶友好方法相比，Git的命令可能更複雜和神秘。</p>
-<p>擴展：兩者都提供了用於附加功能的擴展系統，但Git的生態系統更大更多樣。</p>
-<h4 id="選擇合適的工具">選擇合適的工具：</h4>
-<p>最佳選擇取決於您的需求和優先順序：</p>
-<p>對於初學者：Mercurial的較簡單的分支模型和用戶友好的命令可能更容易學習。</p>
-<p>對於具有許多分支的複雜工作流程：Git的靈活性和強大的分支模型提供了更多控制和可擴展性。</p>
-<p>對於大型團隊和與其他工具的集成：Git的更廣泛的社區和更大的生態系統可能更有優勢。</p>
-
-
-                
-
-                
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/life/classic_cocktail/" data-toggle="tooltip" data-placement="top" title="Classic cocktail">&larr;
-                            Previous Post</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/software/html_basics/" data-toggle="tooltip" data-placement="top" title="HTML Basics">Next
-                            Post &rarr;</a>
-                    </li>
-                    
-                </ul>
-                
-
-                <script src="https://utteranc.es/client.js"
-        repo="chang-wen-chen/chang-wen-chen.github.io"
-        issue-term="pathname"
-        label="Blog"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-            </div>
-
-            
-            
-            <div class="
-                col-lg-2 col-lg-offset-0
-                visible-lg-block
-                sidebar-container
-                catalog-container">
-                <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
-                    <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
-                    </h5>
-                    <ul class="catalog-body"></ul>
-                </div>
-            </div>
-            
-
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">Tags</a></h5>
-                    <div class="tags">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </div>
-                </section>
-                
-
-                
-                
-            </div>
+<div class="post-preview">
+    <a href="https://chang-wen-chen.github.io/hardware/fir/">
+        <h2 class="post-title">
+            FIR forms: direct | transpose
+        </h2>
+	
+        <h3 class="post-subtitle">
+            What are the differences
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            FIR濾波器是一種常用的濾波器，其結構可以分為direct form和transpose form兩種。 面積 在面積方面，direct form的結
+       
         </div>
-    </div>
-</article>
+    </a>
+    <p class="post-meta">
+    
+        Posted by Eirik on Saturday, March 16, 2024
+        
+        
+    
+    </p>
+
+</div>
+<hr>
+
+</div>
+
+            
+
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/changwenchen.jpeg" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Hardware Engineer, Coder and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:eric81510@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.facebook.com/100000177908248">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/chang-wen-chen">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/eirik-chen-499454147">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://medium.com/@eric81510">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                            </span>
+                   </a>
+               </li>
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/23330273">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.instagram.com/chang.wen.chen">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    <section>
+        <hr>
+        <h5>Quick Links</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://semiwiki.com/">SemiWiki</a></li>
+            
+            <li><a target="_blank" href="https://www.cpubenchmark.net/">CPU Benchmark</a></li>
+            
+            <li><a target="_blank" href="https://forgetfulbc.blogspot.com/">B.C. &amp; Lowy</a></li>
+            
+        </ul>
+    </section>
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>Tags</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+</div>
+
+	</div>
+</div>
+
 
 
 
@@ -536,7 +563,7 @@ Choosing the Right Tool:</p>
             
            
                    <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="CozyDev" >
+                       <a href='/tags/fir/index.xml' rel="alternate" type="application/rss+xml" title="CozyDev" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

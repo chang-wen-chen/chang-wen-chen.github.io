@@ -30,6 +30,13 @@
       <description> Verification Testing Verifies correctness of the design Verifies correctness of manufactured hardware Performed by simulation, hardware emulation or formal methods Test generation and test application Performed once prior to manufacturing Test application performed on every manufactured device Reponsible for quality of the design Responsible for quality of devices </description>
     </item>
     <item>
+      <title>FIR forms: direct | transpose</title>
+      <link>https://chang-wen-chen.github.io/hardware/fir/</link>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/fir/</guid>
+      <description>FIR濾波器是一種常用的濾波器，其結構可以分為direct form和transpose form兩種。 面積 在面積方面，direct form的結</description>
+    </item>
+    <item>
       <title>OCV | AOCV | POCV | LVF</title>
       <link>https://chang-wen-chen.github.io/hardware/timing_ocv/</link>
       <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
