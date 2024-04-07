@@ -30,7 +30,7 @@
       <description>Code Owners OWNERS file can sit in every directory layer in the repository</description>
     </item>
     <item>
-      <title>Git rebase</title>
+      <title>git rebase</title>
       <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/scm_git_rebase/</guid>

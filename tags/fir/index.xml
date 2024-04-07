@@ -13,7 +13,7 @@
       <link>https://chang-wen-chen.github.io/hardware/fir/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/hardware/fir/</guid>
-      <description>FIR濾波器是一種常用的濾波器，其結構可以分為direct form和transpose form兩種。 面積 在面積方面，direct form的結</description>
+      <description>面積 在面積方面，direct form的結構比較簡單，只需要一個乘法器和一個加法器，因此面積比較小。而transpose form的結構比較複雜</description>
     </item>
   </channel>
 </rss>

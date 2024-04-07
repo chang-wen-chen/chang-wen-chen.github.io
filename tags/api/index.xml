@@ -13,7 +13,7 @@
       <link>https://chang-wen-chen.github.io/software/api_models/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/api_models/</guid>
-      <description>gRPC OpenAPI REST </description>
+      <description>gRPC 適合需要高效率、強類型、低延遲的系統，特別適用於微服務架構的內部通訊。 OpenAPI 主要用於定義和文檔化 API，提供簡單的工具來自動化生成代碼和文檔。</description>
     </item>
   </channel>
 </rss>

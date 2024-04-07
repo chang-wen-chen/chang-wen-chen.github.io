@@ -6,8 +6,15 @@
     <description>Recent content in Posts on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantum dot</title>
+      <link>https://chang-wen-chen.github.io/tech/quantum_dot/</link>
+      <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tech/quantum_dot/</guid>
+      <description>什麼是量子點 (quantum dot) ? 量子點 (quantum dot)是奈米級半導體顆粒，由於其尺寸和成分而表現出獨特的光學和電子特性。 它們通常是由半導體材料製成的微小晶體，例</description>
+    </item>
     <item>
       <title>git rerere</title>
       <link>https://chang-wen-chen.github.io/software/scm_git_rerere/</link>
@@ -28,6 +35,13 @@
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/thesaurus/store_stash/</guid>
       <description>Store 和 stash 都有存放的意思 Store 通常指將物品放置在一個地方以供未來使用或保管。這個詞通常用於描述將物品儲存在特定的地方或容器中，以便日後取用。 &amp;ldquo;I need to store</description>
+    </item>
+    <item>
+      <title>Power Optimization Techniques</title>
+      <link>https://chang-wen-chen.github.io/hardware/power_opt/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/power_opt/</guid>
+      <description>Techniques to optimize design power Clock tree optimization and clock gating: Portions of the clock tree(s) that aren’t being used at any particular time are disabled.&#xA;Operand isolation: Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.&#xA;Logic restructuring: Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</description>
     </item>
     <item>
       <title>Data Structure</title>
@@ -69,7 +83,7 @@
       <link>https://chang-wen-chen.github.io/hardware/fir/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/hardware/fir/</guid>
-      <description>FIR濾波器是一種常用的濾波器，其結構可以分為direct form和transpose form兩種。 面積 在面積方面，direct form的結</description>
+      <description>面積 在面積方面，direct form的結構比較簡單，只需要一個乘法器和一個加法器，因此面積比較小。而transpose form的結構比較複雜</description>
     </item>
     <item>
       <title>attain | achieve | accomplish</title>
@@ -90,7 +104,7 @@
       <link>https://chang-wen-chen.github.io/software/api_models/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/api_models/</guid>
-      <description>gRPC OpenAPI REST </description>
+      <description>gRPC 適合需要高效率、強類型、低延遲的系統，特別適用於微服務架構的內部通訊。 OpenAPI 主要用於定義和文檔化 API，提供簡單的工具來自動化生成代碼和文檔。</description>
     </item>
     <item>
       <title>Gerrit</title>
@@ -247,7 +261,7 @@
       <description>Google cloud provides 5 storage products: Cloud Storage Cloud SQL Cloud Spanner Firestore Cloud Bigtable 1. Cloud storage Google&amp;rsquo;s object storage product. It allows user to store any amount of data and retrieve it as often as needed. Fully managed scalable service that has wide variety of uses. Example: web archival and disaster recovery, website content, direct download. Primary use: Binary large-object storage (BLOB) Online contents: videos and photos Backup and archiving Storage of intermediate results object storage: store data as object but not as file and folder hierarchy(file storage), or as chunks of a disk(block storage)</description>
     </item>
     <item>
-      <title>Git rebase</title>
+      <title>git rebase</title>
       <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/scm_git_rebase/</guid>

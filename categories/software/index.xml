@@ -41,7 +41,7 @@
       <link>https://chang-wen-chen.github.io/software/api_models/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/api_models/</guid>
-      <description>gRPC OpenAPI REST </description>
+      <description>gRPC 適合需要高效率、強類型、低延遲的系統，特別適用於微服務架構的內部通訊。 OpenAPI 主要用於定義和文檔化 API，提供簡單的工具來自動化生成代碼和文檔。</description>
     </item>
     <item>
       <title>Gerrit</title>
@@ -79,7 +79,7 @@
       <description>Google cloud provides 5 storage products: Cloud Storage Cloud SQL Cloud Spanner Firestore Cloud Bigtable 1. Cloud storage Google&amp;rsquo;s object storage product. It allows user to store any amount of data and retrieve it as often as needed. Fully managed scalable service that has wide variety of uses. Example: web archival and disaster recovery, website content, direct download. Primary use: Binary large-object storage (BLOB) Online contents: videos and photos Backup and archiving Storage of intermediate results object storage: store data as object but not as file and folder hierarchy(file storage), or as chunks of a disk(block storage)</description>
     </item>
     <item>
-      <title>Git rebase</title>
+      <title>git rebase</title>
       <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/software/scm_git_rebase/</guid>
