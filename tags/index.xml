@@ -6,8 +6,36 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DFT</title>
+      <link>https://chang-wen-chen.github.io/tags/dft/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/dft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://chang-wen-chen.github.io/tags/security/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sports</title>
+      <link>https://chang-wen-chen.github.io/tags/sports/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/sports/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>https://chang-wen-chen.github.io/tags/travel/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/travel/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Quantum</title>
       <link>https://chang-wen-chen.github.io/tags/quantum/</link>
@@ -44,10 +72,10 @@
       <description></description>
     </item>
     <item>
-      <title>Power</title>
-      <link>https://chang-wen-chen.github.io/tags/power/</link>
+      <title>Optimization</title>
+      <link>https://chang-wen-chen.github.io/tags/optimization/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/power/</guid>
+      <guid>https://chang-wen-chen.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     <item>
@@ -62,13 +90,6 @@
       <link>https://chang-wen-chen.github.io/tags/linux/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DFT</title>
-      <link>https://chang-wen-chen.github.io/tags/dft/</link>
-      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/dft/</guid>
       <description></description>
     </item>
     <item>

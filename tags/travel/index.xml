@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travel on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/travel/</link>
+    <description>Recent content in Travel on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The seven wonders</title>
+      <link>https://chang-wen-chen.github.io/life/seven_wonders/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/life/seven_wonders/</guid>
+      <description>There are actually two famous lists you might be referring to:&#xA;The Seven Wonders of the Ancient World The New Seven Wonders of the World. The Seven Wonders of the Ancient World were incredible structures built thousands of years ago, but only one remains standing today.&#xA;The Great Pyramid of Giza (the only one still standing)&#xA;The New Seven Wonders of the World, on the other hand, were chosen by a global vote in 2007.</description>
+    </item>
+  </channel>
+</rss>

@@ -6,14 +6,21 @@
     <description>Recent content in Hardware on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security DMP</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_security/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_security/</guid>
+      <description>DMP (Design for Manufacturing and Testability) techniques and methodologies aimed at enhancing the testability and manufacturability of integrated circuits. Security DMP Incorporates security considerations into the design process to ensure that the manufactured chips are resistant to various forms of attacks and unauthorized access.&#xA;Key aspects of security DMP: Secure Test Access Mechanisms Ensures only authorized entities can access the test features of the chip. Secure mechanisms invoke: Implementing authentication Encryption mechanisms Tamper Resistance Protect against physical attacks: probing or tampering with the chip during testing or operation.</description>
+    </item>
     <item>
       <title>Power Optimization Techniques</title>
       <link>https://chang-wen-chen.github.io/hardware/power_opt/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/hardware/power_opt/</guid>
-      <description>Techniques to optimize design power Clock tree optimization and clock gating: Portions of the clock tree(s) that aren’t being used at any particular time are disabled.&#xA;Operand isolation: Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.&#xA;Logic restructuring: Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</description>
+      <description>Techniques to optimize design power Clock tree optimization and clock gating Portions of the clock tree(s) that aren’t being used at any particular time are disabled. Operand isolation Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.&#xA;Logic restructuring Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</description>
     </item>
     <item>
       <title>DFT Basics</title>

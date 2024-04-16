@@ -201,8 +201,8 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/power" title="Power">
-                            Power
+                        <a class="tag" href="/tags/optimization" title="Optimization">
+                            Optimization
                         </a>
                         
                     </div>
@@ -243,38 +243,33 @@
                 
 
                 <h3 id="techniques-to-optimize-design-power">Techniques to optimize design power</h3>
+<h4 id="clock-tree-optimization-and-clock-gating">Clock tree optimization and clock gating</h4>
 <ul>
-<li>
-<p>Clock tree optimization and clock gating: Portions of the clock tree(s) that aren’t being used at any particular time are disabled.</p>
-</li>
-<li>
-<p>Operand isolation: Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.</p>
-</li>
-<li>
-<p>Logic restructuring: Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</p>
-</li>
-<li>
-<p>Multi-Vth :With the use of multi-threshold libraries, individual logic gates use transistors with low switching thresholds (faster with higher leakage) or high switching thresholds (slower with lower leakage).</p>
-</li>
-<li>
-<p>Multi-supply voltage (MSV) or voltage islands: Selected functional blocks are run at different supply voltages.</p>
-</li>
-<li>
-<p>Dynamic voltage scaling (DVS): In this subset of DVFS, selected portions of the device are dynamically set to run at different voltages on the fly while the chip is running.</p>
-</li>
-<li>
-<p>Dynamic voltage and frequency scaling (DVFS): Selected portions of the device are dynamically set to run at different voltages and frequencies on the fly while the chip is running. Used for dynamic power reduction.</p>
-</li>
-<li>
-<p>Adaptive voltage and frequency scaling (AVFS): In this variation of DVFS, a wider variety of voltages are set dynamically, based on adaptive feedback from a control loop; involves analog circuitry.</p>
-</li>
-<li>
-<p>Power shut-off (PSO) [or power gating]: When not in use, selected functional blocks are individually powered down.</p>
-</li>
-<li>
-<p>Memory splitting: If the software and/or data are persistent in one portion of a memory but not in another, it may be appropriate to split that block of memory into two or more portions. One can then selectively power down those portions that aren’t in use.</p>
-</li>
+<li>Portions of the clock tree(s) that aren’t being used at any particular time are disabled.</li>
 </ul>
+<h4 id="operand-isolation">Operand isolation</h4>
+<p>Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.</p>
+<h4 id="logic-restructuring">Logic restructuring</h4>
+<p>Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</p>
+<h4 id="multi-vth">Multi-Vth</h4>
+<p>With the use of multi-threshold libraries, individual logic gates use transistors with low switching thresholds (faster with higher leakage) or high switching thresholds (slower with lower leakage).</p>
+<h4 id="multi-supply-voltage-msv">Multi-supply voltage (MSV)</h4>
+<ul>
+<li>Known as voltage islands, selected functional blocks are run at different supply voltages.</li>
+</ul>
+<h4 id="dynamic-voltage-scaling-dvs">Dynamic voltage scaling (DVS)</h4>
+<p>In this subset of DVFS, selected portions of the device are dynamically set to run at different voltages on the fly while the chip is running.</p>
+<h4 id="dynamic-voltage-and-frequency-scaling-dvfs">Dynamic voltage and frequency scaling (DVFS)</h4>
+<p>Selected portions of the device are dynamically set to run at different voltages and frequencies on the fly while the chip is running. Used for dynamic power reduction.</p>
+<h4 id="adaptive-voltage-and-frequency-scaling-avfs">Adaptive voltage and frequency scaling (AVFS)</h4>
+<p>In this variation of DVFS, a wider variety of voltages are set dynamically, based on adaptive feedback from a control loop; involves analog circuitry.</p>
+<h4 id="power-shut-off-pso">Power shut-off (PSO)</h4>
+<ul>
+<li>Known as power gating.</li>
+<li>When not in use, selected functional blocks are individually powered down.</li>
+</ul>
+<h4 id="memory-splitting">Memory splitting</h4>
+<p>If the software and/or data are persistent in one portion of a memory but not in another, it may be appropriate to split that block of memory into two or more portions. One can then selectively power down those portions that aren’t in use.</p>
 
 
                 
@@ -336,6 +331,12 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">Tags</a></h5>
                     <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
                         
                         
                         

@@ -3,21 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chang-wen-chen.github.io/categories/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/dft/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/hardware/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/life/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/post/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/security/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/hardware/dft_security/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/sports/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/life/ultimate_frisbee/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/life/seven_wonders/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/travel/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/quantum/</loc>
     <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tech/quantum_dot/</loc>
-    <lastmod>2024-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/</loc>
     <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/categories/tech/</loc>
@@ -50,10 +77,7 @@
     <loc>https://chang-wen-chen.github.io/categories/thesaurus/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/hardware/</loc>
-    <lastmod>2024-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/power/</loc>
+    <loc>https://chang-wen-chen.github.io/tags/optimization/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/hardware/power_opt/</loc>
@@ -73,9 +97,6 @@
   </url><url>
     <loc>https://chang-wen-chen.github.io/infra/linux_kernal/</loc>
     <lastmod>2024-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/dft/</loc>
-    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/hardware/dft_basics/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
@@ -171,9 +192,6 @@
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/isa/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/life/</loc>
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/hardware/isa_sve_sme/</loc>

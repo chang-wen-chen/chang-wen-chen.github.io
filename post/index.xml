@@ -6,14 +6,35 @@
     <description>Recent content in Posts on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security DMP</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_security/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_security/</guid>
+      <description>DMP (Design for Manufacturing and Testability) techniques and methodologies aimed at enhancing the testability and manufacturability of integrated circuits. Security DMP Incorporates security considerations into the design process to ensure that the manufactured chips are resistant to various forms of attacks and unauthorized access.&#xA;Key aspects of security DMP: Secure Test Access Mechanisms Ensures only authorized entities can access the test features of the chip. Secure mechanisms invoke: Implementing authentication Encryption mechanisms Tamper Resistance Protect against physical attacks: probing or tampering with the chip during testing or operation.</description>
+    </item>
+    <item>
+      <title>Ultimate Frisbee</title>
+      <link>https://chang-wen-chen.github.io/life/ultimate_frisbee/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/life/ultimate_frisbee/</guid>
+      <description>Also call as Ultimate&#xA;History </description>
+    </item>
+    <item>
+      <title>The seven wonders</title>
+      <link>https://chang-wen-chen.github.io/life/seven_wonders/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/life/seven_wonders/</guid>
+      <description>There are actually two famous lists you might be referring to:&#xA;The Seven Wonders of the Ancient World The New Seven Wonders of the World. The Seven Wonders of the Ancient World were incredible structures built thousands of years ago, but only one remains standing today.&#xA;The Great Pyramid of Giza (the only one still standing)&#xA;The New Seven Wonders of the World, on the other hand, were chosen by a global vote in 2007.</description>
+    </item>
     <item>
       <title>Quantum dot</title>
       <link>https://chang-wen-chen.github.io/tech/quantum_dot/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tech/quantum_dot/</guid>
-      <description>[TOC] 什麼是量子點 (quantum dot) ? 量子點 (quantum dot)是奈米級半導體顆粒，由於其尺寸和成分而表現出獨特的光學和電子特性。 它們通常是由半導體材料製成的微小晶體，</description>
+      <description>量子點 (quantum dot) 量子點 (quantum dot)是奈米級半導體顆粒，由於其尺寸和成分而表現出獨特的光學和電子特性。 它們通常是由半導體材料製成的微小晶體，例如： 硒化</description>
     </item>
     <item>
       <title>git rerere</title>
@@ -41,7 +62,7 @@
       <link>https://chang-wen-chen.github.io/hardware/power_opt/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/hardware/power_opt/</guid>
-      <description>Techniques to optimize design power Clock tree optimization and clock gating: Portions of the clock tree(s) that aren’t being used at any particular time are disabled.&#xA;Operand isolation: Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.&#xA;Logic restructuring: Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</description>
+      <description>Techniques to optimize design power Clock tree optimization and clock gating Portions of the clock tree(s) that aren’t being used at any particular time are disabled. Operand isolation Reduce power dissipation in datapath blocks controlled by an enable signal; when the datapath element is not active, prevent it from switching.&#xA;Logic restructuring Move high switching operations up in the logic cone, and low switching operations back in the logic cone; a gate-level dynamic power optimization technique.</description>
     </item>
     <item>
       <title>Data Structure</title>
@@ -55,7 +76,7 @@
       <link>https://chang-wen-chen.github.io/infra/linux_kernal/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/infra/linux_kernal/</guid>
-      <description>What is Linux Kernal The kernal is a program Often with a name like vmlinuz- Loaded a run by a noot loader, like GRUB(linux) GRUB: Load the Kernal program from disk to memory, and transfer the control to kernal The Kernal is an API System calls Virtual file system entries (not really a directory) proc sys debugfs Device files(standard system calls, read, write, open,&amp;hellip;etc) The Kernal is a gatekeeper Enforce</description>
+      <description>What is Linux Kernal The kernal is a program Often with a name like vmlinuz- Loaded a run by a noot loader, like GRUB(linux) GRUB GRUB: Load the Kernal program from disk to memory, and transfer the control to kernal GRUB comes after Power-On-self-Test(POST) The Kernal is an API System calls Virtual file system entries (not really a directory) proc sys debugfs Device files(standard system calls, read, write, open,&amp;hellip;etc) The</description>
     </item>
     <item>
       <title>DFT Basics</title>
@@ -188,7 +209,7 @@
       <link>https://chang-wen-chen.github.io/life/coffee/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/life/coffee/</guid>
-      <description> </description>
+      <description>Cold brew 冷萃咖啡 以室溫或冰水萃取的咖啡製作方法，與熱水萃煮的熱咖啡不同，萃取時間更長，通常需要12至24小時的時間。 萃取的過程中，咖啡粉會與水慢</description>
     </item>
     <item>
       <title>Investment Terms</title>

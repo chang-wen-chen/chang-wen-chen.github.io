@@ -6,8 +6,15 @@
     <description>Recent content in DFT on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/dft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security DMP</title>
+      <link>https://chang-wen-chen.github.io/hardware/dft_security/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/dft_security/</guid>
+      <description>DMP (Design for Manufacturing and Testability) techniques and methodologies aimed at enhancing the testability and manufacturability of integrated circuits. Security DMP Incorporates security considerations into the design process to ensure that the manufactured chips are resistant to various forms of attacks and unauthorized access.&#xA;Key aspects of security DMP: Secure Test Access Mechanisms Ensures only authorized entities can access the test features of the chip. Secure mechanisms invoke: Implementing authentication Encryption mechanisms Tamper Resistance Protect against physical attacks: probing or tampering with the chip during testing or operation.</description>
+    </item>
     <item>
       <title>DFT Basics</title>
       <link>https://chang-wen-chen.github.io/hardware/dft_basics/</link>
