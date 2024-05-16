@@ -3,10 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chang-wen-chen.github.io/categories/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/english/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/post/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/synonyms/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/thesaurus/taint_pollute/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/thesaurus/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/thesaurus/course_trajectory/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/thesaurus/unpleasant_unsavory/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/finance/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/finance-terms/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/fin/stock_equity/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/dft/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
@@ -17,9 +50,6 @@
     <loc>https://chang-wen-chen.github.io/categories/life/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chang-wen-chen.github.io/post/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chang-wen-chen.github.io/tags/security/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -27,9 +57,6 @@
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/sports/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/life/ultimate_frisbee/</loc>
@@ -53,9 +80,6 @@
     <loc>https://chang-wen-chen.github.io/tags/dvcs/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/english/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chang-wen-chen.github.io/tags/git/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -69,12 +93,6 @@
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/thesaurus/store_stash/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/synonyms/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/thesaurus/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/optimization/</loc>
@@ -180,12 +198,6 @@
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/life/coffee/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/finance/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/finance-terms/</loc>
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/fin/fin_terms/</loc>
