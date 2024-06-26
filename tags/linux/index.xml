@@ -6,8 +6,15 @@
     <description>Recent content in Linux on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux System Files</title>
+      <link>https://chang-wen-chen.github.io/infra/linux_system_files/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/linux_system_files/</guid>
+      <description>/etc/fstab Filesystem Table, default in 644 mode Structure # &amp;lt;file system&amp;gt; &amp;lt;mount point&amp;gt; &amp;lt;type&amp;gt; &amp;lt;options&amp;gt; &amp;lt;dump&amp;gt; &amp;lt;pass&amp;gt; fstab 主要有六個欄位： File System： 需要掛載的裝置（硬碟、Partitions、外接光碟機等等）。 Mount Poin</description>
+    </item>
     <item>
       <title>Linux Kernal</title>
       <link>https://chang-wen-chen.github.io/infra/linux_kernal/</link>

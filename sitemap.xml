@@ -2,34 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chang-wen-chen.github.io/thesaurus/allegation_accusation/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
+    <loc>https://chang-wen-chen.github.io/thesaurus/apparent_obvious/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/categories/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/english/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/infra/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/linux/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/infra/linux_system_files/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/post/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/synonyms/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/thesaurus/</loc>
+    <lastmod>2024-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/thesaurus/surpass_overtake/</loc>
+    <lastmod>2024-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/thesaurus/vestigial_residual/</loc>
+    <lastmod>2024-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/life/cigar/</loc>
+    <lastmod>2024-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/life/holdem/</loc>
+    <lastmod>2024-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/life/</loc>
+    <lastmod>2024-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/pastime/</loc>
+    <lastmod>2024-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/thesaurus/allegation_accusation/</loc>
     <lastmod>2024-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/thesaurus/sarcasm_satire/</loc>
     <lastmod>2024-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/thesaurus/succint_concise/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/synonyms/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/</loc>
-    <lastmod>2024-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/thesaurus/</loc>
     <lastmod>2024-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/thesaurus/hesitate_balk/</loc>
@@ -89,9 +119,6 @@
     <loc>https://chang-wen-chen.github.io/categories/hardware/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/life/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chang-wen-chen.github.io/tags/security/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -148,12 +175,6 @@
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/linkedlist/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/infra/</loc>
-    <lastmod>2024-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/linux/</loc>
-    <lastmod>2024-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/infra/linux_kernal/</loc>
     <lastmod>2024-03-27T00:00:00+00:00</lastmod>
@@ -258,9 +279,6 @@
     <lastmod>2024-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/life/mobile_photography/</loc>
-    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/photography/</loc>
     <lastmod>2024-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/hardware/cts_architecture/</loc>

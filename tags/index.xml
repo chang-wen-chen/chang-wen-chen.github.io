@@ -6,20 +6,34 @@
     <description>Recent content in Tags on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English</title>
       <link>https://chang-wen-chen.github.io/tags/english/</link>
-      <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://chang-wen-chen.github.io/tags/linux/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Synonyms</title>
       <link>https://chang-wen-chen.github.io/tags/synonyms/</link>
-      <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/synonyms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pastime</title>
+      <link>https://chang-wen-chen.github.io/tags/pastime/</link>
+      <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/tags/pastime/</guid>
       <description></description>
     </item>
     <item>
@@ -90,13 +104,6 @@
       <link>https://chang-wen-chen.github.io/tags/linkedlist/</link>
       <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/linkedlist/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://chang-wen-chen.github.io/tags/linux/</link>
-      <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
@@ -174,13 +181,6 @@
       <link>https://chang-wen-chen.github.io/tags/java/</link>
       <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://chang-wen-chen.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Photography</title>
-      <link>https://chang-wen-chen.github.io/tags/photography/</link>
-      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/tags/photography/</guid>
       <description></description>
     </item>
     <item>

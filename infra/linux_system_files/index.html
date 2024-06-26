@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="apparent | obvious" />
-    <meta property="og:title" content="apparent | obvious" />
-    <meta property="twitter:title" content="apparent | obvious" />
+    <meta name="title" content="Linux System Files" />
+    <meta property="og:title" content="Linux System Files" />
+    <meta property="twitter:title" content="Linux System Files" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>apparent | obvious | CozyDev</title>
+    <title>Linux System Files | CozyDev</title>
 
-    <link rel="canonical" href="/thesaurus/apparent_obvious/">
+    <link rel="canonical" href="/infra/linux_system_files/">
 
     
     
@@ -201,17 +201,13 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/english" title="English">
-                            English
-                        </a>
-                        
-                        <a class="tag" href="/tags/synonyms" title="Synonyms">
-                            Synonyms
+                        <a class="tag" href="/tags/linux" title="Linux">
+                            Linux
                         </a>
                         
                     </div>
-                    <h1>apparent | obvious</h1>
-                    <h2 class="subheading">What are the differences</h2>
+                    <h1>Linux System Files</h1>
+                    <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
@@ -246,27 +242,34 @@
 
                 
 
-                <h3 id="apparent">Apparent</h3>
-<p>Something apparent can be clearly seen or understood, but it leaves a little more room for doubt or the possibility that things might not be exactly as they seem.</p>
+                <h3 id="etcfstab">/etc/fstab</h3>
+<p>Filesystem Table, default in 644 mode</p>
+<h4 id="structure">Structure</h4>
+<p><code># &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;</code>
+fstab 主要有六個欄位：</p>
 <ul>
-<li>There were  <strong>apparent</strong> scratches on the table, but it was hard to tell if they were permanent.</li>
-<li>It became increasingly <strong>apparent</strong> that he wasn&rsquo;t telling the whole truth.</li>
-</ul>
-<h3 id="obvious">Obvious</h3>
-<p>Something obvious is so clear and easy to understand that it&rsquo;s practically impossible to miss.</p>
-<p>It&rsquo;s a strong term that implies there&rsquo;s no room for doubt.</p>
+<li>File System： 需要掛載的裝置（硬碟、Partitions、外接光碟機等等）。</li>
+<li>Mount Point： 要掛載的目錄。</li>
+<li>Type： 檔案系統型別，像是 ext4、xfs 等等。</li>
+<li>Options： 開機自動載入時的相關細部設定，例如限制讀寫許可權等等。</li>
+<li>Backup Operation（Dump）： 備份設定，1 為備份， 0 為否。</li>
+<li>File System Check Order（Pass）： 用來判斷是否在掛載前執行 fsck，有三種選項：
 <ul>
-<li>The answer to the question was  <strong>obvious</strong>, even to a kindergartener.</li>
-<li>There were  <strong>obvious</strong> signs of wear and tear on the used car.</li>
+<li>0： 不檢查 Filesystem</li>
+<li>1： 最高優先檢查 Filesystem，通常用於根目錄的 Partition</li>
+<li>2： 最後檢查 Filesystem</li>
 </ul>
-<h3 id="analogy">Analogy</h3>
-<ul>
-<li>Think of  <strong>obvious</strong> as a giant, flashing neon sign. There&rsquo;s no way to miss it.</li>
-<li>Think of  <strong>apparent</strong> as a regular light bulb. It provides illumination, but there might be shadows or things that aren&rsquo;t quite clear.</li>
+</li>
 </ul>
-<h3 id="summary">Summary</h3>
-<p>In most cases, <strong>obvious</strong> or  <strong>apparent</strong> are interchangeable.
-If you want to emphasize that something is completely undeniable,  <strong>obvious</strong>  is the stronger choice.</p>
+<pre tabindex="0"><code>&lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;
+/dev/sda       /               ext4    errors=remount-ro 0       1
+UUID=68434ede-ef44-4f3b-8ede-e5a27a68857e /mogdata/dev3268 ext4 rw,noatime,nodiratime 2 2
+UUID=039ac52a-7c7f-486d-abff-ffa789b6eb34 /mogdata/dev3274 ext4 rw,noatime,nodiratime 2 2
+</code></pre><ul>
+<li>UUID（Universally Unique Identifier）標識檔案系統，以確保即使雲端硬碟的掛載順序發生變化仍然可以正確地自動掛載資料</li>
+</ul>
+<h4 id="deploy">Deploy</h4>
+<p>After editing, run <code>systemctl daemon-reload</code> to update systemd</p>
 
 
                 
@@ -276,10 +279,15 @@ If you want to emphasize that something is completely undeniable,  <strong>obvio
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/infra/linux_system_files/" data-toggle="tooltip" data-placement="top" title="Linux System Files">&larr;
+                        <a href="/thesaurus/surpass_overtake/" data-toggle="tooltip" data-placement="top" title="surpass | overtake">&larr;
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/thesaurus/apparent_obvious/" data-toggle="tooltip" data-placement="top" title="apparent | obvious">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
                 

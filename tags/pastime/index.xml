@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pastime on CozyDev</title>
+    <link>https://chang-wen-chen.github.io/tags/pastime/</link>
+    <description>Recent content in Pastime on CozyDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chang-wen-chen.github.io/tags/pastime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cigar Aficionado</title>
+      <link>https://chang-wen-chen.github.io/life/cigar/</link>
+      <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/life/cigar/</guid>
+      <description>Most expensive: Gurkha Cigars, Cohiba</description>
+    </item>
+    <item>
+      <title>Hold&#39;em</title>
+      <link>https://chang-wen-chen.github.io/life/holdem/</link>
+      <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/life/holdem/</guid>
+      <description>WSOP WPT Fish HUD VPIP:Voluntary Put Money In Pot Bluff PFR: Pre-Flop Raise AF: Aggression Factor BB CO UTG MP pot</description>
+    </item>
+    <item>
+      <title>Mobile photography</title>
+      <link>https://chang-wen-chen.github.io/life/mobile_photography/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/life/mobile_photography/</guid>
+      <description>設定 照片打開ProRes 手機攝影 三分線構圖法 黃金比例：看了很舒服的構圖 把物體放在左右下角的點上 或是這四個點上/附近 三角構圖 (人像) 勾勒出三角</description>
+    </item>
+  </channel>
+</rss>
