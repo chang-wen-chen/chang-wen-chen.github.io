@@ -6,8 +6,15 @@
     <description>Recent content in Linux on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X Window System</title>
+      <link>https://chang-wen-chen.github.io/infra/linux_14_x/</link>
+      <pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/linux_14_x/</guid>
+      <description>Linux 系統的標準GUI是 X Window System，通常簡稱為X。目前發行的版本通常為 X Version 11 Release 7，這版本通常稱為X11R7.4或X11。以GNU Public License 條款發</description>
+    </item>
     <item>
       <title>Linux System Files</title>
       <link>https://chang-wen-chen.github.io/infra/linux_system_files/</link>
