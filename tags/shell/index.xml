@@ -22,5 +22,12 @@
       <guid>https://chang-wen-chen.github.io/infra/shell/</guid>
       <description>set -euo pipefail 在Shell script中，set -euo pipefail 是設置script的選項，它們影響script的行為。逐個解釋這些選項： -e 這個選項使得scrip</description>
     </item>
+    <item>
+      <title>Shell script: 特殊語法解析</title>
+      <link>https://chang-wen-chen.github.io/infra/shell/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/infra/shell/</guid>
+      <description>在 Shell 腳本中，:-, :=, :?, :+, :n 是一些用於參數擴展和變量替換的特殊語法。這些語法有助於在不同情況下處理變量的值。以下是這些語法的詳細解釋： :- (Default value) 用</description>
+    </item>
   </channel>
 </rss>
