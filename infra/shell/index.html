@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Shell script: 特殊語法解析" />
-    <meta property="og:title" content="Shell script: 特殊語法解析" />
-    <meta property="twitter:title" content="Shell script: 特殊語法解析" />
+    <meta name="title" content="Shell commands" />
+    <meta property="og:title" content="Shell commands" />
+    <meta property="twitter:title" content="Shell commands" />
     
 
     
@@ -34,7 +34,7 @@
     <meta name="keyword"  content="Eirik, Hardware, Life, CozyDev, Coding">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Shell script: 特殊語法解析 | CozyDev</title>
+    <title>Shell commands | CozyDev</title>
 
     <link rel="canonical" href="/infra/shell/">
 
@@ -206,8 +206,8 @@
                         </a>
                         
                     </div>
-                    <h1>Shell script: 特殊語法解析</h1>
-                    <h2 class="subheading">冒號、加號、減號、問號、括號的意義用法</h2>
+                    <h1>Shell commands</h1>
+                    <h2 class="subheading">What are the differences</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -242,33 +242,52 @@
 
                 
 
-                <p>在 Shell 腳本中，<code>:-</code>, <code>:=</code>, <code>:?</code>, <code>:+</code>, <code>:n</code> 是一些用於參數擴展和變量替換的特殊語法。這些語法有助於在不同情況下處理變量的值。以下是這些語法的詳細解釋：</p>
-<h3 id="--default-value"><code>:-</code> (Default value)</h3>
-<p>用於給變數設置default value。
-如果變量未設置或為空，則使用指定的默認值。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">var</span><span style="color:#ff79c6">:-</span><span style="color:#8be9fd;font-style:italic">default_value</span><span style="color:#f1fa8c">}</span>
+                <h2 id="set--euo-pipefail">set -euo pipefail</h2>
+<p>在Shell script中，<code>set -euo pipefail</code> 是設置script的選項，它們影響script的行為。逐個解釋這些選項：</p>
+<ol>
+<li>
+<p><code>-e</code>
+這個選項使得script在<code>任何命令出錯時立即退出</code>。如果在腳本中的任何命令返回非零的退出狀態碼（即失敗），腳本將立即停止執行，並且返回非零的退出狀態碼。這有助於在腳本中快速發現錯誤，並且使得腳本更加健壯。</p>
+</li>
+<li>
+<p><code>-u</code>
+這個選項使得在腳本中<code>使用未定義的變量時</code>，立即退出腳本，並報告錯誤。如果腳本嘗試使用一個未賦值的變量，會被視為一個錯誤，並終止腳本的執行。這可以防止因為拼寫錯誤或者其他原因導致使用了未初始化的變量而產生的bug。</p>
+</li>
+<li>
+<p><code>-o pipefail</code>
+這個選項指示shell在管道命令中任何一個命令失敗時，設置整個管道命令的退出狀態碼為失敗。默認情況下，管道命令的退出狀態碼是最後一個命令的退出狀態碼，這個選項修改了這個行為，使得管道命令的退出狀態碼對於整個管道來說更加準確。這樣做有助於更好地處理管道中的錯誤情況。</p>
+</li>
+</ol>
+<p>綜合起來，<code>set -euo pipefail</code> 這一設置可以使得Shell script更加robust，更容易發現和處理錯誤，以及更可靠地處理管道命令的失敗情況。</p>
+<hr>
+<h2 id="data-flow">Data flow</h2>
+<p>在Linux中，有一些用於將標準輸出和標準錯誤流重新定向的符號。這些符號包括 &gt;、&raquo;、&gt;&amp; 和 &raquo;&amp;。</p>
+<p><code>&gt;</code>這個符號用於將標準輸出（stdout）重定向到指定的文件或文件描述符。如果目標文件不存在，則會創建一個新文件；如果存在，則會被覆蓋。 (與 <code>1&gt;</code> 相同)</p>
+<p><code>&gt;&gt;</code>這個符號用於將標準輸出（stdout）附加到指定的文件或文件描述符末尾。如果目標文件不存在，則會創建一個新文件；如果存在，則會將輸出附加到現有文件的末尾。</p>
+<p><code>&gt;&amp;</code>這個符號用於將標準錯誤（stderr）重定向到與標準輸出相同的地方，也就是將錯誤輸出合併到標準輸出流中。(與<code>2&gt;&amp;1</code>以及<code>&amp;&gt;</code>相同)</p>
+<p><code>&gt;&gt;&amp;</code>這個符號用於將標準輸出和標準錯誤都重定向到指定的文件或文件描述符。這相當於使用 &gt; 或 &raquo; 將標準輸出和標準錯誤重定向到同一文件中。</p>
+<p>其他一些資料流向符號還包括：</p>
+<ul>
+<li><code>&lt;</code>用於將文件的內容作為輸入重定向到命令中。</li>
+<li><code>|</code>管道符號，用於將一個命令的輸出作為另一個命令的輸入。</li>
+<li><code>&amp;&gt;</code>將標準輸出和標準錯誤重定向到指定的文件中。</li>
+<li><code>&lt;&amp;</code>將文件或文件描述符的內容作為輸入重定向到命令中。</li>
+<li><code>&lt;&lt;</code>用於提供多行輸入，通常與 EOF 一起使用。</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat <span style="color:#f1fa8c">&lt;&lt; EOF
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">I am &#34;Finding&#34; difficult to write this to file
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">I can &#34;write&#34; without double quotes
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">EOF</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">NAME</span><span style="color:#ff79c6">=</span>
-</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">printf</span> <span style="color:#f1fa8c">&#34;%s\n&#34;</span> <span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">NAME</span><span style="color:#ff79c6">:-</span><span style="color:#8be9fd;font-style:italic">Eirik</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span>
-</span></span><span style="display:flex;"><span>&gt; Eirik
-</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">$NAME</span>
-</span></span><span style="display:flex;"><span>&gt; 
-</span></span></code></pre></div><p>如果 <code>var</code> 未設置或為空，則輸出 <code>default_value</code>。
-<code>變數的實際值未受影響，保持不變</code></p>
-<h3 id="-assign-default-value"><code>:=</code> (Assign default value)</h3>
-<p>如果變量未設置或為空，則給變數賦予默認值，並返回該值。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">var</span>:=default_value<span style="color:#f1fa8c">}</span>
-</span></span></code></pre></div><p>如果 <code>var</code> 未設置或為空，則將 <code>default_value</code> assign 給 <code>var</code> 並輸出 <code>default_value</code>。</p>
-<h3 id="-error-if-unset"><code>:?</code> (Error if unset)</h3>
-<p>如果變量未設置或為空，則打印錯誤消息並退出腳本。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">var</span>:?error_message<span style="color:#f1fa8c">}</span>
-</span></span></code></pre></div><p>如果 <code>var</code> 未設置或為空，則輸出 <code>error_message</code> 並退出腳本。</p>
-<h3 id="-alternate-value"><code>:+</code> (Alternate value)</h3>
-<p>如果變量已設置且非空，則使用指定的替代值。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">var</span>:+alternate_value<span style="color:#f1fa8c">}</span>
-</span></span></code></pre></div><p>如果 <code>var</code> 已設置且非空，則輸出 <code>alternate_value</code>。</p>
-<h3 id="n"><code>:n</code></h3>
-<p>這個語法在標準 Shell 中並不存在。可能是拼寫錯誤或是指代某個特定語境下的自定義語法。</p>
+</span></span><span style="display:flex;"><span>I am <span style="color:#f1fa8c">&#34;Finding&#34;</span> difficult to write this to file
+</span></span><span style="display:flex;"><span>I can <span style="color:#f1fa8c">&#34;write&#34;</span> without double quotes
+</span></span></code></pre></div><p>這些符號在Linux和Unix系統中廣泛使用，用於管理命令的輸入、輸出和錯誤流。</p>
+<hr>
+<h3 id="lm_license_file">LM_LICENSE_FILE</h3>
+<p>LM 在 LM_LICENSE_FILE 中代表 &ldquo;License Manager&rdquo;。LM_LICENSE_FILE 是一個通用的環境變量名，被許多software供應商所采用，用於指定license file的位置，以便process在啟動時能夠讀取license並驗證用戶的license是否有效或過期。</p>
+<p>這個環境變量通常用於指定需要software license 的產品。當你運行需要license的software時，程序會查找這個環境變量，以確定license文件的位置。</p>
+<p>通常情況下，LM_LICENSE_FILE 環境變量的值是指向license文件的路徑。license文件通常是一個文本文件，其中包含了softwarelicense的詳細信息，比如license類型、有效期等。software在啟動時會讀取這個文件，並根據其中的信息來驗證用戶的license是否有效。</p>
 
 
                 
@@ -278,13 +297,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/thesaurus/conduct_execute/" data-toggle="tooltip" data-placement="top" title="conduct | execute">&larr;
+                        <a href="/infra/shell/" data-toggle="tooltip" data-placement="top" title="Shell script: 特殊語法解析">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/infra/shell/" data-toggle="tooltip" data-placement="top" title="Shell commands">Next
+                        <a href="/life/jplt_prepare/" data-toggle="tooltip" data-placement="top" title="JPLT skill">Next
                             Post &rarr;</a>
                     </li>
                     
@@ -330,6 +349,8 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">Tags</a></h5>
                     <div class="tags">
+                        
+                        
                         
                         
                         
