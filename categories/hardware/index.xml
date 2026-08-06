@@ -6,8 +6,15 @@
     <description>Recent content in Hardware on CozyDev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chang-wen-chen.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VLSI Aging: BTI, HCI 與 EOL Timing 解析</title>
+      <link>https://chang-wen-chen.github.io/hardware/vlsi_aging_bti_hci/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://chang-wen-chen.github.io/hardware/vlsi_aging_bti_hci/</guid>
+      <description>在 VLSI（超大型積體電路）的可靠度（Reliability）與時序分析（Timing Analysis）領域中，晶片會隨著長時間操作而發生電</description>
+    </item>
     <item>
       <title>Security DMP</title>
       <link>https://chang-wen-chen.github.io/hardware/dft_security/</link>
