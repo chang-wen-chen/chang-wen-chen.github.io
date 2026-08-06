@@ -23,13 +23,6 @@
       <description>在開發軟體時，可能會遇到一種情境：當某個系統開發已經進行到一半，突然被老闆或客戶「插隊」，需要緊急修正一個現有系統的 Bug 或添加一個功能。 這時候</description>
     </item>
     <item>
-      <title>Gerrit</title>
-      <link>https://chang-wen-chen.github.io/software/scm_gerrit/</link>
-      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://chang-wen-chen.github.io/software/scm_gerrit/</guid>
-      <description>Code Owners OWNERS file can sit in every directory layer in the repository</description>
-    </item>
-    <item>
       <title>git rebase</title>
       <link>https://chang-wen-chen.github.io/software/scm_git_rebase/</link>
       <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
