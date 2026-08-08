@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chang-wen-chen.github.io/tags/aging/</loc>
-    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chang-wen-chen.github.io/categories/</loc>
-    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/coffee/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/categories/life/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/post/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/life/coffee_brewing_equipment/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chang-wen-chen.github.io/tags/aging/</loc>
     <lastmod>2026-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/categories/hardware/</loc>
     <lastmod>2026-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chang-wen-chen.github.io/post/</loc>
-    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chang-wen-chen.github.io/tags/reliability/</loc>
-    <lastmod>2026-08-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/</loc>
     <lastmod>2026-08-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/vlsi/</loc>
@@ -40,9 +49,6 @@
   </url><url>
     <loc>https://chang-wen-chen.github.io/categories/thesaurus/</loc>
     <lastmod>2026-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/categories/life/</loc>
-    <lastmod>2024-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/tags/project-management/</loc>
     <lastmod>2024-08-10T00:00:00+00:00</lastmod>
@@ -292,9 +298,6 @@
   </url><url>
     <loc>https://chang-wen-chen.github.io/thesaurus/utter_say_convey_speak/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chang-wen-chen.github.io/tags/coffee/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chang-wen-chen.github.io/life/coffee/</loc>
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
